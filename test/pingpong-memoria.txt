@@ -1,0 +1,71 @@
+PPOS: system initializing
+PPOS: system ready (uptime 0 ms)
+    0 ms: user_main (id 1): inicio
+Testando mem_size
+mem_size  retornou 67108864 bytes
+Testando mem_avail
+mem_avail retornou 67075728 bytes
+Testando mem_alloc com tamanho 0
+Testando mem_alloc com tamanho negativo
+Testando mem_alloc tamanho excessivo
+Testando mem_free com ponteiro nulo
+Testando mem_free com ponteiro inválido
+Criando blocos de tamanho aleatório
+Testando mem_report (10 alocações)
+heap: 435 KB allocated (15 blocks), 65100 KB free (1 blocks)
+heap: block     0: 0x000055abfb933360 - 0x000055abfb93337f aloc prev    15 next     1 size 32
+heap: block     1: 0x000055abfb933380 - 0x000055abfb93339f aloc prev     0 next     2 size 32
+heap: block     2: 0x000055abfb9333a0 - 0x000055abfb9333bf aloc prev     1 next     3 size 32
+heap: block     3: 0x000055abfb9333c0 - 0x000055abfb9334cf aloc prev     2 next     4 size 272
+heap: block     4: 0x000055abfb9334d0 - 0x000055abfb93b4cf aloc prev     3 next     5 size 32768
+heap: block     5: 0x000055abfb93b4d0 - 0x000055abfb94a82f aloc prev     4 next     6 size 62304
+heap: block     6: 0x000055abfb94a830 - 0x000055abfb94d16f aloc prev     5 next     7 size 10560
+heap: block     7: 0x000055abfb94d170 - 0x000055abfb95c85f aloc prev     6 next     8 size 63216
+heap: block     8: 0x000055abfb95c860 - 0x000055abfb961b9f aloc prev     7 next     9 size 21312
+heap: block     9: 0x000055abfb961ba0 - 0x000055abfb9700af aloc prev     8 next    10 size 58640
+heap: block    10: 0x000055abfb9700b0 - 0x000055abfb97c73f aloc prev     9 next    11 size 50832
+heap: block    11: 0x000055abfb97c740 - 0x000055abfb98336f aloc prev    10 next    12 size 27696
+heap: block    12: 0x000055abfb983370 - 0x000055abfb98931f aloc prev    11 next    13 size 24496
+heap: block    13: 0x000055abfb989320 - 0x000055abfb99520f aloc prev    12 next    14 size 48880
+heap: block    14: 0x000055abfb995210 - 0x000055abfb9a012f aloc prev    13 next    15 size 44832
+heap: block    15: 0x000055abfb9a0130 - 0x000055abff93335f FREE prev    14 next     0 size 66662960
+Foram alocados 2032 blocos
+Testando alinhamento dos blocos alocados
+Preenchendo blocos com bytes fixos
+Verificando conteúdo dos blocos preenchidos
+Liberando os blocos alocados
+Testando mem_report (10 alocações)
+heap: 264 KB allocated (15 blocks), 65271 KB free (2 blocks)
+heap: block     0: 0x000055abfb933360 - 0x000055abfb93337f aloc prev  2037 next     1 size 32
+heap: block     1: 0x000055abfb933380 - 0x000055abfb93339f aloc prev     0 next     2 size 32
+heap: block     2: 0x000055abfb9333a0 - 0x000055abfb9333bf aloc prev     1 next     3 size 32
+heap: block     3: 0x000055abfb9333c0 - 0x000055abfb9334cf aloc prev     2 next     4 size 272
+heap: block     4: 0x000055abfb9334d0 - 0x000055abfb93b4cf aloc prev     3 next  2026 size 32768
+heap: block  2026: 0x000055abfb93b4d0 - 0x000055abff8f8a5f FREE prev     4 next  2027 size 66835856
+heap: block  2027: 0x000055abff8f8a60 - 0x000055abff90436f aloc prev  2026 next  2028 size 47376
+heap: block  2028: 0x000055abff904370 - 0x000055abff90ca7f aloc prev  2027 next  2029 size 34576
+heap: block  2029: 0x000055abff90ca80 - 0x000055abff91c94f aloc prev  2028 next  2030 size 65232
+heap: block  2030: 0x000055abff91c950 - 0x000055abff91f6cf aloc prev  2029 next  2031 size 11648
+heap: block  2031: 0x000055abff91f6d0 - 0x000055abff92d56f aloc prev  2030 next  2032 size 56992
+heap: block  2032: 0x000055abff92d570 - 0x000055abff92dc2f aloc prev  2031 next  2033 size 1728
+heap: block  2033: 0x000055abff92dc30 - 0x000055abff930f1f aloc prev  2032 next  2034 size 13040
+heap: block  2034: 0x000055abff930f20 - 0x000055abff931f7f aloc prev  2033 next  2035 size 4192
+heap: block  2035: 0x000055abff931f80 - 0x000055abff9322ef aloc prev  2034 next  2036 size 880
+heap: block  2036: 0x000055abff9322f0 - 0x000055abff9329af aloc prev  2035 next  2037 size 1728
+heap: block  2037: 0x000055abff9329b0 - 0x000055abff93335f FREE prev  2036 next     0 size 2480
+Verificando a memória disponível
+mem_avail retornou 67075728 bytes
+Testando mem_report (sem alocações do usuário)
+heap: 32 KB allocated (5 blocks), 65503 KB free (1 blocks)
+heap: block     0: 0x000055abfb933360 - 0x000055abfb93337f aloc prev  2036 next     1 size 32
+heap: block     1: 0x000055abfb933380 - 0x000055abfb93339f aloc prev     0 next     2 size 32
+heap: block     2: 0x000055abfb9333a0 - 0x000055abfb9333bf aloc prev     1 next     3 size 32
+heap: block     3: 0x000055abfb9333c0 - 0x000055abfb9334cf aloc prev     2 next     4 size 272
+heap: block     4: 0x000055abfb9334d0 - 0x000055abfb93b4cf aloc prev     3 next  2036 size 32768
+heap: block  2036: 0x000055abfb93b4d0 - 0x000055abff93335f FREE prev     4 next     0 size 67075728
+Testes concluídos com sucesso!
+  179 ms: user_main fim
+PPOS: task   1 (user_main),   179 ms run,   179 ms cpu,    18 acts, exit code   0
+PPOS: task   0 (kernel),   179 ms run,     0 ms cpu,    19 acts, exit code   0
+PPOS: system terminating
+PPOS: system terminated (uptime 179 ms)

@@ -1,0 +1,41 @@
+PPOS: system initializing
+PPOS: system ready (uptime 0 ms)
+    0 ms: user_main (id 1): inicio
+    0 ms: user_main fim
+	Pang (id 2): inicio
+	Pang: 0
+		Peng (id 3): inicio
+		Peng: 0
+			Ping (id 4): inicio
+			Ping: 0
+				Pong (id 5): inicio
+				Pong: 0
+					Pung (id 6): inicio
+					Pung: 0
+	Pang: 1
+		Peng: 1
+			Ping: 1
+				Pong: 1
+					Pung: 1
+	Pang: 2
+		Peng: 2
+			Ping: 2
+				Pong: 2
+					Pung: 2
+	Pang: 3
+		Peng: 3
+			Ping: 3
+				Pong: 3
+					Pung: 3
+	Pang: 4
+		Peng: 4
+			Ping: 4
+				Pong: 4
+					Pung: 4
+	Pang: fim
+		Peng: fim
+			Ping: fim
+				Pong: fim
+					Pung: fim
+PPOS: system terminating
+PPOS: system terminated (uptime 0 ms)

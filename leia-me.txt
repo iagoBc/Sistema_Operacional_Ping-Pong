@@ -1,0 +1,49 @@
+Ping-Pong Operating Systema - PPOS
+Versão 2.1, Julho de 2026
+
+Este diretório contém o código-fonte do Sistema Operacional Ping-Pong, ou PPOS, um projeto que visa construir um sistema operacional didático ("toy operating system").
+
+Ao contrário de projetos similares, o PPOS executa inteiramente dentro de um processo do Linux. A maior vantagem em executar um SO dentro de um processo em modo usuário é a possibilidade de usar ferramentas padrão de depuração, como o Valgrind e o GDB no modo default, o que reduz a curva de aprendizado do aluno.
+
+O PPOS tem uma estrutura típica de um RTOS (Real-Time Operating System), um sistema operacional com espaço de memória único, no qual o núcleo e as aplicações são compilados juntos, formando uma única imagem binária.
+
+As seguintes funcionalidades são suportadas pelo PPOS:
+
+- tarefas com troca de contexto
+- escalonador FCFS e por prioridades
+- preempção por tempo (quantum)
+- gestão do tempo e contabilização
+- sincronização de tarefas
+- semáforos genéricos
+- filas de mensagens
+- alocador de memória heap
+- driver de disco
+- escalonador de E/S
+
+Estas funcionalidades estão sendo desenvolvidas:
+
+- cache de blocos para o driver de disco
+- sistema de arquivos (inodes, diretórios, nomes)
+- driver de interface de rede
+
+Estas funcionalidades NÃO SÃO suportadas pelo PPOS:
+
+- memória virtual
+- separação userspace/kernelspace
+- chamadas de sistema usando traps
+
+O desenvolvimento do PPOS está organizado em projetos incrementais, que visam implementar cada uma das funcionalidades do sistema. Geralmente, cada projeto depende de funcionalidades desenvolvidas em projetos anteriores. Os detalhes de cada projeto estão descritos com maior detalhe na página web do docente: http://wiki.inf.ufpr.br/maziero.
+
+Este diretório tem a seguinte estrutura:
+
+hardware/: hardware virtual (emuladores)
+lib/     : bibliotecas de apoio
+kernel/  : código-fonte do PPOS, a ser desenvolvido pelo aluno
+test/    : programas de teste dos projetos
+makefile : para compilar o sistema
+
+Alguns arquivos (sobretudo os headers, os arquivos no diretório hardware, a mini-biblioteca C e os makefiles) estão prontos e não devem ser alterados (essa restrição está claramente indicada no início de cada arquivo). Esses arquivos serão sobrescritos pelos originais durante a avaliação de cada projeto.
+
+Os demais arquivos devem ser escritos pelo aluno, para implementar as funcionalidades solicitadas em cada projeto.
+
+Prof. Carlos A. Maziero, DINF UFPR

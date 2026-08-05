@@ -1,0 +1,70 @@
+PPOS: system initializing
+PPOS: system ready (uptime 0 ms)
+    0 ms: user_main (id 1): inicio
+    0 ms: user_main 0
+   10 ms: 	Pang inicia
+   10 ms: 	Pang 0
+   20 ms: 		Peng inicia
+   20 ms: 		Peng 0
+   30 ms: 			Ping inicia
+   30 ms: 			Ping 0
+   40 ms: 				Pong inicia
+   40 ms: 				Pong 0
+   50 ms: 					Pung inicia
+   50 ms: 					Pung 0
+ 4079 ms: 					Pung 1
+ 4140 ms: user_main 1
+ 4159 ms: 	Pang 1
+ 4180 ms: 				Pong 1
+ 4221 ms: 		Peng 1
+ 4230 ms: 			Ping 1
+ 8279 ms: 					Pung 2
+ 8329 ms: 				Pong 2
+ 8340 ms: user_main esperando Pang...
+ 8344 ms: 	Pang 2
+ 8357 ms: 		Peng 2
+ 8410 ms: 			Ping 2
+11784 ms: 					Pung 3
+11825 ms: 				Pong 3
+11842 ms: 	Pang 3
+11857 ms: 		Peng 3
+11867 ms: 			Ping 3
+15287 ms: 					Pung 4
+15345 ms: 	Pang termina
+PPOS: task   2 (pang), 15345 ms run,  2795 ms cpu,   280 acts, exit code   2
+15369 ms: 				Pong 4
+15386 ms: user_main esperando Peng...
+15388 ms: 		Peng 4
+15400 ms: 			Ping 4
+18103 ms: 					Pung 5
+18168 ms: 				Pong 5
+18187 ms: 		Peng 5
+18198 ms: 			Ping 5
+20903 ms: 					Pung 6
+20969 ms: 				Pong 6
+20988 ms: 		Peng termina
+PPOS: task   3 (peng), 20988 ms run,  4202 ms cpu,   421 acts, exit code   3
+20993 ms: 			Ping 6
+21019 ms: user_main esperando Ping...
+23050 ms: 					Pung 7
+23076 ms: 				Pong 7
+23092 ms: 			Ping 7
+25092 ms: 					Pung 8
+25143 ms: 				Pong 8
+25165 ms: 			Ping termina
+PPOS: task   4 (ping), 25165 ms run,  5596 ms cpu,   560 acts, exit code   4
+25185 ms: user_main esperando Pong...
+26502 ms: 					Pung 9
+26534 ms: 				Pong 9
+27884 ms: 					Pung 10
+27926 ms: 				Pong termina
+PPOS: task   5 (pong), 27926 ms run,  6971 ms cpu,   698 acts, exit code   5
+27936 ms: user_main esperando Pung...
+28601 ms: 					Pung 11
+29319 ms: 					Pung termina
+PPOS: task   6 (pung), 29319 ms run,  8363 ms cpu,   837 acts, exit code   6
+29319 ms: user_main fim
+PPOS: task   1 (user_main), 29319 ms run,  1390 ms cpu,   145 acts, exit code   0
+PPOS: task   0 (kernel), 29319 ms run,     2 ms cpu,  2942 acts, exit code   0
+PPOS: system terminating
+PPOS: system terminated (uptime 29320 ms)

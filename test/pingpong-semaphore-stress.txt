@@ -1,0 +1,74 @@
+PPOS: system initializing
+PPOS: system ready (uptime 0 ms)
+    0 ms: user_main (id 1): inicio
+64 tarefas somando 1000000 vezes cada, aguarde...
+PPOS: task   2 ((null)),  7535 ms run,    70 ms cpu, 1000001 acts, exit code   0
+PPOS: task   3 ((null)),  7535 ms run,    78 ms cpu, 1000001 acts, exit code   0
+PPOS: task   4 ((null)),  7535 ms run,    67 ms cpu, 1000001 acts, exit code   0
+PPOS: task   5 ((null)),  7535 ms run,    58 ms cpu, 1000001 acts, exit code   0
+PPOS: task   6 ((null)),  7535 ms run,    65 ms cpu, 1000001 acts, exit code   0
+PPOS: task   7 ((null)),  7535 ms run,    67 ms cpu, 1000001 acts, exit code   0
+PPOS: task   8 ((null)),  7536 ms run,    66 ms cpu, 1000001 acts, exit code   0
+PPOS: task   9 ((null)),  7536 ms run,    71 ms cpu, 1000001 acts, exit code   0
+PPOS: task  10 ((null)),  7536 ms run,    60 ms cpu, 1000001 acts, exit code   0
+PPOS: task  11 ((null)),  7536 ms run,    61 ms cpu, 1000001 acts, exit code   0
+PPOS: task  12 ((null)),  7536 ms run,    77 ms cpu, 1000001 acts, exit code   0
+PPOS: task  13 ((null)),  7536 ms run,    67 ms cpu, 1000001 acts, exit code   0
+PPOS: task  14 ((null)),  7536 ms run,    75 ms cpu, 1000001 acts, exit code   0
+PPOS: task  15 ((null)),  7536 ms run,    78 ms cpu, 1000001 acts, exit code   0
+PPOS: task  16 ((null)),  7536 ms run,    55 ms cpu, 1000001 acts, exit code   0
+PPOS: task  17 ((null)),  7536 ms run,    67 ms cpu, 1000001 acts, exit code   0
+PPOS: task  18 ((null)),  7536 ms run,    53 ms cpu, 1000001 acts, exit code   0
+PPOS: task  19 ((null)),  7536 ms run,    64 ms cpu, 1000001 acts, exit code   0
+PPOS: task  20 ((null)),  7536 ms run,    71 ms cpu, 1000001 acts, exit code   0
+PPOS: task  21 ((null)),  7536 ms run,    51 ms cpu, 1000001 acts, exit code   0
+PPOS: task  22 ((null)),  7536 ms run,    68 ms cpu, 1000001 acts, exit code   0
+PPOS: task  23 ((null)),  7536 ms run,    71 ms cpu, 1000001 acts, exit code   0
+PPOS: task  24 ((null)),  7536 ms run,    74 ms cpu, 1000001 acts, exit code   0
+PPOS: task  25 ((null)),  7536 ms run,    63 ms cpu, 1000001 acts, exit code   0
+PPOS: task  26 ((null)),  7536 ms run,    84 ms cpu, 1000001 acts, exit code   0
+PPOS: task  27 ((null)),  7536 ms run,    64 ms cpu, 1000001 acts, exit code   0
+PPOS: task  28 ((null)),  7536 ms run,    70 ms cpu, 1000001 acts, exit code   0
+PPOS: task  29 ((null)),  7536 ms run,    58 ms cpu, 1000001 acts, exit code   0
+PPOS: task  30 ((null)),  7536 ms run,    87 ms cpu, 1000001 acts, exit code   0
+PPOS: task  31 ((null)),  7536 ms run,    81 ms cpu, 1000001 acts, exit code   0
+PPOS: task  32 ((null)),  7536 ms run,    59 ms cpu, 1000001 acts, exit code   0
+PPOS: task  33 ((null)),  7536 ms run,    79 ms cpu, 1000001 acts, exit code   0
+PPOS: task  34 ((null)),  7537 ms run,    70 ms cpu, 1000001 acts, exit code   0
+PPOS: task  35 ((null)),  7537 ms run,    67 ms cpu, 1000001 acts, exit code   0
+PPOS: task  36 ((null)),  7537 ms run,    73 ms cpu, 1000001 acts, exit code   0
+PPOS: task  37 ((null)),  7537 ms run,    81 ms cpu, 1000001 acts, exit code   0
+PPOS: task  38 ((null)),  7537 ms run,    59 ms cpu, 1000001 acts, exit code   0
+PPOS: task  39 ((null)),  7537 ms run,    76 ms cpu, 1000001 acts, exit code   0
+PPOS: task  40 ((null)),  7537 ms run,    56 ms cpu, 1000001 acts, exit code   0
+PPOS: task  41 ((null)),  7537 ms run,    72 ms cpu, 1000001 acts, exit code   0
+PPOS: task  42 ((null)),  7537 ms run,    78 ms cpu, 1000001 acts, exit code   0
+PPOS: task  43 ((null)),  7537 ms run,    85 ms cpu, 1000001 acts, exit code   0
+PPOS: task  44 ((null)),  7537 ms run,    88 ms cpu, 1000001 acts, exit code   0
+PPOS: task  45 ((null)),  7537 ms run,    80 ms cpu, 1000001 acts, exit code   0
+PPOS: task  46 ((null)),  7537 ms run,    61 ms cpu, 1000001 acts, exit code   0
+PPOS: task  47 ((null)),  7537 ms run,    75 ms cpu, 1000001 acts, exit code   0
+PPOS: task  48 ((null)),  7537 ms run,    74 ms cpu, 1000001 acts, exit code   0
+PPOS: task  49 ((null)),  7537 ms run,    72 ms cpu, 1000001 acts, exit code   0
+PPOS: task  50 ((null)),  7537 ms run,    71 ms cpu, 1000001 acts, exit code   0
+PPOS: task  51 ((null)),  7537 ms run,    55 ms cpu, 1000001 acts, exit code   0
+PPOS: task  52 ((null)),  7537 ms run,    76 ms cpu, 1000001 acts, exit code   0
+PPOS: task  53 ((null)),  7537 ms run,    70 ms cpu, 1000001 acts, exit code   0
+PPOS: task  54 ((null)),  7537 ms run,    52 ms cpu, 1000001 acts, exit code   0
+PPOS: task  55 ((null)),  7537 ms run,    77 ms cpu, 1000001 acts, exit code   0
+PPOS: task  56 ((null)),  7537 ms run,    77 ms cpu, 1000001 acts, exit code   0
+PPOS: task  57 ((null)),  7537 ms run,    74 ms cpu, 1000001 acts, exit code   0
+PPOS: task  58 ((null)),  7537 ms run,    58 ms cpu, 1000001 acts, exit code   0
+PPOS: task  59 ((null)),  7537 ms run,    62 ms cpu, 1000001 acts, exit code   0
+PPOS: task  60 ((null)),  7538 ms run,    68 ms cpu, 1000001 acts, exit code   0
+PPOS: task  61 ((null)),  7538 ms run,    69 ms cpu, 1000001 acts, exit code   0
+PPOS: task  62 ((null)),  7538 ms run,    67 ms cpu, 1000001 acts, exit code   0
+PPOS: task  63 ((null)),  7538 ms run,    79 ms cpu, 1000001 acts, exit code   0
+PPOS: task  64 ((null)),  7538 ms run,    71 ms cpu, 1000001 acts, exit code   0
+PPOS: task  65 ((null)),  7538 ms run,    64 ms cpu, 1000001 acts, exit code   0
+A soma deu 64000000, valor correto!
+ 7538 ms: user_main fim
+PPOS: task   1 (user_main),  7538 ms run,     0 ms cpu,    34 acts, exit code   0
+PPOS: task   0 (kernel),  7538 ms run,  3102 ms cpu, 64000099 acts, exit code   0
+PPOS: system terminating
+PPOS: system terminated (uptime 7538 ms)

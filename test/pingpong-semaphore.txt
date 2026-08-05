@@ -1,0 +1,30 @@
+PPOS: system initializing
+PPOS: system ready (uptime 0 ms)
+    0 ms: user_main (id 1): inicio
+    0 ms: A1 zig (0)
+ 1000 ms: 			B1 zag (0)
+ 2000 ms: 	A2 zig (0)
+ 3000 ms: 				B2 zag (0)
+ 4000 ms: A1 zig (1)
+ 5000 ms: 			B1 zag (1)
+ 6000 ms: 	A2 zig (1)
+ 7000 ms: 				B2 zag (1)
+ 8000 ms: A1 zig (2)
+ 9000 ms: 			B1 zag (2)
+10000 ms: 	A2 zig (2)
+11000 ms: 				B2 zag (2)
+12000 ms: A1 zig (3)
+13000 ms: 			B1 zag (3)
+14000 ms: 	A2 zig (3)
+15000 ms: 				B2 zag (3)
+16000 ms: A1 zig (4)
+PPOS: task   2 (a1), 17000 ms run,     0 ms cpu,    10 acts, exit code   0
+17000 ms: 			B1 zag (4)
+PPOS: task   3 (a2), 17000 ms run,     0 ms cpu,    10 acts, exit code   1
+PPOS: task   5 (b2), 17000 ms run,     0 ms cpu,    10 acts, exit code   1
+PPOS: task   4 (b1), 18000 ms run,     0 ms cpu,    11 acts, exit code   2
+18000 ms: user_main fim
+PPOS: task   1 (user_main), 18000 ms run,     0 ms cpu,     4 acts, exit code   0
+PPOS: task   0 (kernel), 18000 ms run, 18000 ms cpu,    46 acts, exit code   0
+PPOS: system terminating
+PPOS: system terminated (uptime 18000 ms)

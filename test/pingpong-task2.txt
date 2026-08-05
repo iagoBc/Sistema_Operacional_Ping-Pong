@@ -1,0 +1,3078 @@
+PPOS: system initializing
+PPOS: system ready (uptime 0 ms)
+    0 ms: user_main (id 1): inicio
+user_main: criei a tarefa 2
+user_main: criei a tarefa 3
+user_main: criei a tarefa 4
+user_main: criei a tarefa 5
+user_main: criei a tarefa 6
+user_main: criei a tarefa 7
+user_main: criei a tarefa 8
+user_main: criei a tarefa 9
+user_main: criei a tarefa 10
+user_main: criei a tarefa 11
+user_main: criei a tarefa 12
+user_main: criei a tarefa 13
+user_main: criei a tarefa 14
+user_main: criei a tarefa 15
+user_main: criei a tarefa 16
+user_main: criei a tarefa 17
+user_main: criei a tarefa 18
+user_main: criei a tarefa 19
+user_main: criei a tarefa 20
+user_main: criei a tarefa 21
+user_main: criei a tarefa 22
+user_main: criei a tarefa 23
+user_main: criei a tarefa 24
+user_main: criei a tarefa 25
+user_main: criei a tarefa 26
+user_main: criei a tarefa 27
+user_main: criei a tarefa 28
+user_main: criei a tarefa 29
+user_main: criei a tarefa 30
+user_main: criei a tarefa 31
+user_main: criei a tarefa 32
+user_main: criei a tarefa 33
+user_main: criei a tarefa 34
+user_main: criei a tarefa 35
+user_main: criei a tarefa 36
+user_main: criei a tarefa 37
+user_main: criei a tarefa 38
+user_main: criei a tarefa 39
+user_main: criei a tarefa 40
+user_main: criei a tarefa 41
+user_main: criei a tarefa 42
+user_main: criei a tarefa 43
+user_main: criei a tarefa 44
+user_main: criei a tarefa 45
+user_main: criei a tarefa 46
+user_main: criei a tarefa 47
+user_main: criei a tarefa 48
+user_main: criei a tarefa 49
+user_main: criei a tarefa 50
+user_main: criei a tarefa 51
+user_main: criei a tarefa 52
+user_main: criei a tarefa 53
+user_main: criei a tarefa 54
+user_main: criei a tarefa 55
+user_main: criei a tarefa 56
+user_main: criei a tarefa 57
+user_main: criei a tarefa 58
+user_main: criei a tarefa 59
+user_main: criei a tarefa 60
+user_main: criei a tarefa 61
+user_main: criei a tarefa 62
+user_main: criei a tarefa 63
+user_main: criei a tarefa 64
+user_main: criei a tarefa 65
+user_main: criei a tarefa 66
+user_main: criei a tarefa 67
+user_main: criei a tarefa 68
+user_main: criei a tarefa 69
+user_main: criei a tarefa 70
+user_main: criei a tarefa 71
+user_main: criei a tarefa 72
+user_main: criei a tarefa 73
+user_main: criei a tarefa 74
+user_main: criei a tarefa 75
+user_main: criei a tarefa 76
+user_main: criei a tarefa 77
+user_main: criei a tarefa 78
+user_main: criei a tarefa 79
+user_main: criei a tarefa 80
+user_main: criei a tarefa 81
+user_main: criei a tarefa 82
+user_main: criei a tarefa 83
+user_main: criei a tarefa 84
+user_main: criei a tarefa 85
+user_main: criei a tarefa 86
+user_main: criei a tarefa 87
+user_main: criei a tarefa 88
+user_main: criei a tarefa 89
+user_main: criei a tarefa 90
+user_main: criei a tarefa 91
+user_main: criei a tarefa 92
+user_main: criei a tarefa 93
+user_main: criei a tarefa 94
+user_main: criei a tarefa 95
+user_main: criei a tarefa 96
+user_main: criei a tarefa 97
+user_main: criei a tarefa 98
+user_main: criei a tarefa 99
+user_main: criei a tarefa 100
+user_main: criei a tarefa 101
+user_main: criei a tarefa 102
+user_main: criei a tarefa 103
+user_main: criei a tarefa 104
+user_main: criei a tarefa 105
+user_main: criei a tarefa 106
+user_main: criei a tarefa 107
+user_main: criei a tarefa 108
+user_main: criei a tarefa 109
+user_main: criei a tarefa 110
+user_main: criei a tarefa 111
+user_main: criei a tarefa 112
+user_main: criei a tarefa 113
+user_main: criei a tarefa 114
+user_main: criei a tarefa 115
+user_main: criei a tarefa 116
+user_main: criei a tarefa 117
+user_main: criei a tarefa 118
+user_main: criei a tarefa 119
+user_main: criei a tarefa 120
+user_main: criei a tarefa 121
+user_main: criei a tarefa 122
+user_main: criei a tarefa 123
+user_main: criei a tarefa 124
+user_main: criei a tarefa 125
+user_main: criei a tarefa 126
+user_main: criei a tarefa 127
+user_main: criei a tarefa 128
+user_main: criei a tarefa 129
+user_main: criei a tarefa 130
+user_main: criei a tarefa 131
+user_main: criei a tarefa 132
+user_main: criei a tarefa 133
+user_main: criei a tarefa 134
+user_main: criei a tarefa 135
+user_main: criei a tarefa 136
+user_main: criei a tarefa 137
+user_main: criei a tarefa 138
+user_main: criei a tarefa 139
+user_main: criei a tarefa 140
+user_main: criei a tarefa 141
+user_main: criei a tarefa 142
+user_main: criei a tarefa 143
+user_main: criei a tarefa 144
+user_main: criei a tarefa 145
+user_main: criei a tarefa 146
+user_main: criei a tarefa 147
+user_main: criei a tarefa 148
+user_main: criei a tarefa 149
+user_main: criei a tarefa 150
+user_main: criei a tarefa 151
+user_main: criei a tarefa 152
+user_main: criei a tarefa 153
+user_main: criei a tarefa 154
+user_main: criei a tarefa 155
+user_main: criei a tarefa 156
+user_main: criei a tarefa 157
+user_main: criei a tarefa 158
+user_main: criei a tarefa 159
+user_main: criei a tarefa 160
+user_main: criei a tarefa 161
+user_main: criei a tarefa 162
+user_main: criei a tarefa 163
+user_main: criei a tarefa 164
+user_main: criei a tarefa 165
+user_main: criei a tarefa 166
+user_main: criei a tarefa 167
+user_main: criei a tarefa 168
+user_main: criei a tarefa 169
+user_main: criei a tarefa 170
+user_main: criei a tarefa 171
+user_main: criei a tarefa 172
+user_main: criei a tarefa 173
+user_main: criei a tarefa 174
+user_main: criei a tarefa 175
+user_main: criei a tarefa 176
+user_main: criei a tarefa 177
+user_main: criei a tarefa 178
+user_main: criei a tarefa 179
+user_main: criei a tarefa 180
+user_main: criei a tarefa 181
+user_main: criei a tarefa 182
+user_main: criei a tarefa 183
+user_main: criei a tarefa 184
+user_main: criei a tarefa 185
+user_main: criei a tarefa 186
+user_main: criei a tarefa 187
+user_main: criei a tarefa 188
+user_main: criei a tarefa 189
+user_main: criei a tarefa 190
+user_main: criei a tarefa 191
+user_main: criei a tarefa 192
+user_main: criei a tarefa 193
+user_main: criei a tarefa 194
+user_main: criei a tarefa 195
+user_main: criei a tarefa 196
+user_main: criei a tarefa 197
+user_main: criei a tarefa 198
+user_main: criei a tarefa 199
+user_main: criei a tarefa 200
+user_main: criei a tarefa 201
+user_main: criei a tarefa 202
+user_main: criei a tarefa 203
+user_main: criei a tarefa 204
+user_main: criei a tarefa 205
+user_main: criei a tarefa 206
+user_main: criei a tarefa 207
+user_main: criei a tarefa 208
+user_main: criei a tarefa 209
+user_main: criei a tarefa 210
+user_main: criei a tarefa 211
+user_main: criei a tarefa 212
+user_main: criei a tarefa 213
+user_main: criei a tarefa 214
+user_main: criei a tarefa 215
+user_main: criei a tarefa 216
+user_main: criei a tarefa 217
+user_main: criei a tarefa 218
+user_main: criei a tarefa 219
+user_main: criei a tarefa 220
+user_main: criei a tarefa 221
+user_main: criei a tarefa 222
+user_main: criei a tarefa 223
+user_main: criei a tarefa 224
+user_main: criei a tarefa 225
+user_main: criei a tarefa 226
+user_main: criei a tarefa 227
+user_main: criei a tarefa 228
+user_main: criei a tarefa 229
+user_main: criei a tarefa 230
+user_main: criei a tarefa 231
+user_main: criei a tarefa 232
+user_main: criei a tarefa 233
+user_main: criei a tarefa 234
+user_main: criei a tarefa 235
+user_main: criei a tarefa 236
+user_main: criei a tarefa 237
+user_main: criei a tarefa 238
+user_main: criei a tarefa 239
+user_main: criei a tarefa 240
+user_main: criei a tarefa 241
+user_main: criei a tarefa 242
+user_main: criei a tarefa 243
+user_main: criei a tarefa 244
+user_main: criei a tarefa 245
+user_main: criei a tarefa 246
+user_main: criei a tarefa 247
+user_main: criei a tarefa 248
+user_main: criei a tarefa 249
+user_main: criei a tarefa 250
+user_main: criei a tarefa 251
+user_main: criei a tarefa 252
+user_main: criei a tarefa 253
+user_main: criei a tarefa 254
+user_main: criei a tarefa 255
+user_main: criei a tarefa 256
+user_main: criei a tarefa 257
+user_main: criei a tarefa 258
+user_main: criei a tarefa 259
+user_main: criei a tarefa 260
+user_main: criei a tarefa 261
+user_main: criei a tarefa 262
+user_main: criei a tarefa 263
+user_main: criei a tarefa 264
+user_main: criei a tarefa 265
+user_main: criei a tarefa 266
+user_main: criei a tarefa 267
+user_main: criei a tarefa 268
+user_main: criei a tarefa 269
+user_main: criei a tarefa 270
+user_main: criei a tarefa 271
+user_main: criei a tarefa 272
+user_main: criei a tarefa 273
+user_main: criei a tarefa 274
+user_main: criei a tarefa 275
+user_main: criei a tarefa 276
+user_main: criei a tarefa 277
+user_main: criei a tarefa 278
+user_main: criei a tarefa 279
+user_main: criei a tarefa 280
+user_main: criei a tarefa 281
+user_main: criei a tarefa 282
+user_main: criei a tarefa 283
+user_main: criei a tarefa 284
+user_main: criei a tarefa 285
+user_main: criei a tarefa 286
+user_main: criei a tarefa 287
+user_main: criei a tarefa 288
+user_main: criei a tarefa 289
+user_main: criei a tarefa 290
+user_main: criei a tarefa 291
+user_main: criei a tarefa 292
+user_main: criei a tarefa 293
+user_main: criei a tarefa 294
+user_main: criei a tarefa 295
+user_main: criei a tarefa 296
+user_main: criei a tarefa 297
+user_main: criei a tarefa 298
+user_main: criei a tarefa 299
+user_main: criei a tarefa 300
+user_main: criei a tarefa 301
+user_main: criei a tarefa 302
+user_main: criei a tarefa 303
+user_main: criei a tarefa 304
+user_main: criei a tarefa 305
+user_main: criei a tarefa 306
+user_main: criei a tarefa 307
+user_main: criei a tarefa 308
+user_main: criei a tarefa 309
+user_main: criei a tarefa 310
+user_main: criei a tarefa 311
+user_main: criei a tarefa 312
+user_main: criei a tarefa 313
+user_main: criei a tarefa 314
+user_main: criei a tarefa 315
+user_main: criei a tarefa 316
+user_main: criei a tarefa 317
+user_main: criei a tarefa 318
+user_main: criei a tarefa 319
+user_main: criei a tarefa 320
+user_main: criei a tarefa 321
+user_main: criei a tarefa 322
+user_main: criei a tarefa 323
+user_main: criei a tarefa 324
+user_main: criei a tarefa 325
+user_main: criei a tarefa 326
+user_main: criei a tarefa 327
+user_main: criei a tarefa 328
+user_main: criei a tarefa 329
+user_main: criei a tarefa 330
+user_main: criei a tarefa 331
+user_main: criei a tarefa 332
+user_main: criei a tarefa 333
+user_main: criei a tarefa 334
+user_main: criei a tarefa 335
+user_main: criei a tarefa 336
+user_main: criei a tarefa 337
+user_main: criei a tarefa 338
+user_main: criei a tarefa 339
+user_main: criei a tarefa 340
+user_main: criei a tarefa 341
+user_main: criei a tarefa 342
+user_main: criei a tarefa 343
+user_main: criei a tarefa 344
+user_main: criei a tarefa 345
+user_main: criei a tarefa 346
+user_main: criei a tarefa 347
+user_main: criei a tarefa 348
+user_main: criei a tarefa 349
+user_main: criei a tarefa 350
+user_main: criei a tarefa 351
+user_main: criei a tarefa 352
+user_main: criei a tarefa 353
+user_main: criei a tarefa 354
+user_main: criei a tarefa 355
+user_main: criei a tarefa 356
+user_main: criei a tarefa 357
+user_main: criei a tarefa 358
+user_main: criei a tarefa 359
+user_main: criei a tarefa 360
+user_main: criei a tarefa 361
+user_main: criei a tarefa 362
+user_main: criei a tarefa 363
+user_main: criei a tarefa 364
+user_main: criei a tarefa 365
+user_main: criei a tarefa 366
+user_main: criei a tarefa 367
+user_main: criei a tarefa 368
+user_main: criei a tarefa 369
+user_main: criei a tarefa 370
+user_main: criei a tarefa 371
+user_main: criei a tarefa 372
+user_main: criei a tarefa 373
+user_main: criei a tarefa 374
+user_main: criei a tarefa 375
+user_main: criei a tarefa 376
+user_main: criei a tarefa 377
+user_main: criei a tarefa 378
+user_main: criei a tarefa 379
+user_main: criei a tarefa 380
+user_main: criei a tarefa 381
+user_main: criei a tarefa 382
+user_main: criei a tarefa 383
+user_main: criei a tarefa 384
+user_main: criei a tarefa 385
+user_main: criei a tarefa 386
+user_main: criei a tarefa 387
+user_main: criei a tarefa 388
+user_main: criei a tarefa 389
+user_main: criei a tarefa 390
+user_main: criei a tarefa 391
+user_main: criei a tarefa 392
+user_main: criei a tarefa 393
+user_main: criei a tarefa 394
+user_main: criei a tarefa 395
+user_main: criei a tarefa 396
+user_main: criei a tarefa 397
+user_main: criei a tarefa 398
+user_main: criei a tarefa 399
+user_main: criei a tarefa 400
+user_main: criei a tarefa 401
+user_main: criei a tarefa 402
+user_main: criei a tarefa 403
+user_main: criei a tarefa 404
+user_main: criei a tarefa 405
+user_main: criei a tarefa 406
+user_main: criei a tarefa 407
+user_main: criei a tarefa 408
+user_main: criei a tarefa 409
+user_main: criei a tarefa 410
+user_main: criei a tarefa 411
+user_main: criei a tarefa 412
+user_main: criei a tarefa 413
+user_main: criei a tarefa 414
+user_main: criei a tarefa 415
+user_main: criei a tarefa 416
+user_main: criei a tarefa 417
+user_main: criei a tarefa 418
+user_main: criei a tarefa 419
+user_main: criei a tarefa 420
+user_main: criei a tarefa 421
+user_main: criei a tarefa 422
+user_main: criei a tarefa 423
+user_main: criei a tarefa 424
+user_main: criei a tarefa 425
+user_main: criei a tarefa 426
+user_main: criei a tarefa 427
+user_main: criei a tarefa 428
+user_main: criei a tarefa 429
+user_main: criei a tarefa 430
+user_main: criei a tarefa 431
+user_main: criei a tarefa 432
+user_main: criei a tarefa 433
+user_main: criei a tarefa 434
+user_main: criei a tarefa 435
+user_main: criei a tarefa 436
+user_main: criei a tarefa 437
+user_main: criei a tarefa 438
+user_main: criei a tarefa 439
+user_main: criei a tarefa 440
+user_main: criei a tarefa 441
+user_main: criei a tarefa 442
+user_main: criei a tarefa 443
+user_main: criei a tarefa 444
+user_main: criei a tarefa 445
+user_main: criei a tarefa 446
+user_main: criei a tarefa 447
+user_main: criei a tarefa 448
+user_main: criei a tarefa 449
+user_main: criei a tarefa 450
+user_main: criei a tarefa 451
+user_main: criei a tarefa 452
+user_main: criei a tarefa 453
+user_main: criei a tarefa 454
+user_main: criei a tarefa 455
+user_main: criei a tarefa 456
+user_main: criei a tarefa 457
+user_main: criei a tarefa 458
+user_main: criei a tarefa 459
+user_main: criei a tarefa 460
+user_main: criei a tarefa 461
+user_main: criei a tarefa 462
+user_main: criei a tarefa 463
+user_main: criei a tarefa 464
+user_main: criei a tarefa 465
+user_main: criei a tarefa 466
+user_main: criei a tarefa 467
+user_main: criei a tarefa 468
+user_main: criei a tarefa 469
+user_main: criei a tarefa 470
+user_main: criei a tarefa 471
+user_main: criei a tarefa 472
+user_main: criei a tarefa 473
+user_main: criei a tarefa 474
+user_main: criei a tarefa 475
+user_main: criei a tarefa 476
+user_main: criei a tarefa 477
+user_main: criei a tarefa 478
+user_main: criei a tarefa 479
+user_main: criei a tarefa 480
+user_main: criei a tarefa 481
+user_main: criei a tarefa 482
+user_main: criei a tarefa 483
+user_main: criei a tarefa 484
+user_main: criei a tarefa 485
+user_main: criei a tarefa 486
+user_main: criei a tarefa 487
+user_main: criei a tarefa 488
+user_main: criei a tarefa 489
+user_main: criei a tarefa 490
+user_main: criei a tarefa 491
+user_main: criei a tarefa 492
+user_main: criei a tarefa 493
+user_main: criei a tarefa 494
+user_main: criei a tarefa 495
+user_main: criei a tarefa 496
+user_main: criei a tarefa 497
+user_main: criei a tarefa 498
+user_main: criei a tarefa 499
+user_main: criei a tarefa 500
+user_main: criei a tarefa 501
+user_main: criei a tarefa 502
+user_main: criei a tarefa 503
+user_main: criei a tarefa 504
+user_main: criei a tarefa 505
+user_main: criei a tarefa 506
+user_main: criei a tarefa 507
+user_main: criei a tarefa 508
+user_main: criei a tarefa 509
+user_main: criei a tarefa 510
+user_main: criei a tarefa 511
+user_main: criei a tarefa 512
+user_main: criei a tarefa 513
+user_main: vou ativar a tarefa 2
+	Iniciei  tarefa     2
+	Vou mudar para a tarefa 3
+	Iniciei  tarefa     3
+	Vou mudar para a tarefa 4
+	Iniciei  tarefa     4
+	Vou mudar para a tarefa 5
+	Iniciei  tarefa     5
+	Vou mudar para a tarefa 6
+	Iniciei  tarefa     6
+	Vou mudar para a tarefa 7
+	Iniciei  tarefa     7
+	Vou mudar para a tarefa 8
+	Iniciei  tarefa     8
+	Vou mudar para a tarefa 9
+	Iniciei  tarefa     9
+	Vou mudar para a tarefa 10
+	Iniciei  tarefa    10
+	Vou mudar para a tarefa 11
+	Iniciei  tarefa    11
+	Vou mudar para a tarefa 12
+	Iniciei  tarefa    12
+	Vou mudar para a tarefa 13
+	Iniciei  tarefa    13
+	Vou mudar para a tarefa 14
+	Iniciei  tarefa    14
+	Vou mudar para a tarefa 15
+	Iniciei  tarefa    15
+	Vou mudar para a tarefa 16
+	Iniciei  tarefa    16
+	Vou mudar para a tarefa 17
+	Iniciei  tarefa    17
+	Vou mudar para a tarefa 18
+	Iniciei  tarefa    18
+	Vou mudar para a tarefa 19
+	Iniciei  tarefa    19
+	Vou mudar para a tarefa 20
+	Iniciei  tarefa    20
+	Vou mudar para a tarefa 21
+	Iniciei  tarefa    21
+	Vou mudar para a tarefa 22
+	Iniciei  tarefa    22
+	Vou mudar para a tarefa 23
+	Iniciei  tarefa    23
+	Vou mudar para a tarefa 24
+	Iniciei  tarefa    24
+	Vou mudar para a tarefa 25
+	Iniciei  tarefa    25
+	Vou mudar para a tarefa 26
+	Iniciei  tarefa    26
+	Vou mudar para a tarefa 27
+	Iniciei  tarefa    27
+	Vou mudar para a tarefa 28
+	Iniciei  tarefa    28
+	Vou mudar para a tarefa 29
+	Iniciei  tarefa    29
+	Vou mudar para a tarefa 30
+	Iniciei  tarefa    30
+	Vou mudar para a tarefa 31
+	Iniciei  tarefa    31
+	Vou mudar para a tarefa 32
+	Iniciei  tarefa    32
+	Vou mudar para a tarefa 33
+	Iniciei  tarefa    33
+	Vou mudar para a tarefa 34
+	Iniciei  tarefa    34
+	Vou mudar para a tarefa 35
+	Iniciei  tarefa    35
+	Vou mudar para a tarefa 36
+	Iniciei  tarefa    36
+	Vou mudar para a tarefa 37
+	Iniciei  tarefa    37
+	Vou mudar para a tarefa 38
+	Iniciei  tarefa    38
+	Vou mudar para a tarefa 39
+	Iniciei  tarefa    39
+	Vou mudar para a tarefa 40
+	Iniciei  tarefa    40
+	Vou mudar para a tarefa 41
+	Iniciei  tarefa    41
+	Vou mudar para a tarefa 42
+	Iniciei  tarefa    42
+	Vou mudar para a tarefa 43
+	Iniciei  tarefa    43
+	Vou mudar para a tarefa 44
+	Iniciei  tarefa    44
+	Vou mudar para a tarefa 45
+	Iniciei  tarefa    45
+	Vou mudar para a tarefa 46
+	Iniciei  tarefa    46
+	Vou mudar para a tarefa 47
+	Iniciei  tarefa    47
+	Vou mudar para a tarefa 48
+	Iniciei  tarefa    48
+	Vou mudar para a tarefa 49
+	Iniciei  tarefa    49
+	Vou mudar para a tarefa 50
+	Iniciei  tarefa    50
+	Vou mudar para a tarefa 51
+	Iniciei  tarefa    51
+	Vou mudar para a tarefa 52
+	Iniciei  tarefa    52
+	Vou mudar para a tarefa 53
+	Iniciei  tarefa    53
+	Vou mudar para a tarefa 54
+	Iniciei  tarefa    54
+	Vou mudar para a tarefa 55
+	Iniciei  tarefa    55
+	Vou mudar para a tarefa 56
+	Iniciei  tarefa    56
+	Vou mudar para a tarefa 57
+	Iniciei  tarefa    57
+	Vou mudar para a tarefa 58
+	Iniciei  tarefa    58
+	Vou mudar para a tarefa 59
+	Iniciei  tarefa    59
+	Vou mudar para a tarefa 60
+	Iniciei  tarefa    60
+	Vou mudar para a tarefa 61
+	Iniciei  tarefa    61
+	Vou mudar para a tarefa 62
+	Iniciei  tarefa    62
+	Vou mudar para a tarefa 63
+	Iniciei  tarefa    63
+	Vou mudar para a tarefa 64
+	Iniciei  tarefa    64
+	Vou mudar para a tarefa 65
+	Iniciei  tarefa    65
+	Vou mudar para a tarefa 66
+	Iniciei  tarefa    66
+	Vou mudar para a tarefa 67
+	Iniciei  tarefa    67
+	Vou mudar para a tarefa 68
+	Iniciei  tarefa    68
+	Vou mudar para a tarefa 69
+	Iniciei  tarefa    69
+	Vou mudar para a tarefa 70
+	Iniciei  tarefa    70
+	Vou mudar para a tarefa 71
+	Iniciei  tarefa    71
+	Vou mudar para a tarefa 72
+	Iniciei  tarefa    72
+	Vou mudar para a tarefa 73
+	Iniciei  tarefa    73
+	Vou mudar para a tarefa 74
+	Iniciei  tarefa    74
+	Vou mudar para a tarefa 75
+	Iniciei  tarefa    75
+	Vou mudar para a tarefa 76
+	Iniciei  tarefa    76
+	Vou mudar para a tarefa 77
+	Iniciei  tarefa    77
+	Vou mudar para a tarefa 78
+	Iniciei  tarefa    78
+	Vou mudar para a tarefa 79
+	Iniciei  tarefa    79
+	Vou mudar para a tarefa 80
+	Iniciei  tarefa    80
+	Vou mudar para a tarefa 81
+	Iniciei  tarefa    81
+	Vou mudar para a tarefa 82
+	Iniciei  tarefa    82
+	Vou mudar para a tarefa 83
+	Iniciei  tarefa    83
+	Vou mudar para a tarefa 84
+	Iniciei  tarefa    84
+	Vou mudar para a tarefa 85
+	Iniciei  tarefa    85
+	Vou mudar para a tarefa 86
+	Iniciei  tarefa    86
+	Vou mudar para a tarefa 87
+	Iniciei  tarefa    87
+	Vou mudar para a tarefa 88
+	Iniciei  tarefa    88
+	Vou mudar para a tarefa 89
+	Iniciei  tarefa    89
+	Vou mudar para a tarefa 90
+	Iniciei  tarefa    90
+	Vou mudar para a tarefa 91
+	Iniciei  tarefa    91
+	Vou mudar para a tarefa 92
+	Iniciei  tarefa    92
+	Vou mudar para a tarefa 93
+	Iniciei  tarefa    93
+	Vou mudar para a tarefa 94
+	Iniciei  tarefa    94
+	Vou mudar para a tarefa 95
+	Iniciei  tarefa    95
+	Vou mudar para a tarefa 96
+	Iniciei  tarefa    96
+	Vou mudar para a tarefa 97
+	Iniciei  tarefa    97
+	Vou mudar para a tarefa 98
+	Iniciei  tarefa    98
+	Vou mudar para a tarefa 99
+	Iniciei  tarefa    99
+	Vou mudar para a tarefa 100
+	Iniciei  tarefa   100
+	Vou mudar para a tarefa 101
+	Iniciei  tarefa   101
+	Vou mudar para a tarefa 102
+	Iniciei  tarefa   102
+	Vou mudar para a tarefa 103
+	Iniciei  tarefa   103
+	Vou mudar para a tarefa 104
+	Iniciei  tarefa   104
+	Vou mudar para a tarefa 105
+	Iniciei  tarefa   105
+	Vou mudar para a tarefa 106
+	Iniciei  tarefa   106
+	Vou mudar para a tarefa 107
+	Iniciei  tarefa   107
+	Vou mudar para a tarefa 108
+	Iniciei  tarefa   108
+	Vou mudar para a tarefa 109
+	Iniciei  tarefa   109
+	Vou mudar para a tarefa 110
+	Iniciei  tarefa   110
+	Vou mudar para a tarefa 111
+	Iniciei  tarefa   111
+	Vou mudar para a tarefa 112
+	Iniciei  tarefa   112
+	Vou mudar para a tarefa 113
+	Iniciei  tarefa   113
+	Vou mudar para a tarefa 114
+	Iniciei  tarefa   114
+	Vou mudar para a tarefa 115
+	Iniciei  tarefa   115
+	Vou mudar para a tarefa 116
+	Iniciei  tarefa   116
+	Vou mudar para a tarefa 117
+	Iniciei  tarefa   117
+	Vou mudar para a tarefa 118
+	Iniciei  tarefa   118
+	Vou mudar para a tarefa 119
+	Iniciei  tarefa   119
+	Vou mudar para a tarefa 120
+	Iniciei  tarefa   120
+	Vou mudar para a tarefa 121
+	Iniciei  tarefa   121
+	Vou mudar para a tarefa 122
+	Iniciei  tarefa   122
+	Vou mudar para a tarefa 123
+	Iniciei  tarefa   123
+	Vou mudar para a tarefa 124
+	Iniciei  tarefa   124
+	Vou mudar para a tarefa 125
+	Iniciei  tarefa   125
+	Vou mudar para a tarefa 126
+	Iniciei  tarefa   126
+	Vou mudar para a tarefa 127
+	Iniciei  tarefa   127
+	Vou mudar para a tarefa 128
+	Iniciei  tarefa   128
+	Vou mudar para a tarefa 129
+	Iniciei  tarefa   129
+	Vou mudar para a tarefa 130
+	Iniciei  tarefa   130
+	Vou mudar para a tarefa 131
+	Iniciei  tarefa   131
+	Vou mudar para a tarefa 132
+	Iniciei  tarefa   132
+	Vou mudar para a tarefa 133
+	Iniciei  tarefa   133
+	Vou mudar para a tarefa 134
+	Iniciei  tarefa   134
+	Vou mudar para a tarefa 135
+	Iniciei  tarefa   135
+	Vou mudar para a tarefa 136
+	Iniciei  tarefa   136
+	Vou mudar para a tarefa 137
+	Iniciei  tarefa   137
+	Vou mudar para a tarefa 138
+	Iniciei  tarefa   138
+	Vou mudar para a tarefa 139
+	Iniciei  tarefa   139
+	Vou mudar para a tarefa 140
+	Iniciei  tarefa   140
+	Vou mudar para a tarefa 141
+	Iniciei  tarefa   141
+	Vou mudar para a tarefa 142
+	Iniciei  tarefa   142
+	Vou mudar para a tarefa 143
+	Iniciei  tarefa   143
+	Vou mudar para a tarefa 144
+	Iniciei  tarefa   144
+	Vou mudar para a tarefa 145
+	Iniciei  tarefa   145
+	Vou mudar para a tarefa 146
+	Iniciei  tarefa   146
+	Vou mudar para a tarefa 147
+	Iniciei  tarefa   147
+	Vou mudar para a tarefa 148
+	Iniciei  tarefa   148
+	Vou mudar para a tarefa 149
+	Iniciei  tarefa   149
+	Vou mudar para a tarefa 150
+	Iniciei  tarefa   150
+	Vou mudar para a tarefa 151
+	Iniciei  tarefa   151
+	Vou mudar para a tarefa 152
+	Iniciei  tarefa   152
+	Vou mudar para a tarefa 153
+	Iniciei  tarefa   153
+	Vou mudar para a tarefa 154
+	Iniciei  tarefa   154
+	Vou mudar para a tarefa 155
+	Iniciei  tarefa   155
+	Vou mudar para a tarefa 156
+	Iniciei  tarefa   156
+	Vou mudar para a tarefa 157
+	Iniciei  tarefa   157
+	Vou mudar para a tarefa 158
+	Iniciei  tarefa   158
+	Vou mudar para a tarefa 159
+	Iniciei  tarefa   159
+	Vou mudar para a tarefa 160
+	Iniciei  tarefa   160
+	Vou mudar para a tarefa 161
+	Iniciei  tarefa   161
+	Vou mudar para a tarefa 162
+	Iniciei  tarefa   162
+	Vou mudar para a tarefa 163
+	Iniciei  tarefa   163
+	Vou mudar para a tarefa 164
+	Iniciei  tarefa   164
+	Vou mudar para a tarefa 165
+	Iniciei  tarefa   165
+	Vou mudar para a tarefa 166
+	Iniciei  tarefa   166
+	Vou mudar para a tarefa 167
+	Iniciei  tarefa   167
+	Vou mudar para a tarefa 168
+	Iniciei  tarefa   168
+	Vou mudar para a tarefa 169
+	Iniciei  tarefa   169
+	Vou mudar para a tarefa 170
+	Iniciei  tarefa   170
+	Vou mudar para a tarefa 171
+	Iniciei  tarefa   171
+	Vou mudar para a tarefa 172
+	Iniciei  tarefa   172
+	Vou mudar para a tarefa 173
+	Iniciei  tarefa   173
+	Vou mudar para a tarefa 174
+	Iniciei  tarefa   174
+	Vou mudar para a tarefa 175
+	Iniciei  tarefa   175
+	Vou mudar para a tarefa 176
+	Iniciei  tarefa   176
+	Vou mudar para a tarefa 177
+	Iniciei  tarefa   177
+	Vou mudar para a tarefa 178
+	Iniciei  tarefa   178
+	Vou mudar para a tarefa 179
+	Iniciei  tarefa   179
+	Vou mudar para a tarefa 180
+	Iniciei  tarefa   180
+	Vou mudar para a tarefa 181
+	Iniciei  tarefa   181
+	Vou mudar para a tarefa 182
+	Iniciei  tarefa   182
+	Vou mudar para a tarefa 183
+	Iniciei  tarefa   183
+	Vou mudar para a tarefa 184
+	Iniciei  tarefa   184
+	Vou mudar para a tarefa 185
+	Iniciei  tarefa   185
+	Vou mudar para a tarefa 186
+	Iniciei  tarefa   186
+	Vou mudar para a tarefa 187
+	Iniciei  tarefa   187
+	Vou mudar para a tarefa 188
+	Iniciei  tarefa   188
+	Vou mudar para a tarefa 189
+	Iniciei  tarefa   189
+	Vou mudar para a tarefa 190
+	Iniciei  tarefa   190
+	Vou mudar para a tarefa 191
+	Iniciei  tarefa   191
+	Vou mudar para a tarefa 192
+	Iniciei  tarefa   192
+	Vou mudar para a tarefa 193
+	Iniciei  tarefa   193
+	Vou mudar para a tarefa 194
+	Iniciei  tarefa   194
+	Vou mudar para a tarefa 195
+	Iniciei  tarefa   195
+	Vou mudar para a tarefa 196
+	Iniciei  tarefa   196
+	Vou mudar para a tarefa 197
+	Iniciei  tarefa   197
+	Vou mudar para a tarefa 198
+	Iniciei  tarefa   198
+	Vou mudar para a tarefa 199
+	Iniciei  tarefa   199
+	Vou mudar para a tarefa 200
+	Iniciei  tarefa   200
+	Vou mudar para a tarefa 201
+	Iniciei  tarefa   201
+	Vou mudar para a tarefa 202
+	Iniciei  tarefa   202
+	Vou mudar para a tarefa 203
+	Iniciei  tarefa   203
+	Vou mudar para a tarefa 204
+	Iniciei  tarefa   204
+	Vou mudar para a tarefa 205
+	Iniciei  tarefa   205
+	Vou mudar para a tarefa 206
+	Iniciei  tarefa   206
+	Vou mudar para a tarefa 207
+	Iniciei  tarefa   207
+	Vou mudar para a tarefa 208
+	Iniciei  tarefa   208
+	Vou mudar para a tarefa 209
+	Iniciei  tarefa   209
+	Vou mudar para a tarefa 210
+	Iniciei  tarefa   210
+	Vou mudar para a tarefa 211
+	Iniciei  tarefa   211
+	Vou mudar para a tarefa 212
+	Iniciei  tarefa   212
+	Vou mudar para a tarefa 213
+	Iniciei  tarefa   213
+	Vou mudar para a tarefa 214
+	Iniciei  tarefa   214
+	Vou mudar para a tarefa 215
+	Iniciei  tarefa   215
+	Vou mudar para a tarefa 216
+	Iniciei  tarefa   216
+	Vou mudar para a tarefa 217
+	Iniciei  tarefa   217
+	Vou mudar para a tarefa 218
+	Iniciei  tarefa   218
+	Vou mudar para a tarefa 219
+	Iniciei  tarefa   219
+	Vou mudar para a tarefa 220
+	Iniciei  tarefa   220
+	Vou mudar para a tarefa 221
+	Iniciei  tarefa   221
+	Vou mudar para a tarefa 222
+	Iniciei  tarefa   222
+	Vou mudar para a tarefa 223
+	Iniciei  tarefa   223
+	Vou mudar para a tarefa 224
+	Iniciei  tarefa   224
+	Vou mudar para a tarefa 225
+	Iniciei  tarefa   225
+	Vou mudar para a tarefa 226
+	Iniciei  tarefa   226
+	Vou mudar para a tarefa 227
+	Iniciei  tarefa   227
+	Vou mudar para a tarefa 228
+	Iniciei  tarefa   228
+	Vou mudar para a tarefa 229
+	Iniciei  tarefa   229
+	Vou mudar para a tarefa 230
+	Iniciei  tarefa   230
+	Vou mudar para a tarefa 231
+	Iniciei  tarefa   231
+	Vou mudar para a tarefa 232
+	Iniciei  tarefa   232
+	Vou mudar para a tarefa 233
+	Iniciei  tarefa   233
+	Vou mudar para a tarefa 234
+	Iniciei  tarefa   234
+	Vou mudar para a tarefa 235
+	Iniciei  tarefa   235
+	Vou mudar para a tarefa 236
+	Iniciei  tarefa   236
+	Vou mudar para a tarefa 237
+	Iniciei  tarefa   237
+	Vou mudar para a tarefa 238
+	Iniciei  tarefa   238
+	Vou mudar para a tarefa 239
+	Iniciei  tarefa   239
+	Vou mudar para a tarefa 240
+	Iniciei  tarefa   240
+	Vou mudar para a tarefa 241
+	Iniciei  tarefa   241
+	Vou mudar para a tarefa 242
+	Iniciei  tarefa   242
+	Vou mudar para a tarefa 243
+	Iniciei  tarefa   243
+	Vou mudar para a tarefa 244
+	Iniciei  tarefa   244
+	Vou mudar para a tarefa 245
+	Iniciei  tarefa   245
+	Vou mudar para a tarefa 246
+	Iniciei  tarefa   246
+	Vou mudar para a tarefa 247
+	Iniciei  tarefa   247
+	Vou mudar para a tarefa 248
+	Iniciei  tarefa   248
+	Vou mudar para a tarefa 249
+	Iniciei  tarefa   249
+	Vou mudar para a tarefa 250
+	Iniciei  tarefa   250
+	Vou mudar para a tarefa 251
+	Iniciei  tarefa   251
+	Vou mudar para a tarefa 252
+	Iniciei  tarefa   252
+	Vou mudar para a tarefa 253
+	Iniciei  tarefa   253
+	Vou mudar para a tarefa 254
+	Iniciei  tarefa   254
+	Vou mudar para a tarefa 255
+	Iniciei  tarefa   255
+	Vou mudar para a tarefa 256
+	Iniciei  tarefa   256
+	Vou mudar para a tarefa 257
+	Iniciei  tarefa   257
+	Vou mudar para a tarefa 258
+	Iniciei  tarefa   258
+	Vou mudar para a tarefa 259
+	Iniciei  tarefa   259
+	Vou mudar para a tarefa 260
+	Iniciei  tarefa   260
+	Vou mudar para a tarefa 261
+	Iniciei  tarefa   261
+	Vou mudar para a tarefa 262
+	Iniciei  tarefa   262
+	Vou mudar para a tarefa 263
+	Iniciei  tarefa   263
+	Vou mudar para a tarefa 264
+	Iniciei  tarefa   264
+	Vou mudar para a tarefa 265
+	Iniciei  tarefa   265
+	Vou mudar para a tarefa 266
+	Iniciei  tarefa   266
+	Vou mudar para a tarefa 267
+	Iniciei  tarefa   267
+	Vou mudar para a tarefa 268
+	Iniciei  tarefa   268
+	Vou mudar para a tarefa 269
+	Iniciei  tarefa   269
+	Vou mudar para a tarefa 270
+	Iniciei  tarefa   270
+	Vou mudar para a tarefa 271
+	Iniciei  tarefa   271
+	Vou mudar para a tarefa 272
+	Iniciei  tarefa   272
+	Vou mudar para a tarefa 273
+	Iniciei  tarefa   273
+	Vou mudar para a tarefa 274
+	Iniciei  tarefa   274
+	Vou mudar para a tarefa 275
+	Iniciei  tarefa   275
+	Vou mudar para a tarefa 276
+	Iniciei  tarefa   276
+	Vou mudar para a tarefa 277
+	Iniciei  tarefa   277
+	Vou mudar para a tarefa 278
+	Iniciei  tarefa   278
+	Vou mudar para a tarefa 279
+	Iniciei  tarefa   279
+	Vou mudar para a tarefa 280
+	Iniciei  tarefa   280
+	Vou mudar para a tarefa 281
+	Iniciei  tarefa   281
+	Vou mudar para a tarefa 282
+	Iniciei  tarefa   282
+	Vou mudar para a tarefa 283
+	Iniciei  tarefa   283
+	Vou mudar para a tarefa 284
+	Iniciei  tarefa   284
+	Vou mudar para a tarefa 285
+	Iniciei  tarefa   285
+	Vou mudar para a tarefa 286
+	Iniciei  tarefa   286
+	Vou mudar para a tarefa 287
+	Iniciei  tarefa   287
+	Vou mudar para a tarefa 288
+	Iniciei  tarefa   288
+	Vou mudar para a tarefa 289
+	Iniciei  tarefa   289
+	Vou mudar para a tarefa 290
+	Iniciei  tarefa   290
+	Vou mudar para a tarefa 291
+	Iniciei  tarefa   291
+	Vou mudar para a tarefa 292
+	Iniciei  tarefa   292
+	Vou mudar para a tarefa 293
+	Iniciei  tarefa   293
+	Vou mudar para a tarefa 294
+	Iniciei  tarefa   294
+	Vou mudar para a tarefa 295
+	Iniciei  tarefa   295
+	Vou mudar para a tarefa 296
+	Iniciei  tarefa   296
+	Vou mudar para a tarefa 297
+	Iniciei  tarefa   297
+	Vou mudar para a tarefa 298
+	Iniciei  tarefa   298
+	Vou mudar para a tarefa 299
+	Iniciei  tarefa   299
+	Vou mudar para a tarefa 300
+	Iniciei  tarefa   300
+	Vou mudar para a tarefa 301
+	Iniciei  tarefa   301
+	Vou mudar para a tarefa 302
+	Iniciei  tarefa   302
+	Vou mudar para a tarefa 303
+	Iniciei  tarefa   303
+	Vou mudar para a tarefa 304
+	Iniciei  tarefa   304
+	Vou mudar para a tarefa 305
+	Iniciei  tarefa   305
+	Vou mudar para a tarefa 306
+	Iniciei  tarefa   306
+	Vou mudar para a tarefa 307
+	Iniciei  tarefa   307
+	Vou mudar para a tarefa 308
+	Iniciei  tarefa   308
+	Vou mudar para a tarefa 309
+	Iniciei  tarefa   309
+	Vou mudar para a tarefa 310
+	Iniciei  tarefa   310
+	Vou mudar para a tarefa 311
+	Iniciei  tarefa   311
+	Vou mudar para a tarefa 312
+	Iniciei  tarefa   312
+	Vou mudar para a tarefa 313
+	Iniciei  tarefa   313
+	Vou mudar para a tarefa 314
+	Iniciei  tarefa   314
+	Vou mudar para a tarefa 315
+	Iniciei  tarefa   315
+	Vou mudar para a tarefa 316
+	Iniciei  tarefa   316
+	Vou mudar para a tarefa 317
+	Iniciei  tarefa   317
+	Vou mudar para a tarefa 318
+	Iniciei  tarefa   318
+	Vou mudar para a tarefa 319
+	Iniciei  tarefa   319
+	Vou mudar para a tarefa 320
+	Iniciei  tarefa   320
+	Vou mudar para a tarefa 321
+	Iniciei  tarefa   321
+	Vou mudar para a tarefa 322
+	Iniciei  tarefa   322
+	Vou mudar para a tarefa 323
+	Iniciei  tarefa   323
+	Vou mudar para a tarefa 324
+	Iniciei  tarefa   324
+	Vou mudar para a tarefa 325
+	Iniciei  tarefa   325
+	Vou mudar para a tarefa 326
+	Iniciei  tarefa   326
+	Vou mudar para a tarefa 327
+	Iniciei  tarefa   327
+	Vou mudar para a tarefa 328
+	Iniciei  tarefa   328
+	Vou mudar para a tarefa 329
+	Iniciei  tarefa   329
+	Vou mudar para a tarefa 330
+	Iniciei  tarefa   330
+	Vou mudar para a tarefa 331
+	Iniciei  tarefa   331
+	Vou mudar para a tarefa 332
+	Iniciei  tarefa   332
+	Vou mudar para a tarefa 333
+	Iniciei  tarefa   333
+	Vou mudar para a tarefa 334
+	Iniciei  tarefa   334
+	Vou mudar para a tarefa 335
+	Iniciei  tarefa   335
+	Vou mudar para a tarefa 336
+	Iniciei  tarefa   336
+	Vou mudar para a tarefa 337
+	Iniciei  tarefa   337
+	Vou mudar para a tarefa 338
+	Iniciei  tarefa   338
+	Vou mudar para a tarefa 339
+	Iniciei  tarefa   339
+	Vou mudar para a tarefa 340
+	Iniciei  tarefa   340
+	Vou mudar para a tarefa 341
+	Iniciei  tarefa   341
+	Vou mudar para a tarefa 342
+	Iniciei  tarefa   342
+	Vou mudar para a tarefa 343
+	Iniciei  tarefa   343
+	Vou mudar para a tarefa 344
+	Iniciei  tarefa   344
+	Vou mudar para a tarefa 345
+	Iniciei  tarefa   345
+	Vou mudar para a tarefa 346
+	Iniciei  tarefa   346
+	Vou mudar para a tarefa 347
+	Iniciei  tarefa   347
+	Vou mudar para a tarefa 348
+	Iniciei  tarefa   348
+	Vou mudar para a tarefa 349
+	Iniciei  tarefa   349
+	Vou mudar para a tarefa 350
+	Iniciei  tarefa   350
+	Vou mudar para a tarefa 351
+	Iniciei  tarefa   351
+	Vou mudar para a tarefa 352
+	Iniciei  tarefa   352
+	Vou mudar para a tarefa 353
+	Iniciei  tarefa   353
+	Vou mudar para a tarefa 354
+	Iniciei  tarefa   354
+	Vou mudar para a tarefa 355
+	Iniciei  tarefa   355
+	Vou mudar para a tarefa 356
+	Iniciei  tarefa   356
+	Vou mudar para a tarefa 357
+	Iniciei  tarefa   357
+	Vou mudar para a tarefa 358
+	Iniciei  tarefa   358
+	Vou mudar para a tarefa 359
+	Iniciei  tarefa   359
+	Vou mudar para a tarefa 360
+	Iniciei  tarefa   360
+	Vou mudar para a tarefa 361
+	Iniciei  tarefa   361
+	Vou mudar para a tarefa 362
+	Iniciei  tarefa   362
+	Vou mudar para a tarefa 363
+	Iniciei  tarefa   363
+	Vou mudar para a tarefa 364
+	Iniciei  tarefa   364
+	Vou mudar para a tarefa 365
+	Iniciei  tarefa   365
+	Vou mudar para a tarefa 366
+	Iniciei  tarefa   366
+	Vou mudar para a tarefa 367
+	Iniciei  tarefa   367
+	Vou mudar para a tarefa 368
+	Iniciei  tarefa   368
+	Vou mudar para a tarefa 369
+	Iniciei  tarefa   369
+	Vou mudar para a tarefa 370
+	Iniciei  tarefa   370
+	Vou mudar para a tarefa 371
+	Iniciei  tarefa   371
+	Vou mudar para a tarefa 372
+	Iniciei  tarefa   372
+	Vou mudar para a tarefa 373
+	Iniciei  tarefa   373
+	Vou mudar para a tarefa 374
+	Iniciei  tarefa   374
+	Vou mudar para a tarefa 375
+	Iniciei  tarefa   375
+	Vou mudar para a tarefa 376
+	Iniciei  tarefa   376
+	Vou mudar para a tarefa 377
+	Iniciei  tarefa   377
+	Vou mudar para a tarefa 378
+	Iniciei  tarefa   378
+	Vou mudar para a tarefa 379
+	Iniciei  tarefa   379
+	Vou mudar para a tarefa 380
+	Iniciei  tarefa   380
+	Vou mudar para a tarefa 381
+	Iniciei  tarefa   381
+	Vou mudar para a tarefa 382
+	Iniciei  tarefa   382
+	Vou mudar para a tarefa 383
+	Iniciei  tarefa   383
+	Vou mudar para a tarefa 384
+	Iniciei  tarefa   384
+	Vou mudar para a tarefa 385
+	Iniciei  tarefa   385
+	Vou mudar para a tarefa 386
+	Iniciei  tarefa   386
+	Vou mudar para a tarefa 387
+	Iniciei  tarefa   387
+	Vou mudar para a tarefa 388
+	Iniciei  tarefa   388
+	Vou mudar para a tarefa 389
+	Iniciei  tarefa   389
+	Vou mudar para a tarefa 390
+	Iniciei  tarefa   390
+	Vou mudar para a tarefa 391
+	Iniciei  tarefa   391
+	Vou mudar para a tarefa 392
+	Iniciei  tarefa   392
+	Vou mudar para a tarefa 393
+	Iniciei  tarefa   393
+	Vou mudar para a tarefa 394
+	Iniciei  tarefa   394
+	Vou mudar para a tarefa 395
+	Iniciei  tarefa   395
+	Vou mudar para a tarefa 396
+	Iniciei  tarefa   396
+	Vou mudar para a tarefa 397
+	Iniciei  tarefa   397
+	Vou mudar para a tarefa 398
+	Iniciei  tarefa   398
+	Vou mudar para a tarefa 399
+	Iniciei  tarefa   399
+	Vou mudar para a tarefa 400
+	Iniciei  tarefa   400
+	Vou mudar para a tarefa 401
+	Iniciei  tarefa   401
+	Vou mudar para a tarefa 402
+	Iniciei  tarefa   402
+	Vou mudar para a tarefa 403
+	Iniciei  tarefa   403
+	Vou mudar para a tarefa 404
+	Iniciei  tarefa   404
+	Vou mudar para a tarefa 405
+	Iniciei  tarefa   405
+	Vou mudar para a tarefa 406
+	Iniciei  tarefa   406
+	Vou mudar para a tarefa 407
+	Iniciei  tarefa   407
+	Vou mudar para a tarefa 408
+	Iniciei  tarefa   408
+	Vou mudar para a tarefa 409
+	Iniciei  tarefa   409
+	Vou mudar para a tarefa 410
+	Iniciei  tarefa   410
+	Vou mudar para a tarefa 411
+	Iniciei  tarefa   411
+	Vou mudar para a tarefa 412
+	Iniciei  tarefa   412
+	Vou mudar para a tarefa 413
+	Iniciei  tarefa   413
+	Vou mudar para a tarefa 414
+	Iniciei  tarefa   414
+	Vou mudar para a tarefa 415
+	Iniciei  tarefa   415
+	Vou mudar para a tarefa 416
+	Iniciei  tarefa   416
+	Vou mudar para a tarefa 417
+	Iniciei  tarefa   417
+	Vou mudar para a tarefa 418
+	Iniciei  tarefa   418
+	Vou mudar para a tarefa 419
+	Iniciei  tarefa   419
+	Vou mudar para a tarefa 420
+	Iniciei  tarefa   420
+	Vou mudar para a tarefa 421
+	Iniciei  tarefa   421
+	Vou mudar para a tarefa 422
+	Iniciei  tarefa   422
+	Vou mudar para a tarefa 423
+	Iniciei  tarefa   423
+	Vou mudar para a tarefa 424
+	Iniciei  tarefa   424
+	Vou mudar para a tarefa 425
+	Iniciei  tarefa   425
+	Vou mudar para a tarefa 426
+	Iniciei  tarefa   426
+	Vou mudar para a tarefa 427
+	Iniciei  tarefa   427
+	Vou mudar para a tarefa 428
+	Iniciei  tarefa   428
+	Vou mudar para a tarefa 429
+	Iniciei  tarefa   429
+	Vou mudar para a tarefa 430
+	Iniciei  tarefa   430
+	Vou mudar para a tarefa 431
+	Iniciei  tarefa   431
+	Vou mudar para a tarefa 432
+	Iniciei  tarefa   432
+	Vou mudar para a tarefa 433
+	Iniciei  tarefa   433
+	Vou mudar para a tarefa 434
+	Iniciei  tarefa   434
+	Vou mudar para a tarefa 435
+	Iniciei  tarefa   435
+	Vou mudar para a tarefa 436
+	Iniciei  tarefa   436
+	Vou mudar para a tarefa 437
+	Iniciei  tarefa   437
+	Vou mudar para a tarefa 438
+	Iniciei  tarefa   438
+	Vou mudar para a tarefa 439
+	Iniciei  tarefa   439
+	Vou mudar para a tarefa 440
+	Iniciei  tarefa   440
+	Vou mudar para a tarefa 441
+	Iniciei  tarefa   441
+	Vou mudar para a tarefa 442
+	Iniciei  tarefa   442
+	Vou mudar para a tarefa 443
+	Iniciei  tarefa   443
+	Vou mudar para a tarefa 444
+	Iniciei  tarefa   444
+	Vou mudar para a tarefa 445
+	Iniciei  tarefa   445
+	Vou mudar para a tarefa 446
+	Iniciei  tarefa   446
+	Vou mudar para a tarefa 447
+	Iniciei  tarefa   447
+	Vou mudar para a tarefa 448
+	Iniciei  tarefa   448
+	Vou mudar para a tarefa 449
+	Iniciei  tarefa   449
+	Vou mudar para a tarefa 450
+	Iniciei  tarefa   450
+	Vou mudar para a tarefa 451
+	Iniciei  tarefa   451
+	Vou mudar para a tarefa 452
+	Iniciei  tarefa   452
+	Vou mudar para a tarefa 453
+	Iniciei  tarefa   453
+	Vou mudar para a tarefa 454
+	Iniciei  tarefa   454
+	Vou mudar para a tarefa 455
+	Iniciei  tarefa   455
+	Vou mudar para a tarefa 456
+	Iniciei  tarefa   456
+	Vou mudar para a tarefa 457
+	Iniciei  tarefa   457
+	Vou mudar para a tarefa 458
+	Iniciei  tarefa   458
+	Vou mudar para a tarefa 459
+	Iniciei  tarefa   459
+	Vou mudar para a tarefa 460
+	Iniciei  tarefa   460
+	Vou mudar para a tarefa 461
+	Iniciei  tarefa   461
+	Vou mudar para a tarefa 462
+	Iniciei  tarefa   462
+	Vou mudar para a tarefa 463
+	Iniciei  tarefa   463
+	Vou mudar para a tarefa 464
+	Iniciei  tarefa   464
+	Vou mudar para a tarefa 465
+	Iniciei  tarefa   465
+	Vou mudar para a tarefa 466
+	Iniciei  tarefa   466
+	Vou mudar para a tarefa 467
+	Iniciei  tarefa   467
+	Vou mudar para a tarefa 468
+	Iniciei  tarefa   468
+	Vou mudar para a tarefa 469
+	Iniciei  tarefa   469
+	Vou mudar para a tarefa 470
+	Iniciei  tarefa   470
+	Vou mudar para a tarefa 471
+	Iniciei  tarefa   471
+	Vou mudar para a tarefa 472
+	Iniciei  tarefa   472
+	Vou mudar para a tarefa 473
+	Iniciei  tarefa   473
+	Vou mudar para a tarefa 474
+	Iniciei  tarefa   474
+	Vou mudar para a tarefa 475
+	Iniciei  tarefa   475
+	Vou mudar para a tarefa 476
+	Iniciei  tarefa   476
+	Vou mudar para a tarefa 477
+	Iniciei  tarefa   477
+	Vou mudar para a tarefa 478
+	Iniciei  tarefa   478
+	Vou mudar para a tarefa 479
+	Iniciei  tarefa   479
+	Vou mudar para a tarefa 480
+	Iniciei  tarefa   480
+	Vou mudar para a tarefa 481
+	Iniciei  tarefa   481
+	Vou mudar para a tarefa 482
+	Iniciei  tarefa   482
+	Vou mudar para a tarefa 483
+	Iniciei  tarefa   483
+	Vou mudar para a tarefa 484
+	Iniciei  tarefa   484
+	Vou mudar para a tarefa 485
+	Iniciei  tarefa   485
+	Vou mudar para a tarefa 486
+	Iniciei  tarefa   486
+	Vou mudar para a tarefa 487
+	Iniciei  tarefa   487
+	Vou mudar para a tarefa 488
+	Iniciei  tarefa   488
+	Vou mudar para a tarefa 489
+	Iniciei  tarefa   489
+	Vou mudar para a tarefa 490
+	Iniciei  tarefa   490
+	Vou mudar para a tarefa 491
+	Iniciei  tarefa   491
+	Vou mudar para a tarefa 492
+	Iniciei  tarefa   492
+	Vou mudar para a tarefa 493
+	Iniciei  tarefa   493
+	Vou mudar para a tarefa 494
+	Iniciei  tarefa   494
+	Vou mudar para a tarefa 495
+	Iniciei  tarefa   495
+	Vou mudar para a tarefa 496
+	Iniciei  tarefa   496
+	Vou mudar para a tarefa 497
+	Iniciei  tarefa   497
+	Vou mudar para a tarefa 498
+	Iniciei  tarefa   498
+	Vou mudar para a tarefa 499
+	Iniciei  tarefa   499
+	Vou mudar para a tarefa 500
+	Iniciei  tarefa   500
+	Vou mudar para a tarefa 501
+	Iniciei  tarefa   501
+	Vou mudar para a tarefa 502
+	Iniciei  tarefa   502
+	Vou mudar para a tarefa 503
+	Iniciei  tarefa   503
+	Vou mudar para a tarefa 504
+	Iniciei  tarefa   504
+	Vou mudar para a tarefa 505
+	Iniciei  tarefa   505
+	Vou mudar para a tarefa 506
+	Iniciei  tarefa   506
+	Vou mudar para a tarefa 507
+	Iniciei  tarefa   507
+	Vou mudar para a tarefa 508
+	Iniciei  tarefa   508
+	Vou mudar para a tarefa 509
+	Iniciei  tarefa   509
+	Vou mudar para a tarefa 510
+	Iniciei  tarefa   510
+	Vou mudar para a tarefa 511
+	Iniciei  tarefa   511
+	Vou mudar para a tarefa 512
+	Iniciei  tarefa   512
+	Vou mudar para a tarefa 513
+	Iniciei  tarefa   513
+	Vou mudar para a tarefa 2
+	Encerrei tarefa     2
+user_main: vou ativar a tarefa 3
+	Encerrei tarefa     3
+user_main: vou ativar a tarefa 4
+	Encerrei tarefa     4
+user_main: vou ativar a tarefa 5
+	Encerrei tarefa     5
+user_main: vou ativar a tarefa 6
+	Encerrei tarefa     6
+user_main: vou ativar a tarefa 7
+	Encerrei tarefa     7
+user_main: vou ativar a tarefa 8
+	Encerrei tarefa     8
+user_main: vou ativar a tarefa 9
+	Encerrei tarefa     9
+user_main: vou ativar a tarefa 10
+	Encerrei tarefa    10
+user_main: vou ativar a tarefa 11
+	Encerrei tarefa    11
+user_main: vou ativar a tarefa 12
+	Encerrei tarefa    12
+user_main: vou ativar a tarefa 13
+	Encerrei tarefa    13
+user_main: vou ativar a tarefa 14
+	Encerrei tarefa    14
+user_main: vou ativar a tarefa 15
+	Encerrei tarefa    15
+user_main: vou ativar a tarefa 16
+	Encerrei tarefa    16
+user_main: vou ativar a tarefa 17
+	Encerrei tarefa    17
+user_main: vou ativar a tarefa 18
+	Encerrei tarefa    18
+user_main: vou ativar a tarefa 19
+	Encerrei tarefa    19
+user_main: vou ativar a tarefa 20
+	Encerrei tarefa    20
+user_main: vou ativar a tarefa 21
+	Encerrei tarefa    21
+user_main: vou ativar a tarefa 22
+	Encerrei tarefa    22
+user_main: vou ativar a tarefa 23
+	Encerrei tarefa    23
+user_main: vou ativar a tarefa 24
+	Encerrei tarefa    24
+user_main: vou ativar a tarefa 25
+	Encerrei tarefa    25
+user_main: vou ativar a tarefa 26
+	Encerrei tarefa    26
+user_main: vou ativar a tarefa 27
+	Encerrei tarefa    27
+user_main: vou ativar a tarefa 28
+	Encerrei tarefa    28
+user_main: vou ativar a tarefa 29
+	Encerrei tarefa    29
+user_main: vou ativar a tarefa 30
+	Encerrei tarefa    30
+user_main: vou ativar a tarefa 31
+	Encerrei tarefa    31
+user_main: vou ativar a tarefa 32
+	Encerrei tarefa    32
+user_main: vou ativar a tarefa 33
+	Encerrei tarefa    33
+user_main: vou ativar a tarefa 34
+	Encerrei tarefa    34
+user_main: vou ativar a tarefa 35
+	Encerrei tarefa    35
+user_main: vou ativar a tarefa 36
+	Encerrei tarefa    36
+user_main: vou ativar a tarefa 37
+	Encerrei tarefa    37
+user_main: vou ativar a tarefa 38
+	Encerrei tarefa    38
+user_main: vou ativar a tarefa 39
+	Encerrei tarefa    39
+user_main: vou ativar a tarefa 40
+	Encerrei tarefa    40
+user_main: vou ativar a tarefa 41
+	Encerrei tarefa    41
+user_main: vou ativar a tarefa 42
+	Encerrei tarefa    42
+user_main: vou ativar a tarefa 43
+	Encerrei tarefa    43
+user_main: vou ativar a tarefa 44
+	Encerrei tarefa    44
+user_main: vou ativar a tarefa 45
+	Encerrei tarefa    45
+user_main: vou ativar a tarefa 46
+	Encerrei tarefa    46
+user_main: vou ativar a tarefa 47
+	Encerrei tarefa    47
+user_main: vou ativar a tarefa 48
+	Encerrei tarefa    48
+user_main: vou ativar a tarefa 49
+	Encerrei tarefa    49
+user_main: vou ativar a tarefa 50
+	Encerrei tarefa    50
+user_main: vou ativar a tarefa 51
+	Encerrei tarefa    51
+user_main: vou ativar a tarefa 52
+	Encerrei tarefa    52
+user_main: vou ativar a tarefa 53
+	Encerrei tarefa    53
+user_main: vou ativar a tarefa 54
+	Encerrei tarefa    54
+user_main: vou ativar a tarefa 55
+	Encerrei tarefa    55
+user_main: vou ativar a tarefa 56
+	Encerrei tarefa    56
+user_main: vou ativar a tarefa 57
+	Encerrei tarefa    57
+user_main: vou ativar a tarefa 58
+	Encerrei tarefa    58
+user_main: vou ativar a tarefa 59
+	Encerrei tarefa    59
+user_main: vou ativar a tarefa 60
+	Encerrei tarefa    60
+user_main: vou ativar a tarefa 61
+	Encerrei tarefa    61
+user_main: vou ativar a tarefa 62
+	Encerrei tarefa    62
+user_main: vou ativar a tarefa 63
+	Encerrei tarefa    63
+user_main: vou ativar a tarefa 64
+	Encerrei tarefa    64
+user_main: vou ativar a tarefa 65
+	Encerrei tarefa    65
+user_main: vou ativar a tarefa 66
+	Encerrei tarefa    66
+user_main: vou ativar a tarefa 67
+	Encerrei tarefa    67
+user_main: vou ativar a tarefa 68
+	Encerrei tarefa    68
+user_main: vou ativar a tarefa 69
+	Encerrei tarefa    69
+user_main: vou ativar a tarefa 70
+	Encerrei tarefa    70
+user_main: vou ativar a tarefa 71
+	Encerrei tarefa    71
+user_main: vou ativar a tarefa 72
+	Encerrei tarefa    72
+user_main: vou ativar a tarefa 73
+	Encerrei tarefa    73
+user_main: vou ativar a tarefa 74
+	Encerrei tarefa    74
+user_main: vou ativar a tarefa 75
+	Encerrei tarefa    75
+user_main: vou ativar a tarefa 76
+	Encerrei tarefa    76
+user_main: vou ativar a tarefa 77
+	Encerrei tarefa    77
+user_main: vou ativar a tarefa 78
+	Encerrei tarefa    78
+user_main: vou ativar a tarefa 79
+	Encerrei tarefa    79
+user_main: vou ativar a tarefa 80
+	Encerrei tarefa    80
+user_main: vou ativar a tarefa 81
+	Encerrei tarefa    81
+user_main: vou ativar a tarefa 82
+	Encerrei tarefa    82
+user_main: vou ativar a tarefa 83
+	Encerrei tarefa    83
+user_main: vou ativar a tarefa 84
+	Encerrei tarefa    84
+user_main: vou ativar a tarefa 85
+	Encerrei tarefa    85
+user_main: vou ativar a tarefa 86
+	Encerrei tarefa    86
+user_main: vou ativar a tarefa 87
+	Encerrei tarefa    87
+user_main: vou ativar a tarefa 88
+	Encerrei tarefa    88
+user_main: vou ativar a tarefa 89
+	Encerrei tarefa    89
+user_main: vou ativar a tarefa 90
+	Encerrei tarefa    90
+user_main: vou ativar a tarefa 91
+	Encerrei tarefa    91
+user_main: vou ativar a tarefa 92
+	Encerrei tarefa    92
+user_main: vou ativar a tarefa 93
+	Encerrei tarefa    93
+user_main: vou ativar a tarefa 94
+	Encerrei tarefa    94
+user_main: vou ativar a tarefa 95
+	Encerrei tarefa    95
+user_main: vou ativar a tarefa 96
+	Encerrei tarefa    96
+user_main: vou ativar a tarefa 97
+	Encerrei tarefa    97
+user_main: vou ativar a tarefa 98
+	Encerrei tarefa    98
+user_main: vou ativar a tarefa 99
+	Encerrei tarefa    99
+user_main: vou ativar a tarefa 100
+	Encerrei tarefa   100
+user_main: vou ativar a tarefa 101
+	Encerrei tarefa   101
+user_main: vou ativar a tarefa 102
+	Encerrei tarefa   102
+user_main: vou ativar a tarefa 103
+	Encerrei tarefa   103
+user_main: vou ativar a tarefa 104
+	Encerrei tarefa   104
+user_main: vou ativar a tarefa 105
+	Encerrei tarefa   105
+user_main: vou ativar a tarefa 106
+	Encerrei tarefa   106
+user_main: vou ativar a tarefa 107
+	Encerrei tarefa   107
+user_main: vou ativar a tarefa 108
+	Encerrei tarefa   108
+user_main: vou ativar a tarefa 109
+	Encerrei tarefa   109
+user_main: vou ativar a tarefa 110
+	Encerrei tarefa   110
+user_main: vou ativar a tarefa 111
+	Encerrei tarefa   111
+user_main: vou ativar a tarefa 112
+	Encerrei tarefa   112
+user_main: vou ativar a tarefa 113
+	Encerrei tarefa   113
+user_main: vou ativar a tarefa 114
+	Encerrei tarefa   114
+user_main: vou ativar a tarefa 115
+	Encerrei tarefa   115
+user_main: vou ativar a tarefa 116
+	Encerrei tarefa   116
+user_main: vou ativar a tarefa 117
+	Encerrei tarefa   117
+user_main: vou ativar a tarefa 118
+	Encerrei tarefa   118
+user_main: vou ativar a tarefa 119
+	Encerrei tarefa   119
+user_main: vou ativar a tarefa 120
+	Encerrei tarefa   120
+user_main: vou ativar a tarefa 121
+	Encerrei tarefa   121
+user_main: vou ativar a tarefa 122
+	Encerrei tarefa   122
+user_main: vou ativar a tarefa 123
+	Encerrei tarefa   123
+user_main: vou ativar a tarefa 124
+	Encerrei tarefa   124
+user_main: vou ativar a tarefa 125
+	Encerrei tarefa   125
+user_main: vou ativar a tarefa 126
+	Encerrei tarefa   126
+user_main: vou ativar a tarefa 127
+	Encerrei tarefa   127
+user_main: vou ativar a tarefa 128
+	Encerrei tarefa   128
+user_main: vou ativar a tarefa 129
+	Encerrei tarefa   129
+user_main: vou ativar a tarefa 130
+	Encerrei tarefa   130
+user_main: vou ativar a tarefa 131
+	Encerrei tarefa   131
+user_main: vou ativar a tarefa 132
+	Encerrei tarefa   132
+user_main: vou ativar a tarefa 133
+	Encerrei tarefa   133
+user_main: vou ativar a tarefa 134
+	Encerrei tarefa   134
+user_main: vou ativar a tarefa 135
+	Encerrei tarefa   135
+user_main: vou ativar a tarefa 136
+	Encerrei tarefa   136
+user_main: vou ativar a tarefa 137
+	Encerrei tarefa   137
+user_main: vou ativar a tarefa 138
+	Encerrei tarefa   138
+user_main: vou ativar a tarefa 139
+	Encerrei tarefa   139
+user_main: vou ativar a tarefa 140
+	Encerrei tarefa   140
+user_main: vou ativar a tarefa 141
+	Encerrei tarefa   141
+user_main: vou ativar a tarefa 142
+	Encerrei tarefa   142
+user_main: vou ativar a tarefa 143
+	Encerrei tarefa   143
+user_main: vou ativar a tarefa 144
+	Encerrei tarefa   144
+user_main: vou ativar a tarefa 145
+	Encerrei tarefa   145
+user_main: vou ativar a tarefa 146
+	Encerrei tarefa   146
+user_main: vou ativar a tarefa 147
+	Encerrei tarefa   147
+user_main: vou ativar a tarefa 148
+	Encerrei tarefa   148
+user_main: vou ativar a tarefa 149
+	Encerrei tarefa   149
+user_main: vou ativar a tarefa 150
+	Encerrei tarefa   150
+user_main: vou ativar a tarefa 151
+	Encerrei tarefa   151
+user_main: vou ativar a tarefa 152
+	Encerrei tarefa   152
+user_main: vou ativar a tarefa 153
+	Encerrei tarefa   153
+user_main: vou ativar a tarefa 154
+	Encerrei tarefa   154
+user_main: vou ativar a tarefa 155
+	Encerrei tarefa   155
+user_main: vou ativar a tarefa 156
+	Encerrei tarefa   156
+user_main: vou ativar a tarefa 157
+	Encerrei tarefa   157
+user_main: vou ativar a tarefa 158
+	Encerrei tarefa   158
+user_main: vou ativar a tarefa 159
+	Encerrei tarefa   159
+user_main: vou ativar a tarefa 160
+	Encerrei tarefa   160
+user_main: vou ativar a tarefa 161
+	Encerrei tarefa   161
+user_main: vou ativar a tarefa 162
+	Encerrei tarefa   162
+user_main: vou ativar a tarefa 163
+	Encerrei tarefa   163
+user_main: vou ativar a tarefa 164
+	Encerrei tarefa   164
+user_main: vou ativar a tarefa 165
+	Encerrei tarefa   165
+user_main: vou ativar a tarefa 166
+	Encerrei tarefa   166
+user_main: vou ativar a tarefa 167
+	Encerrei tarefa   167
+user_main: vou ativar a tarefa 168
+	Encerrei tarefa   168
+user_main: vou ativar a tarefa 169
+	Encerrei tarefa   169
+user_main: vou ativar a tarefa 170
+	Encerrei tarefa   170
+user_main: vou ativar a tarefa 171
+	Encerrei tarefa   171
+user_main: vou ativar a tarefa 172
+	Encerrei tarefa   172
+user_main: vou ativar a tarefa 173
+	Encerrei tarefa   173
+user_main: vou ativar a tarefa 174
+	Encerrei tarefa   174
+user_main: vou ativar a tarefa 175
+	Encerrei tarefa   175
+user_main: vou ativar a tarefa 176
+	Encerrei tarefa   176
+user_main: vou ativar a tarefa 177
+	Encerrei tarefa   177
+user_main: vou ativar a tarefa 178
+	Encerrei tarefa   178
+user_main: vou ativar a tarefa 179
+	Encerrei tarefa   179
+user_main: vou ativar a tarefa 180
+	Encerrei tarefa   180
+user_main: vou ativar a tarefa 181
+	Encerrei tarefa   181
+user_main: vou ativar a tarefa 182
+	Encerrei tarefa   182
+user_main: vou ativar a tarefa 183
+	Encerrei tarefa   183
+user_main: vou ativar a tarefa 184
+	Encerrei tarefa   184
+user_main: vou ativar a tarefa 185
+	Encerrei tarefa   185
+user_main: vou ativar a tarefa 186
+	Encerrei tarefa   186
+user_main: vou ativar a tarefa 187
+	Encerrei tarefa   187
+user_main: vou ativar a tarefa 188
+	Encerrei tarefa   188
+user_main: vou ativar a tarefa 189
+	Encerrei tarefa   189
+user_main: vou ativar a tarefa 190
+	Encerrei tarefa   190
+user_main: vou ativar a tarefa 191
+	Encerrei tarefa   191
+user_main: vou ativar a tarefa 192
+	Encerrei tarefa   192
+user_main: vou ativar a tarefa 193
+	Encerrei tarefa   193
+user_main: vou ativar a tarefa 194
+	Encerrei tarefa   194
+user_main: vou ativar a tarefa 195
+	Encerrei tarefa   195
+user_main: vou ativar a tarefa 196
+	Encerrei tarefa   196
+user_main: vou ativar a tarefa 197
+	Encerrei tarefa   197
+user_main: vou ativar a tarefa 198
+	Encerrei tarefa   198
+user_main: vou ativar a tarefa 199
+	Encerrei tarefa   199
+user_main: vou ativar a tarefa 200
+	Encerrei tarefa   200
+user_main: vou ativar a tarefa 201
+	Encerrei tarefa   201
+user_main: vou ativar a tarefa 202
+	Encerrei tarefa   202
+user_main: vou ativar a tarefa 203
+	Encerrei tarefa   203
+user_main: vou ativar a tarefa 204
+	Encerrei tarefa   204
+user_main: vou ativar a tarefa 205
+	Encerrei tarefa   205
+user_main: vou ativar a tarefa 206
+	Encerrei tarefa   206
+user_main: vou ativar a tarefa 207
+	Encerrei tarefa   207
+user_main: vou ativar a tarefa 208
+	Encerrei tarefa   208
+user_main: vou ativar a tarefa 209
+	Encerrei tarefa   209
+user_main: vou ativar a tarefa 210
+	Encerrei tarefa   210
+user_main: vou ativar a tarefa 211
+	Encerrei tarefa   211
+user_main: vou ativar a tarefa 212
+	Encerrei tarefa   212
+user_main: vou ativar a tarefa 213
+	Encerrei tarefa   213
+user_main: vou ativar a tarefa 214
+	Encerrei tarefa   214
+user_main: vou ativar a tarefa 215
+	Encerrei tarefa   215
+user_main: vou ativar a tarefa 216
+	Encerrei tarefa   216
+user_main: vou ativar a tarefa 217
+	Encerrei tarefa   217
+user_main: vou ativar a tarefa 218
+	Encerrei tarefa   218
+user_main: vou ativar a tarefa 219
+	Encerrei tarefa   219
+user_main: vou ativar a tarefa 220
+	Encerrei tarefa   220
+user_main: vou ativar a tarefa 221
+	Encerrei tarefa   221
+user_main: vou ativar a tarefa 222
+	Encerrei tarefa   222
+user_main: vou ativar a tarefa 223
+	Encerrei tarefa   223
+user_main: vou ativar a tarefa 224
+	Encerrei tarefa   224
+user_main: vou ativar a tarefa 225
+	Encerrei tarefa   225
+user_main: vou ativar a tarefa 226
+	Encerrei tarefa   226
+user_main: vou ativar a tarefa 227
+	Encerrei tarefa   227
+user_main: vou ativar a tarefa 228
+	Encerrei tarefa   228
+user_main: vou ativar a tarefa 229
+	Encerrei tarefa   229
+user_main: vou ativar a tarefa 230
+	Encerrei tarefa   230
+user_main: vou ativar a tarefa 231
+	Encerrei tarefa   231
+user_main: vou ativar a tarefa 232
+	Encerrei tarefa   232
+user_main: vou ativar a tarefa 233
+	Encerrei tarefa   233
+user_main: vou ativar a tarefa 234
+	Encerrei tarefa   234
+user_main: vou ativar a tarefa 235
+	Encerrei tarefa   235
+user_main: vou ativar a tarefa 236
+	Encerrei tarefa   236
+user_main: vou ativar a tarefa 237
+	Encerrei tarefa   237
+user_main: vou ativar a tarefa 238
+	Encerrei tarefa   238
+user_main: vou ativar a tarefa 239
+	Encerrei tarefa   239
+user_main: vou ativar a tarefa 240
+	Encerrei tarefa   240
+user_main: vou ativar a tarefa 241
+	Encerrei tarefa   241
+user_main: vou ativar a tarefa 242
+	Encerrei tarefa   242
+user_main: vou ativar a tarefa 243
+	Encerrei tarefa   243
+user_main: vou ativar a tarefa 244
+	Encerrei tarefa   244
+user_main: vou ativar a tarefa 245
+	Encerrei tarefa   245
+user_main: vou ativar a tarefa 246
+	Encerrei tarefa   246
+user_main: vou ativar a tarefa 247
+	Encerrei tarefa   247
+user_main: vou ativar a tarefa 248
+	Encerrei tarefa   248
+user_main: vou ativar a tarefa 249
+	Encerrei tarefa   249
+user_main: vou ativar a tarefa 250
+	Encerrei tarefa   250
+user_main: vou ativar a tarefa 251
+	Encerrei tarefa   251
+user_main: vou ativar a tarefa 252
+	Encerrei tarefa   252
+user_main: vou ativar a tarefa 253
+	Encerrei tarefa   253
+user_main: vou ativar a tarefa 254
+	Encerrei tarefa   254
+user_main: vou ativar a tarefa 255
+	Encerrei tarefa   255
+user_main: vou ativar a tarefa 256
+	Encerrei tarefa   256
+user_main: vou ativar a tarefa 257
+	Encerrei tarefa   257
+user_main: vou ativar a tarefa 258
+	Encerrei tarefa   258
+user_main: vou ativar a tarefa 259
+	Encerrei tarefa   259
+user_main: vou ativar a tarefa 260
+	Encerrei tarefa   260
+user_main: vou ativar a tarefa 261
+	Encerrei tarefa   261
+user_main: vou ativar a tarefa 262
+	Encerrei tarefa   262
+user_main: vou ativar a tarefa 263
+	Encerrei tarefa   263
+user_main: vou ativar a tarefa 264
+	Encerrei tarefa   264
+user_main: vou ativar a tarefa 265
+	Encerrei tarefa   265
+user_main: vou ativar a tarefa 266
+	Encerrei tarefa   266
+user_main: vou ativar a tarefa 267
+	Encerrei tarefa   267
+user_main: vou ativar a tarefa 268
+	Encerrei tarefa   268
+user_main: vou ativar a tarefa 269
+	Encerrei tarefa   269
+user_main: vou ativar a tarefa 270
+	Encerrei tarefa   270
+user_main: vou ativar a tarefa 271
+	Encerrei tarefa   271
+user_main: vou ativar a tarefa 272
+	Encerrei tarefa   272
+user_main: vou ativar a tarefa 273
+	Encerrei tarefa   273
+user_main: vou ativar a tarefa 274
+	Encerrei tarefa   274
+user_main: vou ativar a tarefa 275
+	Encerrei tarefa   275
+user_main: vou ativar a tarefa 276
+	Encerrei tarefa   276
+user_main: vou ativar a tarefa 277
+	Encerrei tarefa   277
+user_main: vou ativar a tarefa 278
+	Encerrei tarefa   278
+user_main: vou ativar a tarefa 279
+	Encerrei tarefa   279
+user_main: vou ativar a tarefa 280
+	Encerrei tarefa   280
+user_main: vou ativar a tarefa 281
+	Encerrei tarefa   281
+user_main: vou ativar a tarefa 282
+	Encerrei tarefa   282
+user_main: vou ativar a tarefa 283
+	Encerrei tarefa   283
+user_main: vou ativar a tarefa 284
+	Encerrei tarefa   284
+user_main: vou ativar a tarefa 285
+	Encerrei tarefa   285
+user_main: vou ativar a tarefa 286
+	Encerrei tarefa   286
+user_main: vou ativar a tarefa 287
+	Encerrei tarefa   287
+user_main: vou ativar a tarefa 288
+	Encerrei tarefa   288
+user_main: vou ativar a tarefa 289
+	Encerrei tarefa   289
+user_main: vou ativar a tarefa 290
+	Encerrei tarefa   290
+user_main: vou ativar a tarefa 291
+	Encerrei tarefa   291
+user_main: vou ativar a tarefa 292
+	Encerrei tarefa   292
+user_main: vou ativar a tarefa 293
+	Encerrei tarefa   293
+user_main: vou ativar a tarefa 294
+	Encerrei tarefa   294
+user_main: vou ativar a tarefa 295
+	Encerrei tarefa   295
+user_main: vou ativar a tarefa 296
+	Encerrei tarefa   296
+user_main: vou ativar a tarefa 297
+	Encerrei tarefa   297
+user_main: vou ativar a tarefa 298
+	Encerrei tarefa   298
+user_main: vou ativar a tarefa 299
+	Encerrei tarefa   299
+user_main: vou ativar a tarefa 300
+	Encerrei tarefa   300
+user_main: vou ativar a tarefa 301
+	Encerrei tarefa   301
+user_main: vou ativar a tarefa 302
+	Encerrei tarefa   302
+user_main: vou ativar a tarefa 303
+	Encerrei tarefa   303
+user_main: vou ativar a tarefa 304
+	Encerrei tarefa   304
+user_main: vou ativar a tarefa 305
+	Encerrei tarefa   305
+user_main: vou ativar a tarefa 306
+	Encerrei tarefa   306
+user_main: vou ativar a tarefa 307
+	Encerrei tarefa   307
+user_main: vou ativar a tarefa 308
+	Encerrei tarefa   308
+user_main: vou ativar a tarefa 309
+	Encerrei tarefa   309
+user_main: vou ativar a tarefa 310
+	Encerrei tarefa   310
+user_main: vou ativar a tarefa 311
+	Encerrei tarefa   311
+user_main: vou ativar a tarefa 312
+	Encerrei tarefa   312
+user_main: vou ativar a tarefa 313
+	Encerrei tarefa   313
+user_main: vou ativar a tarefa 314
+	Encerrei tarefa   314
+user_main: vou ativar a tarefa 315
+	Encerrei tarefa   315
+user_main: vou ativar a tarefa 316
+	Encerrei tarefa   316
+user_main: vou ativar a tarefa 317
+	Encerrei tarefa   317
+user_main: vou ativar a tarefa 318
+	Encerrei tarefa   318
+user_main: vou ativar a tarefa 319
+	Encerrei tarefa   319
+user_main: vou ativar a tarefa 320
+	Encerrei tarefa   320
+user_main: vou ativar a tarefa 321
+	Encerrei tarefa   321
+user_main: vou ativar a tarefa 322
+	Encerrei tarefa   322
+user_main: vou ativar a tarefa 323
+	Encerrei tarefa   323
+user_main: vou ativar a tarefa 324
+	Encerrei tarefa   324
+user_main: vou ativar a tarefa 325
+	Encerrei tarefa   325
+user_main: vou ativar a tarefa 326
+	Encerrei tarefa   326
+user_main: vou ativar a tarefa 327
+	Encerrei tarefa   327
+user_main: vou ativar a tarefa 328
+	Encerrei tarefa   328
+user_main: vou ativar a tarefa 329
+	Encerrei tarefa   329
+user_main: vou ativar a tarefa 330
+	Encerrei tarefa   330
+user_main: vou ativar a tarefa 331
+	Encerrei tarefa   331
+user_main: vou ativar a tarefa 332
+	Encerrei tarefa   332
+user_main: vou ativar a tarefa 333
+	Encerrei tarefa   333
+user_main: vou ativar a tarefa 334
+	Encerrei tarefa   334
+user_main: vou ativar a tarefa 335
+	Encerrei tarefa   335
+user_main: vou ativar a tarefa 336
+	Encerrei tarefa   336
+user_main: vou ativar a tarefa 337
+	Encerrei tarefa   337
+user_main: vou ativar a tarefa 338
+	Encerrei tarefa   338
+user_main: vou ativar a tarefa 339
+	Encerrei tarefa   339
+user_main: vou ativar a tarefa 340
+	Encerrei tarefa   340
+user_main: vou ativar a tarefa 341
+	Encerrei tarefa   341
+user_main: vou ativar a tarefa 342
+	Encerrei tarefa   342
+user_main: vou ativar a tarefa 343
+	Encerrei tarefa   343
+user_main: vou ativar a tarefa 344
+	Encerrei tarefa   344
+user_main: vou ativar a tarefa 345
+	Encerrei tarefa   345
+user_main: vou ativar a tarefa 346
+	Encerrei tarefa   346
+user_main: vou ativar a tarefa 347
+	Encerrei tarefa   347
+user_main: vou ativar a tarefa 348
+	Encerrei tarefa   348
+user_main: vou ativar a tarefa 349
+	Encerrei tarefa   349
+user_main: vou ativar a tarefa 350
+	Encerrei tarefa   350
+user_main: vou ativar a tarefa 351
+	Encerrei tarefa   351
+user_main: vou ativar a tarefa 352
+	Encerrei tarefa   352
+user_main: vou ativar a tarefa 353
+	Encerrei tarefa   353
+user_main: vou ativar a tarefa 354
+	Encerrei tarefa   354
+user_main: vou ativar a tarefa 355
+	Encerrei tarefa   355
+user_main: vou ativar a tarefa 356
+	Encerrei tarefa   356
+user_main: vou ativar a tarefa 357
+	Encerrei tarefa   357
+user_main: vou ativar a tarefa 358
+	Encerrei tarefa   358
+user_main: vou ativar a tarefa 359
+	Encerrei tarefa   359
+user_main: vou ativar a tarefa 360
+	Encerrei tarefa   360
+user_main: vou ativar a tarefa 361
+	Encerrei tarefa   361
+user_main: vou ativar a tarefa 362
+	Encerrei tarefa   362
+user_main: vou ativar a tarefa 363
+	Encerrei tarefa   363
+user_main: vou ativar a tarefa 364
+	Encerrei tarefa   364
+user_main: vou ativar a tarefa 365
+	Encerrei tarefa   365
+user_main: vou ativar a tarefa 366
+	Encerrei tarefa   366
+user_main: vou ativar a tarefa 367
+	Encerrei tarefa   367
+user_main: vou ativar a tarefa 368
+	Encerrei tarefa   368
+user_main: vou ativar a tarefa 369
+	Encerrei tarefa   369
+user_main: vou ativar a tarefa 370
+	Encerrei tarefa   370
+user_main: vou ativar a tarefa 371
+	Encerrei tarefa   371
+user_main: vou ativar a tarefa 372
+	Encerrei tarefa   372
+user_main: vou ativar a tarefa 373
+	Encerrei tarefa   373
+user_main: vou ativar a tarefa 374
+	Encerrei tarefa   374
+user_main: vou ativar a tarefa 375
+	Encerrei tarefa   375
+user_main: vou ativar a tarefa 376
+	Encerrei tarefa   376
+user_main: vou ativar a tarefa 377
+	Encerrei tarefa   377
+user_main: vou ativar a tarefa 378
+	Encerrei tarefa   378
+user_main: vou ativar a tarefa 379
+	Encerrei tarefa   379
+user_main: vou ativar a tarefa 380
+	Encerrei tarefa   380
+user_main: vou ativar a tarefa 381
+	Encerrei tarefa   381
+user_main: vou ativar a tarefa 382
+	Encerrei tarefa   382
+user_main: vou ativar a tarefa 383
+	Encerrei tarefa   383
+user_main: vou ativar a tarefa 384
+	Encerrei tarefa   384
+user_main: vou ativar a tarefa 385
+	Encerrei tarefa   385
+user_main: vou ativar a tarefa 386
+	Encerrei tarefa   386
+user_main: vou ativar a tarefa 387
+	Encerrei tarefa   387
+user_main: vou ativar a tarefa 388
+	Encerrei tarefa   388
+user_main: vou ativar a tarefa 389
+	Encerrei tarefa   389
+user_main: vou ativar a tarefa 390
+	Encerrei tarefa   390
+user_main: vou ativar a tarefa 391
+	Encerrei tarefa   391
+user_main: vou ativar a tarefa 392
+	Encerrei tarefa   392
+user_main: vou ativar a tarefa 393
+	Encerrei tarefa   393
+user_main: vou ativar a tarefa 394
+	Encerrei tarefa   394
+user_main: vou ativar a tarefa 395
+	Encerrei tarefa   395
+user_main: vou ativar a tarefa 396
+	Encerrei tarefa   396
+user_main: vou ativar a tarefa 397
+	Encerrei tarefa   397
+user_main: vou ativar a tarefa 398
+	Encerrei tarefa   398
+user_main: vou ativar a tarefa 399
+	Encerrei tarefa   399
+user_main: vou ativar a tarefa 400
+	Encerrei tarefa   400
+user_main: vou ativar a tarefa 401
+	Encerrei tarefa   401
+user_main: vou ativar a tarefa 402
+	Encerrei tarefa   402
+user_main: vou ativar a tarefa 403
+	Encerrei tarefa   403
+user_main: vou ativar a tarefa 404
+	Encerrei tarefa   404
+user_main: vou ativar a tarefa 405
+	Encerrei tarefa   405
+user_main: vou ativar a tarefa 406
+	Encerrei tarefa   406
+user_main: vou ativar a tarefa 407
+	Encerrei tarefa   407
+user_main: vou ativar a tarefa 408
+	Encerrei tarefa   408
+user_main: vou ativar a tarefa 409
+	Encerrei tarefa   409
+user_main: vou ativar a tarefa 410
+	Encerrei tarefa   410
+user_main: vou ativar a tarefa 411
+	Encerrei tarefa   411
+user_main: vou ativar a tarefa 412
+	Encerrei tarefa   412
+user_main: vou ativar a tarefa 413
+	Encerrei tarefa   413
+user_main: vou ativar a tarefa 414
+	Encerrei tarefa   414
+user_main: vou ativar a tarefa 415
+	Encerrei tarefa   415
+user_main: vou ativar a tarefa 416
+	Encerrei tarefa   416
+user_main: vou ativar a tarefa 417
+	Encerrei tarefa   417
+user_main: vou ativar a tarefa 418
+	Encerrei tarefa   418
+user_main: vou ativar a tarefa 419
+	Encerrei tarefa   419
+user_main: vou ativar a tarefa 420
+	Encerrei tarefa   420
+user_main: vou ativar a tarefa 421
+	Encerrei tarefa   421
+user_main: vou ativar a tarefa 422
+	Encerrei tarefa   422
+user_main: vou ativar a tarefa 423
+	Encerrei tarefa   423
+user_main: vou ativar a tarefa 424
+	Encerrei tarefa   424
+user_main: vou ativar a tarefa 425
+	Encerrei tarefa   425
+user_main: vou ativar a tarefa 426
+	Encerrei tarefa   426
+user_main: vou ativar a tarefa 427
+	Encerrei tarefa   427
+user_main: vou ativar a tarefa 428
+	Encerrei tarefa   428
+user_main: vou ativar a tarefa 429
+	Encerrei tarefa   429
+user_main: vou ativar a tarefa 430
+	Encerrei tarefa   430
+user_main: vou ativar a tarefa 431
+	Encerrei tarefa   431
+user_main: vou ativar a tarefa 432
+	Encerrei tarefa   432
+user_main: vou ativar a tarefa 433
+	Encerrei tarefa   433
+user_main: vou ativar a tarefa 434
+	Encerrei tarefa   434
+user_main: vou ativar a tarefa 435
+	Encerrei tarefa   435
+user_main: vou ativar a tarefa 436
+	Encerrei tarefa   436
+user_main: vou ativar a tarefa 437
+	Encerrei tarefa   437
+user_main: vou ativar a tarefa 438
+	Encerrei tarefa   438
+user_main: vou ativar a tarefa 439
+	Encerrei tarefa   439
+user_main: vou ativar a tarefa 440
+	Encerrei tarefa   440
+user_main: vou ativar a tarefa 441
+	Encerrei tarefa   441
+user_main: vou ativar a tarefa 442
+	Encerrei tarefa   442
+user_main: vou ativar a tarefa 443
+	Encerrei tarefa   443
+user_main: vou ativar a tarefa 444
+	Encerrei tarefa   444
+user_main: vou ativar a tarefa 445
+	Encerrei tarefa   445
+user_main: vou ativar a tarefa 446
+	Encerrei tarefa   446
+user_main: vou ativar a tarefa 447
+	Encerrei tarefa   447
+user_main: vou ativar a tarefa 448
+	Encerrei tarefa   448
+user_main: vou ativar a tarefa 449
+	Encerrei tarefa   449
+user_main: vou ativar a tarefa 450
+	Encerrei tarefa   450
+user_main: vou ativar a tarefa 451
+	Encerrei tarefa   451
+user_main: vou ativar a tarefa 452
+	Encerrei tarefa   452
+user_main: vou ativar a tarefa 453
+	Encerrei tarefa   453
+user_main: vou ativar a tarefa 454
+	Encerrei tarefa   454
+user_main: vou ativar a tarefa 455
+	Encerrei tarefa   455
+user_main: vou ativar a tarefa 456
+	Encerrei tarefa   456
+user_main: vou ativar a tarefa 457
+	Encerrei tarefa   457
+user_main: vou ativar a tarefa 458
+	Encerrei tarefa   458
+user_main: vou ativar a tarefa 459
+	Encerrei tarefa   459
+user_main: vou ativar a tarefa 460
+	Encerrei tarefa   460
+user_main: vou ativar a tarefa 461
+	Encerrei tarefa   461
+user_main: vou ativar a tarefa 462
+	Encerrei tarefa   462
+user_main: vou ativar a tarefa 463
+	Encerrei tarefa   463
+user_main: vou ativar a tarefa 464
+	Encerrei tarefa   464
+user_main: vou ativar a tarefa 465
+	Encerrei tarefa   465
+user_main: vou ativar a tarefa 466
+	Encerrei tarefa   466
+user_main: vou ativar a tarefa 467
+	Encerrei tarefa   467
+user_main: vou ativar a tarefa 468
+	Encerrei tarefa   468
+user_main: vou ativar a tarefa 469
+	Encerrei tarefa   469
+user_main: vou ativar a tarefa 470
+	Encerrei tarefa   470
+user_main: vou ativar a tarefa 471
+	Encerrei tarefa   471
+user_main: vou ativar a tarefa 472
+	Encerrei tarefa   472
+user_main: vou ativar a tarefa 473
+	Encerrei tarefa   473
+user_main: vou ativar a tarefa 474
+	Encerrei tarefa   474
+user_main: vou ativar a tarefa 475
+	Encerrei tarefa   475
+user_main: vou ativar a tarefa 476
+	Encerrei tarefa   476
+user_main: vou ativar a tarefa 477
+	Encerrei tarefa   477
+user_main: vou ativar a tarefa 478
+	Encerrei tarefa   478
+user_main: vou ativar a tarefa 479
+	Encerrei tarefa   479
+user_main: vou ativar a tarefa 480
+	Encerrei tarefa   480
+user_main: vou ativar a tarefa 481
+	Encerrei tarefa   481
+user_main: vou ativar a tarefa 482
+	Encerrei tarefa   482
+user_main: vou ativar a tarefa 483
+	Encerrei tarefa   483
+user_main: vou ativar a tarefa 484
+	Encerrei tarefa   484
+user_main: vou ativar a tarefa 485
+	Encerrei tarefa   485
+user_main: vou ativar a tarefa 486
+	Encerrei tarefa   486
+user_main: vou ativar a tarefa 487
+	Encerrei tarefa   487
+user_main: vou ativar a tarefa 488
+	Encerrei tarefa   488
+user_main: vou ativar a tarefa 489
+	Encerrei tarefa   489
+user_main: vou ativar a tarefa 490
+	Encerrei tarefa   490
+user_main: vou ativar a tarefa 491
+	Encerrei tarefa   491
+user_main: vou ativar a tarefa 492
+	Encerrei tarefa   492
+user_main: vou ativar a tarefa 493
+	Encerrei tarefa   493
+user_main: vou ativar a tarefa 494
+	Encerrei tarefa   494
+user_main: vou ativar a tarefa 495
+	Encerrei tarefa   495
+user_main: vou ativar a tarefa 496
+	Encerrei tarefa   496
+user_main: vou ativar a tarefa 497
+	Encerrei tarefa   497
+user_main: vou ativar a tarefa 498
+	Encerrei tarefa   498
+user_main: vou ativar a tarefa 499
+	Encerrei tarefa   499
+user_main: vou ativar a tarefa 500
+	Encerrei tarefa   500
+user_main: vou ativar a tarefa 501
+	Encerrei tarefa   501
+user_main: vou ativar a tarefa 502
+	Encerrei tarefa   502
+user_main: vou ativar a tarefa 503
+	Encerrei tarefa   503
+user_main: vou ativar a tarefa 504
+	Encerrei tarefa   504
+user_main: vou ativar a tarefa 505
+	Encerrei tarefa   505
+user_main: vou ativar a tarefa 506
+	Encerrei tarefa   506
+user_main: vou ativar a tarefa 507
+	Encerrei tarefa   507
+user_main: vou ativar a tarefa 508
+	Encerrei tarefa   508
+user_main: vou ativar a tarefa 509
+	Encerrei tarefa   509
+user_main: vou ativar a tarefa 510
+	Encerrei tarefa   510
+user_main: vou ativar a tarefa 511
+	Encerrei tarefa   511
+user_main: vou ativar a tarefa 512
+	Encerrei tarefa   512
+user_main: vou ativar a tarefa 513
+	Encerrei tarefa   513
+user_main: vou destruir a tarefa 2
+user_main: vou destruir a tarefa 3
+user_main: vou destruir a tarefa 4
+user_main: vou destruir a tarefa 5
+user_main: vou destruir a tarefa 6
+user_main: vou destruir a tarefa 7
+user_main: vou destruir a tarefa 8
+user_main: vou destruir a tarefa 9
+user_main: vou destruir a tarefa 10
+user_main: vou destruir a tarefa 11
+user_main: vou destruir a tarefa 12
+user_main: vou destruir a tarefa 13
+user_main: vou destruir a tarefa 14
+user_main: vou destruir a tarefa 15
+user_main: vou destruir a tarefa 16
+user_main: vou destruir a tarefa 17
+user_main: vou destruir a tarefa 18
+user_main: vou destruir a tarefa 19
+user_main: vou destruir a tarefa 20
+user_main: vou destruir a tarefa 21
+user_main: vou destruir a tarefa 22
+user_main: vou destruir a tarefa 23
+user_main: vou destruir a tarefa 24
+user_main: vou destruir a tarefa 25
+user_main: vou destruir a tarefa 26
+user_main: vou destruir a tarefa 27
+user_main: vou destruir a tarefa 28
+user_main: vou destruir a tarefa 29
+user_main: vou destruir a tarefa 30
+user_main: vou destruir a tarefa 31
+user_main: vou destruir a tarefa 32
+user_main: vou destruir a tarefa 33
+user_main: vou destruir a tarefa 34
+user_main: vou destruir a tarefa 35
+user_main: vou destruir a tarefa 36
+user_main: vou destruir a tarefa 37
+user_main: vou destruir a tarefa 38
+user_main: vou destruir a tarefa 39
+user_main: vou destruir a tarefa 40
+user_main: vou destruir a tarefa 41
+user_main: vou destruir a tarefa 42
+user_main: vou destruir a tarefa 43
+user_main: vou destruir a tarefa 44
+user_main: vou destruir a tarefa 45
+user_main: vou destruir a tarefa 46
+user_main: vou destruir a tarefa 47
+user_main: vou destruir a tarefa 48
+user_main: vou destruir a tarefa 49
+user_main: vou destruir a tarefa 50
+user_main: vou destruir a tarefa 51
+user_main: vou destruir a tarefa 52
+user_main: vou destruir a tarefa 53
+user_main: vou destruir a tarefa 54
+user_main: vou destruir a tarefa 55
+user_main: vou destruir a tarefa 56
+user_main: vou destruir a tarefa 57
+user_main: vou destruir a tarefa 58
+user_main: vou destruir a tarefa 59
+user_main: vou destruir a tarefa 60
+user_main: vou destruir a tarefa 61
+user_main: vou destruir a tarefa 62
+user_main: vou destruir a tarefa 63
+user_main: vou destruir a tarefa 64
+user_main: vou destruir a tarefa 65
+user_main: vou destruir a tarefa 66
+user_main: vou destruir a tarefa 67
+user_main: vou destruir a tarefa 68
+user_main: vou destruir a tarefa 69
+user_main: vou destruir a tarefa 70
+user_main: vou destruir a tarefa 71
+user_main: vou destruir a tarefa 72
+user_main: vou destruir a tarefa 73
+user_main: vou destruir a tarefa 74
+user_main: vou destruir a tarefa 75
+user_main: vou destruir a tarefa 76
+user_main: vou destruir a tarefa 77
+user_main: vou destruir a tarefa 78
+user_main: vou destruir a tarefa 79
+user_main: vou destruir a tarefa 80
+user_main: vou destruir a tarefa 81
+user_main: vou destruir a tarefa 82
+user_main: vou destruir a tarefa 83
+user_main: vou destruir a tarefa 84
+user_main: vou destruir a tarefa 85
+user_main: vou destruir a tarefa 86
+user_main: vou destruir a tarefa 87
+user_main: vou destruir a tarefa 88
+user_main: vou destruir a tarefa 89
+user_main: vou destruir a tarefa 90
+user_main: vou destruir a tarefa 91
+user_main: vou destruir a tarefa 92
+user_main: vou destruir a tarefa 93
+user_main: vou destruir a tarefa 94
+user_main: vou destruir a tarefa 95
+user_main: vou destruir a tarefa 96
+user_main: vou destruir a tarefa 97
+user_main: vou destruir a tarefa 98
+user_main: vou destruir a tarefa 99
+user_main: vou destruir a tarefa 100
+user_main: vou destruir a tarefa 101
+user_main: vou destruir a tarefa 102
+user_main: vou destruir a tarefa 103
+user_main: vou destruir a tarefa 104
+user_main: vou destruir a tarefa 105
+user_main: vou destruir a tarefa 106
+user_main: vou destruir a tarefa 107
+user_main: vou destruir a tarefa 108
+user_main: vou destruir a tarefa 109
+user_main: vou destruir a tarefa 110
+user_main: vou destruir a tarefa 111
+user_main: vou destruir a tarefa 112
+user_main: vou destruir a tarefa 113
+user_main: vou destruir a tarefa 114
+user_main: vou destruir a tarefa 115
+user_main: vou destruir a tarefa 116
+user_main: vou destruir a tarefa 117
+user_main: vou destruir a tarefa 118
+user_main: vou destruir a tarefa 119
+user_main: vou destruir a tarefa 120
+user_main: vou destruir a tarefa 121
+user_main: vou destruir a tarefa 122
+user_main: vou destruir a tarefa 123
+user_main: vou destruir a tarefa 124
+user_main: vou destruir a tarefa 125
+user_main: vou destruir a tarefa 126
+user_main: vou destruir a tarefa 127
+user_main: vou destruir a tarefa 128
+user_main: vou destruir a tarefa 129
+user_main: vou destruir a tarefa 130
+user_main: vou destruir a tarefa 131
+user_main: vou destruir a tarefa 132
+user_main: vou destruir a tarefa 133
+user_main: vou destruir a tarefa 134
+user_main: vou destruir a tarefa 135
+user_main: vou destruir a tarefa 136
+user_main: vou destruir a tarefa 137
+user_main: vou destruir a tarefa 138
+user_main: vou destruir a tarefa 139
+user_main: vou destruir a tarefa 140
+user_main: vou destruir a tarefa 141
+user_main: vou destruir a tarefa 142
+user_main: vou destruir a tarefa 143
+user_main: vou destruir a tarefa 144
+user_main: vou destruir a tarefa 145
+user_main: vou destruir a tarefa 146
+user_main: vou destruir a tarefa 147
+user_main: vou destruir a tarefa 148
+user_main: vou destruir a tarefa 149
+user_main: vou destruir a tarefa 150
+user_main: vou destruir a tarefa 151
+user_main: vou destruir a tarefa 152
+user_main: vou destruir a tarefa 153
+user_main: vou destruir a tarefa 154
+user_main: vou destruir a tarefa 155
+user_main: vou destruir a tarefa 156
+user_main: vou destruir a tarefa 157
+user_main: vou destruir a tarefa 158
+user_main: vou destruir a tarefa 159
+user_main: vou destruir a tarefa 160
+user_main: vou destruir a tarefa 161
+user_main: vou destruir a tarefa 162
+user_main: vou destruir a tarefa 163
+user_main: vou destruir a tarefa 164
+user_main: vou destruir a tarefa 165
+user_main: vou destruir a tarefa 166
+user_main: vou destruir a tarefa 167
+user_main: vou destruir a tarefa 168
+user_main: vou destruir a tarefa 169
+user_main: vou destruir a tarefa 170
+user_main: vou destruir a tarefa 171
+user_main: vou destruir a tarefa 172
+user_main: vou destruir a tarefa 173
+user_main: vou destruir a tarefa 174
+user_main: vou destruir a tarefa 175
+user_main: vou destruir a tarefa 176
+user_main: vou destruir a tarefa 177
+user_main: vou destruir a tarefa 178
+user_main: vou destruir a tarefa 179
+user_main: vou destruir a tarefa 180
+user_main: vou destruir a tarefa 181
+user_main: vou destruir a tarefa 182
+user_main: vou destruir a tarefa 183
+user_main: vou destruir a tarefa 184
+user_main: vou destruir a tarefa 185
+user_main: vou destruir a tarefa 186
+user_main: vou destruir a tarefa 187
+user_main: vou destruir a tarefa 188
+user_main: vou destruir a tarefa 189
+user_main: vou destruir a tarefa 190
+user_main: vou destruir a tarefa 191
+user_main: vou destruir a tarefa 192
+user_main: vou destruir a tarefa 193
+user_main: vou destruir a tarefa 194
+user_main: vou destruir a tarefa 195
+user_main: vou destruir a tarefa 196
+user_main: vou destruir a tarefa 197
+user_main: vou destruir a tarefa 198
+user_main: vou destruir a tarefa 199
+user_main: vou destruir a tarefa 200
+user_main: vou destruir a tarefa 201
+user_main: vou destruir a tarefa 202
+user_main: vou destruir a tarefa 203
+user_main: vou destruir a tarefa 204
+user_main: vou destruir a tarefa 205
+user_main: vou destruir a tarefa 206
+user_main: vou destruir a tarefa 207
+user_main: vou destruir a tarefa 208
+user_main: vou destruir a tarefa 209
+user_main: vou destruir a tarefa 210
+user_main: vou destruir a tarefa 211
+user_main: vou destruir a tarefa 212
+user_main: vou destruir a tarefa 213
+user_main: vou destruir a tarefa 214
+user_main: vou destruir a tarefa 215
+user_main: vou destruir a tarefa 216
+user_main: vou destruir a tarefa 217
+user_main: vou destruir a tarefa 218
+user_main: vou destruir a tarefa 219
+user_main: vou destruir a tarefa 220
+user_main: vou destruir a tarefa 221
+user_main: vou destruir a tarefa 222
+user_main: vou destruir a tarefa 223
+user_main: vou destruir a tarefa 224
+user_main: vou destruir a tarefa 225
+user_main: vou destruir a tarefa 226
+user_main: vou destruir a tarefa 227
+user_main: vou destruir a tarefa 228
+user_main: vou destruir a tarefa 229
+user_main: vou destruir a tarefa 230
+user_main: vou destruir a tarefa 231
+user_main: vou destruir a tarefa 232
+user_main: vou destruir a tarefa 233
+user_main: vou destruir a tarefa 234
+user_main: vou destruir a tarefa 235
+user_main: vou destruir a tarefa 236
+user_main: vou destruir a tarefa 237
+user_main: vou destruir a tarefa 238
+user_main: vou destruir a tarefa 239
+user_main: vou destruir a tarefa 240
+user_main: vou destruir a tarefa 241
+user_main: vou destruir a tarefa 242
+user_main: vou destruir a tarefa 243
+user_main: vou destruir a tarefa 244
+user_main: vou destruir a tarefa 245
+user_main: vou destruir a tarefa 246
+user_main: vou destruir a tarefa 247
+user_main: vou destruir a tarefa 248
+user_main: vou destruir a tarefa 249
+user_main: vou destruir a tarefa 250
+user_main: vou destruir a tarefa 251
+user_main: vou destruir a tarefa 252
+user_main: vou destruir a tarefa 253
+user_main: vou destruir a tarefa 254
+user_main: vou destruir a tarefa 255
+user_main: vou destruir a tarefa 256
+user_main: vou destruir a tarefa 257
+user_main: vou destruir a tarefa 258
+user_main: vou destruir a tarefa 259
+user_main: vou destruir a tarefa 260
+user_main: vou destruir a tarefa 261
+user_main: vou destruir a tarefa 262
+user_main: vou destruir a tarefa 263
+user_main: vou destruir a tarefa 264
+user_main: vou destruir a tarefa 265
+user_main: vou destruir a tarefa 266
+user_main: vou destruir a tarefa 267
+user_main: vou destruir a tarefa 268
+user_main: vou destruir a tarefa 269
+user_main: vou destruir a tarefa 270
+user_main: vou destruir a tarefa 271
+user_main: vou destruir a tarefa 272
+user_main: vou destruir a tarefa 273
+user_main: vou destruir a tarefa 274
+user_main: vou destruir a tarefa 275
+user_main: vou destruir a tarefa 276
+user_main: vou destruir a tarefa 277
+user_main: vou destruir a tarefa 278
+user_main: vou destruir a tarefa 279
+user_main: vou destruir a tarefa 280
+user_main: vou destruir a tarefa 281
+user_main: vou destruir a tarefa 282
+user_main: vou destruir a tarefa 283
+user_main: vou destruir a tarefa 284
+user_main: vou destruir a tarefa 285
+user_main: vou destruir a tarefa 286
+user_main: vou destruir a tarefa 287
+user_main: vou destruir a tarefa 288
+user_main: vou destruir a tarefa 289
+user_main: vou destruir a tarefa 290
+user_main: vou destruir a tarefa 291
+user_main: vou destruir a tarefa 292
+user_main: vou destruir a tarefa 293
+user_main: vou destruir a tarefa 294
+user_main: vou destruir a tarefa 295
+user_main: vou destruir a tarefa 296
+user_main: vou destruir a tarefa 297
+user_main: vou destruir a tarefa 298
+user_main: vou destruir a tarefa 299
+user_main: vou destruir a tarefa 300
+user_main: vou destruir a tarefa 301
+user_main: vou destruir a tarefa 302
+user_main: vou destruir a tarefa 303
+user_main: vou destruir a tarefa 304
+user_main: vou destruir a tarefa 305
+user_main: vou destruir a tarefa 306
+user_main: vou destruir a tarefa 307
+user_main: vou destruir a tarefa 308
+user_main: vou destruir a tarefa 309
+user_main: vou destruir a tarefa 310
+user_main: vou destruir a tarefa 311
+user_main: vou destruir a tarefa 312
+user_main: vou destruir a tarefa 313
+user_main: vou destruir a tarefa 314
+user_main: vou destruir a tarefa 315
+user_main: vou destruir a tarefa 316
+user_main: vou destruir a tarefa 317
+user_main: vou destruir a tarefa 318
+user_main: vou destruir a tarefa 319
+user_main: vou destruir a tarefa 320
+user_main: vou destruir a tarefa 321
+user_main: vou destruir a tarefa 322
+user_main: vou destruir a tarefa 323
+user_main: vou destruir a tarefa 324
+user_main: vou destruir a tarefa 325
+user_main: vou destruir a tarefa 326
+user_main: vou destruir a tarefa 327
+user_main: vou destruir a tarefa 328
+user_main: vou destruir a tarefa 329
+user_main: vou destruir a tarefa 330
+user_main: vou destruir a tarefa 331
+user_main: vou destruir a tarefa 332
+user_main: vou destruir a tarefa 333
+user_main: vou destruir a tarefa 334
+user_main: vou destruir a tarefa 335
+user_main: vou destruir a tarefa 336
+user_main: vou destruir a tarefa 337
+user_main: vou destruir a tarefa 338
+user_main: vou destruir a tarefa 339
+user_main: vou destruir a tarefa 340
+user_main: vou destruir a tarefa 341
+user_main: vou destruir a tarefa 342
+user_main: vou destruir a tarefa 343
+user_main: vou destruir a tarefa 344
+user_main: vou destruir a tarefa 345
+user_main: vou destruir a tarefa 346
+user_main: vou destruir a tarefa 347
+user_main: vou destruir a tarefa 348
+user_main: vou destruir a tarefa 349
+user_main: vou destruir a tarefa 350
+user_main: vou destruir a tarefa 351
+user_main: vou destruir a tarefa 352
+user_main: vou destruir a tarefa 353
+user_main: vou destruir a tarefa 354
+user_main: vou destruir a tarefa 355
+user_main: vou destruir a tarefa 356
+user_main: vou destruir a tarefa 357
+user_main: vou destruir a tarefa 358
+user_main: vou destruir a tarefa 359
+user_main: vou destruir a tarefa 360
+user_main: vou destruir a tarefa 361
+user_main: vou destruir a tarefa 362
+user_main: vou destruir a tarefa 363
+user_main: vou destruir a tarefa 364
+user_main: vou destruir a tarefa 365
+user_main: vou destruir a tarefa 366
+user_main: vou destruir a tarefa 367
+user_main: vou destruir a tarefa 368
+user_main: vou destruir a tarefa 369
+user_main: vou destruir a tarefa 370
+user_main: vou destruir a tarefa 371
+user_main: vou destruir a tarefa 372
+user_main: vou destruir a tarefa 373
+user_main: vou destruir a tarefa 374
+user_main: vou destruir a tarefa 375
+user_main: vou destruir a tarefa 376
+user_main: vou destruir a tarefa 377
+user_main: vou destruir a tarefa 378
+user_main: vou destruir a tarefa 379
+user_main: vou destruir a tarefa 380
+user_main: vou destruir a tarefa 381
+user_main: vou destruir a tarefa 382
+user_main: vou destruir a tarefa 383
+user_main: vou destruir a tarefa 384
+user_main: vou destruir a tarefa 385
+user_main: vou destruir a tarefa 386
+user_main: vou destruir a tarefa 387
+user_main: vou destruir a tarefa 388
+user_main: vou destruir a tarefa 389
+user_main: vou destruir a tarefa 390
+user_main: vou destruir a tarefa 391
+user_main: vou destruir a tarefa 392
+user_main: vou destruir a tarefa 393
+user_main: vou destruir a tarefa 394
+user_main: vou destruir a tarefa 395
+user_main: vou destruir a tarefa 396
+user_main: vou destruir a tarefa 397
+user_main: vou destruir a tarefa 398
+user_main: vou destruir a tarefa 399
+user_main: vou destruir a tarefa 400
+user_main: vou destruir a tarefa 401
+user_main: vou destruir a tarefa 402
+user_main: vou destruir a tarefa 403
+user_main: vou destruir a tarefa 404
+user_main: vou destruir a tarefa 405
+user_main: vou destruir a tarefa 406
+user_main: vou destruir a tarefa 407
+user_main: vou destruir a tarefa 408
+user_main: vou destruir a tarefa 409
+user_main: vou destruir a tarefa 410
+user_main: vou destruir a tarefa 411
+user_main: vou destruir a tarefa 412
+user_main: vou destruir a tarefa 413
+user_main: vou destruir a tarefa 414
+user_main: vou destruir a tarefa 415
+user_main: vou destruir a tarefa 416
+user_main: vou destruir a tarefa 417
+user_main: vou destruir a tarefa 418
+user_main: vou destruir a tarefa 419
+user_main: vou destruir a tarefa 420
+user_main: vou destruir a tarefa 421
+user_main: vou destruir a tarefa 422
+user_main: vou destruir a tarefa 423
+user_main: vou destruir a tarefa 424
+user_main: vou destruir a tarefa 425
+user_main: vou destruir a tarefa 426
+user_main: vou destruir a tarefa 427
+user_main: vou destruir a tarefa 428
+user_main: vou destruir a tarefa 429
+user_main: vou destruir a tarefa 430
+user_main: vou destruir a tarefa 431
+user_main: vou destruir a tarefa 432
+user_main: vou destruir a tarefa 433
+user_main: vou destruir a tarefa 434
+user_main: vou destruir a tarefa 435
+user_main: vou destruir a tarefa 436
+user_main: vou destruir a tarefa 437
+user_main: vou destruir a tarefa 438
+user_main: vou destruir a tarefa 439
+user_main: vou destruir a tarefa 440
+user_main: vou destruir a tarefa 441
+user_main: vou destruir a tarefa 442
+user_main: vou destruir a tarefa 443
+user_main: vou destruir a tarefa 444
+user_main: vou destruir a tarefa 445
+user_main: vou destruir a tarefa 446
+user_main: vou destruir a tarefa 447
+user_main: vou destruir a tarefa 448
+user_main: vou destruir a tarefa 449
+user_main: vou destruir a tarefa 450
+user_main: vou destruir a tarefa 451
+user_main: vou destruir a tarefa 452
+user_main: vou destruir a tarefa 453
+user_main: vou destruir a tarefa 454
+user_main: vou destruir a tarefa 455
+user_main: vou destruir a tarefa 456
+user_main: vou destruir a tarefa 457
+user_main: vou destruir a tarefa 458
+user_main: vou destruir a tarefa 459
+user_main: vou destruir a tarefa 460
+user_main: vou destruir a tarefa 461
+user_main: vou destruir a tarefa 462
+user_main: vou destruir a tarefa 463
+user_main: vou destruir a tarefa 464
+user_main: vou destruir a tarefa 465
+user_main: vou destruir a tarefa 466
+user_main: vou destruir a tarefa 467
+user_main: vou destruir a tarefa 468
+user_main: vou destruir a tarefa 469
+user_main: vou destruir a tarefa 470
+user_main: vou destruir a tarefa 471
+user_main: vou destruir a tarefa 472
+user_main: vou destruir a tarefa 473
+user_main: vou destruir a tarefa 474
+user_main: vou destruir a tarefa 475
+user_main: vou destruir a tarefa 476
+user_main: vou destruir a tarefa 477
+user_main: vou destruir a tarefa 478
+user_main: vou destruir a tarefa 479
+user_main: vou destruir a tarefa 480
+user_main: vou destruir a tarefa 481
+user_main: vou destruir a tarefa 482
+user_main: vou destruir a tarefa 483
+user_main: vou destruir a tarefa 484
+user_main: vou destruir a tarefa 485
+user_main: vou destruir a tarefa 486
+user_main: vou destruir a tarefa 487
+user_main: vou destruir a tarefa 488
+user_main: vou destruir a tarefa 489
+user_main: vou destruir a tarefa 490
+user_main: vou destruir a tarefa 491
+user_main: vou destruir a tarefa 492
+user_main: vou destruir a tarefa 493
+user_main: vou destruir a tarefa 494
+user_main: vou destruir a tarefa 495
+user_main: vou destruir a tarefa 496
+user_main: vou destruir a tarefa 497
+user_main: vou destruir a tarefa 498
+user_main: vou destruir a tarefa 499
+user_main: vou destruir a tarefa 500
+user_main: vou destruir a tarefa 501
+user_main: vou destruir a tarefa 502
+user_main: vou destruir a tarefa 503
+user_main: vou destruir a tarefa 504
+user_main: vou destruir a tarefa 505
+user_main: vou destruir a tarefa 506
+user_main: vou destruir a tarefa 507
+user_main: vou destruir a tarefa 508
+user_main: vou destruir a tarefa 509
+user_main: vou destruir a tarefa 510
+user_main: vou destruir a tarefa 511
+user_main: vou destruir a tarefa 512
+user_main: vou destruir a tarefa 513
+    0 ms: user_main fim
+PPOS: system terminating
+PPOS: system terminated (uptime 0 ms)
