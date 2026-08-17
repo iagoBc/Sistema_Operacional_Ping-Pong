@@ -36,6 +36,9 @@ int task_id(struct task_t *task);
 // informa o nome de uma tarefa (ou da tarefa atual se task == NULL)
 char *task_name(struct task_t *task);
 
+// alterna a execução para a tarefa indicada; retorna o ID da tarefa que estava em execução ou ERROR (<0) em caso de erro.
+int task_switch(struct task_t *task);
+
 // a tarefa atual libera a CPU e volta para a fila de prontas; a execução
 // retorna ao núcleo/dispatcher.
 void task_yield();
@@ -52,5 +55,6 @@ void task_sleep(int t);
 // encerra a execução da tarefa atual, informando um código de encerramento
 // (exit_code); a execução retorna ao núcleo/dispatcher.
 void task_exit(int exit_code);
+
 
 #endif
