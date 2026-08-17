@@ -6,6 +6,8 @@
 
 // somente para a implementação trivial
 #include <stdlib.h>
+#define ERROR -1
+#define NOERROR 0
 
 // implementação trivial, a ser substituída
 void *mem_alloc(int size)
