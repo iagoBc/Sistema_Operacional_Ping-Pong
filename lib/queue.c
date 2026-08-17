@@ -7,7 +7,7 @@
 // Implementação do TAD fila genérica
 #include "queue.h"
 #include "pplibc.h"
-#include <stdlib.h>
+#include "kernel/memory.h"
 
 typedef struct No{
     void *dado;
@@ -22,7 +22,7 @@ typedef struct queue_t{
 } queue_t;
 
 struct queue_t *queue_create(){
-    queue_t *fila = (queue_t*) malloc(sizeof(queue_t)); // Aloca dinamicamente memoria para struct
+    queue_t *fila = (queue_t*) mem_alloc(sizeof(queue_t)); // Aloca dinamicamente memoria para struct
 
     if(!fila) return NULL; // Erro ao alocar memoria para struct
     
@@ -42,11 +42,11 @@ int queue_destroy(struct queue_t *queue){
 
     while(queue->head){ // Enquanto tiver um no na fila
         prox = queue->head->prox;
-        free(queue->head);
+        mem_free(queue->head);
         queue->head = prox; // Nova cabeca da fila
     } 
 
-    free(queue); // Libera memoria 
+    mem_free(queue); // Libera memoria 
 
     return NOERROR;
 }
@@ -54,7 +54,7 @@ int queue_destroy(struct queue_t *queue){
 int queue_add(struct queue_t *queue, void *item){
     if(!queue || !item) return ERROR; // Retorna ERROR se a fila ou item nao existe
 
-    No* no = (No*) malloc(sizeof(No)); // Aloca memoria para o no
+    No* no = (No*) mem_alloc(sizeof(No)); // Aloca memoria para o no
 
     no->prox = NULL; // Sempre o proximo no = NULL
     no->dado = item; // O valor dentro do no = item
@@ -93,7 +93,7 @@ int queue_del(struct queue_t *queue, void *item){
     if(!no->prox) queue->tail = anterior; // Se o no deletado = calda da fila, atualiza a calda
     if(queue->it == no) queue->it = no->prox; // Se o no deletado esta apontado pelo iterador, o iterador vai para o prox no
 
-    free(no); // Libera o no
+    mem_free(no); // Libera o no
 
     queue->tam--; // Diminui o tamanho da fila
 

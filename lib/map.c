@@ -8,26 +8,26 @@
 
 #include "map.h"
 #include "pplibc.h"
-#include <stdlib.h>
+#include "kernel/memory.h"
 
 typedef struct map_t{
     void **vetor; // 
-    unsigned int tam; // Tamanho do mapa
-    unsigned int ocupados; // Quantos IDs estao ocupados no mapa
-    unsigned int prox; // Proximo ID
+    int tam; // Tamanho do mapa
+    int ocupados; // Quantos IDs estao ocupados no mapa
+    int prox; // Proximo ID
 }map_t;
 
 struct map_t *map_create(int size){
     if(size <= 0) return NULL; 
 
-    map_t *map = malloc(sizeof(map_t)); // Aloca dinamicamente memoria para struct
+    map_t *map = mem_alloc(sizeof(map_t)); // Aloca dinamicamente memoria para struct
 
     if(!map) return NULL; // Erro ao alocar memoria para struct
 
-    map->vetor = malloc(sizeof(void*) * size); // Aloca dinamicamente memoria para o vetor
+    map->vetor = mem_alloc(sizeof(void*) * size); // Aloca dinamicamente memoria para o vetor
 
     if(!map->vetor){ // Erro ao alocar memoria para o vetor
-        free(map);
+        mem_free(map);
         return NULL;
     }
 
@@ -39,8 +39,8 @@ struct map_t *map_create(int size){
 
 int map_destroy(struct map_t *map){
     if(!map) return -1; // Retorno -1 indicando erro
-    free(map->vetor);  // Libera apenas o vetor
-    free(map);          // libera a struct
+    mem_free(map->vetor);  // Libera apenas o vetor
+    mem_free(map);          // libera a struct
 
     return 0; // Retorno 0 indicando sucesso
 }
