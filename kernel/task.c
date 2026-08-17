@@ -9,47 +9,47 @@
 #include "task.h"
 #include "memory.h"
 
-#define STACKSIZE 32 * 1024 // Tamanho de pilha das tarefas
+#define STACKSIZE 32 * 1024 
 
-struct task_t task_kernel; // Tarefa do kernel (inicial)
-struct task_t* task_atual = NULL; // Tarefa atual (em execução)
-unsigned long int ids = 1; // Variavel global para nao repetir os ids
+struct task_t task_kernel; // Tarefa para o fluxo de execução do núcleo
+struct task_t* task_current = NULL; // Struct para armazenar a tarefa atual em execução
+unsigned int ids = 1; // Contador de IDs
 
-void task_init(){
+void task_init(){ 
     task_kernel.name = "kernel";
     task_kernel.id = 0;
-    task_atual = &task_kernel;
-    task_kernel.status = EXECUCAO; // A tarefa do kernel está em execução
+    task_current = &task_kernel;
+    task_kernel.stats = RUNNING;
     task_kernel.parent = NULL; // A tarefa do kernel não tem pai
 
     ppos_debug("subsystem task initiated\n");
 }
 
 struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
-    struct task_t *tarefa = mem_alloc(sizeof(struct task_t));
-    if(!tarefa) return NULL;
+    struct task_t *task = mem_alloc(sizeof(struct task_t));
+    if(!task) return NULL;
 
-    tarefa->name = name;
-    tarefa->id = ids++; // Atribui um ID único à tarefa
-    tarefa->status = PRONTO; // A tarefa criada está pronta para ser executada
+    task->name = name;
+    task->id = ids++; 
+    task->stats = READY; // Tarefa pronta para ser executada
 
-    tarefa->stack = mem_alloc(STACKSIZE); // Aloca a pilha da tarefa
-    if(!tarefa->stack){
-        mem_free(tarefa);
+    task->stack = mem_alloc(STACKSIZE); // Aloca memoria para a pilha da tarefa
+    if(!task->stack){
+        mem_free(task);
         return NULL;
     }
 
-    if(ctx_create(&tarefa->context, entry, arg, tarefa->stack, STACKSIZE) == ERROR){ // Cria o contexto da tarefa
-        mem_free(tarefa->stack);
-        mem_free(tarefa);
+    if(ctx_create(&task->context, entry, arg, task->stack, STACKSIZE) == ERROR){ // Inicializa o contexto da tarefa 
+        mem_free(task->stack);
+        mem_free(task);
         return NULL;
     }
 
-    tarefa->parent = task_atual; // Define a tarefa atual como pai da nova tarefa
+    task->parent = task_current; // Define a tarefa atual como pai da nova tarefa
 
-    ppos_debug("task %d (%s) create task %d (%s)\n", tarefa->parent->id, tarefa->parent->name, tarefa->id, tarefa->name);
+    ppos_debug("task %d (%s) create task %d (%s)\n", task->parent->id, task->parent->name, task->id, task->name);
 
-    return tarefa;
+    return task;
 }
 
 int task_destroy(struct task_t *task){
@@ -59,32 +59,33 @@ int task_destroy(struct task_t *task){
 }
 
 int task_id(struct task_t *task){
-    if(!task) return task_atual->id;
-    return task->id; // Retorna o ID da tarefa especificada ou da tarefa atual se task for NULL
+    if(!task) return task_current->id;
+    return task->id; 
 }
 
 char *task_name(struct task_t *task){
-    if(!task) return task_atual->name;
-    return task->name; // Retorna o nome da tarefa especificada ou da tarefa atual se task for NULL
+    if(!task) return task_current->name;
+    return task->name;
 }
 
 int task_switch(struct task_t *task){
-    struct task_t *atual = task_atual;
-    struct task_t *nova; 
+    struct task_t *current = task_current;
+    struct task_t *new; 
 
-    if (!task) nova = task_atual->parent; // Se task for NULL, alterna para a tarefa pai
-    else nova = task; // Caso contrário, alterna para a tarefa especificada
+    if (!task) new = task_current->parent; // Se o parametro = NULL, a tarefa atual vai ser trocada pela tarefa pai
+    else new = task; 
 
-    if (nova == atual) return ERROR;
+    if (new == current) return ERROR;
 
-    if (atual->status == EXECUCAO) atual->status = PRONTO;
+    current->stats = READY;
 
-    task_atual = nova;
-    task_atual->status = EXECUCAO;
+    // Troca de tarefa para a nova tarefa
+    task_current = new;
+    task_current->stats = RUNNING;
 
-    ppos_debug("task %i (%s) switch to task %i (%s)\n", atual->id, atual->name, task_atual->id, task_atual->name);
+    ppos_debug("task %i (%s) switch to task %i (%s)\n", current->id, current->name, task_current->id, task_current->name);
 
-    return ctx_switch(&atual->context, &nova->context); // Troca o contexto entre a tarefa atual e a nova tarefa
+    return ctx_switch(&current->context, &new->context); 
 }
 
 void task_term(){

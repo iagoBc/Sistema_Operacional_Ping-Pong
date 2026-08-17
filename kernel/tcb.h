@@ -10,19 +10,20 @@
 #define __PPOS_TCB__
 
 #include "ctx.h"
-#define PRONTO 1
-#define EXECUCAO 2
-#define FINALIZADO 3
+#define READY 1
+#define RUNNING 2
+#define TERMINATED 3
 
 // Task Control Block (TCB), infos sobre uma tarefa
 struct task_t
 {
-    int id;         // identificador da tarefa
-    char *name;     // nome da tarefa
-    struct ctx_t context;  // contexto da tarefa
-    int status;     // pronta, executando, ...
-    void *stack;    // ponteiro para a pilha da tarefa
-    struct task_t *parent;                // demais informações, a completar
+    int id;                     // identificador da tarefa
+    char *name;                 // nome da tarefa
+    struct ctx_t context;       // contexto da tarefa
+    char stats;                 // pronta, executando, finalizada ...
+    void *stack;                // ponteiro para a pilha da tarefa
+    struct task_t *parent;      // ponteiro para a tarefa pai          
+                                // demais informações, a completar
 };
 
 #endif
