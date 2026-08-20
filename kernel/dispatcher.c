@@ -7,7 +7,7 @@
 #include "task.h"
 #include "macros.h"
 extern void user_main(void *arg);
-
+extern void task_switch(struct task_t *task);
 
 void dispatcher_init(){
     ppos_debug("subsystem dispatcher initiated\n");
