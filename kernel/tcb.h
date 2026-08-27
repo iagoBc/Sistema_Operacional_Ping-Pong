@@ -24,7 +24,8 @@ struct task_t
     struct ctx_t context;       // contexto da tarefa
     char state;                 // pronta, executando, finalizada ...
     void *stack;                // ponteiro para a pilha da tarefa
-    struct task_t *parent;      // ponteiro para a tarefa pai          
+    struct task_t *parent;      // ponteiro para a tarefa pai
+    int vg_id;		            // ID da pilha da tarefa no Valgrind          
                                 // demais informações, a completar
 };
 

@@ -10,6 +10,7 @@
 #include "lib/queue.h"
 #include "task.h"
 #include "memory.h"
+#include <valgrind/valgrind.h>
 
 #define STACKSIZE 32 * 1024 
 
@@ -56,6 +57,9 @@ struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
         return NULL;
     }
 
+    // registra a pilha da tarefa no Valgrind
+    task->vg_id = VALGRIND_STACK_REGISTER(task->stack, task->stack + STACKSIZE);
+
     if(ctx_create(&task->context, entry, arg, task->stack, STACKSIZE) == ERROR){ // Inicializa o contexto da tarefa 
         mem_free(task->stack);
         mem_free(task);
@@ -73,8 +77,13 @@ struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
 // destrói uma tarefa e libera seus recursos; somente deve atuar sobre tarefas
 // terminadas. Retorno: NOERROR (0) ou ERROR (<0).
 int task_destroy(struct task_t *task){
+    if (!task) return NOERROR;
+    if (task->state != TERMINATED) return ERROR;
+
     mem_free(task->stack);
+    VALGRIND_STACK_DEREGISTER(task->vg_id); // dezfaz o registro da pilha no Valgrind
     mem_free(task);
+
     return NOERROR;
 }
 
