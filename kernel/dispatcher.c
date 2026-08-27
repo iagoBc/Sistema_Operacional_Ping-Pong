@@ -57,7 +57,6 @@ void task_suspend(struct queue_t *queue){
 // em uma fila), muda seu status para PRONTA e a insere na fila de prontas,
 // para retomar (ou iniciar) sua execução.
 void task_awake(struct task_t *task){
-    if(!task) return;
     if(queue_has(suspended_queue, task)) queue_del(suspended_queue, task);
     task->state = READY;
     queue_add(ready_queue, task);
