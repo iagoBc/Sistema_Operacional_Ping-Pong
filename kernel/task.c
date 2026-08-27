@@ -29,6 +29,8 @@ void task_init(){
     current_task = &kernel_task;
     kernel_task.state = RUNNING;
     kernel_task.parent = NULL; // A tarefa do kernel não tem pai
+    kernel_task.static_prio = 0;
+    kernel_task.dynamic_prio = 0;
 
     ppos_debug("subsystem task initiated\n");
 }
@@ -50,6 +52,8 @@ struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
     task->name = name;
     task->id = ids++; 
     task->state = READY; // Tarefa pronta para ser executada
+    task->static_prio = 0; // Inicializa a prioridade estática da tarefa
+    task->dynamic_prio = 0; // Inicializa a prioridade dinâmica da tarefa
 
     task->stack = mem_alloc(STACKSIZE); // Aloca memoria para a pilha da tarefa
     if(!task->stack){
@@ -82,6 +86,7 @@ int task_destroy(struct task_t *task){
 
     mem_free(task->stack);
     VALGRIND_STACK_DEREGISTER(task->vg_id); // dezfaz o registro da pilha no Valgrind
+    task->vg_id = 0;
     mem_free(task);
 
     return NOERROR;
@@ -106,16 +111,13 @@ int task_switch(struct task_t *task){
     struct task_t *current = current_task;
     struct task_t *new; 
 
-    if (!task) new = current_task->parent; // Se o parametro = NULL, a tarefa atual vai ser trocada pela tarefa pai
+    if(!task) new = current_task->parent; // Se o parametro = NULL, a tarefa atual vai ser trocada pela tarefa pai
     else new = task; 
 
-    if (new == current) return ERROR;
-
-    current->state = READY;
+    if(new == current) return ERROR;
 
     // Troca de tarefa para a nova tarefa
     current_task = new;
-    current_task->state = RUNNING;
 
     ppos_debug("task %i (%s) switch to task %i (%s)\n", current->id, current->name, current_task->id, current_task->name);
 
