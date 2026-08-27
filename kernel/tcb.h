@@ -25,7 +25,9 @@ struct task_t
     char state;                 // pronta, executando, finalizada ...
     void *stack;                // ponteiro para a pilha da tarefa
     struct task_t *parent;      // ponteiro para a tarefa pai
-    int vg_id;		            // ID da pilha da tarefa no Valgrind          
+    int vg_id;		            // ID da pilha da tarefa no Valgrind
+    int static_prio;            // prioridade estática da tarefa
+    int dynamic_prio;           // prioridade dinâmica da tarefa          
                                 // demais informações, a completar
 };
 
