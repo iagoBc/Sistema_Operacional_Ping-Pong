@@ -55,8 +55,7 @@ makefile    para compilar o sistema
 
 ## Observações importantes
 
-- Alguns arquivos — sobretudo headers, arquivos em `hardware/`, a mini-biblioteca C e os makefiles — **já estão prontos e não devem ser alterados** (restrição indicada no início de cada arquivo). Esses arquivos são sobrescritos pelos originais durante a avaliação de cada projeto.
-- Os demais arquivos devem ser escritos pelo aluno, implementando as funcionalidades solicitadas em cada projeto.
+- Alguns arquivos — sobretudo headers, arquivos em `hardware/`, a mini-biblioteca C e os makefiles — **já estão prontos e não devem ser alterados** (restrição indicada no início de cada arquivo).
 
 ---
 
