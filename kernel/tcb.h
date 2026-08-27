@@ -14,6 +14,7 @@
 #define READY 1
 #define RUNNING 2
 #define TERMINATED 3
+#define SUSPENDED 4
 
 // Task Control Block (TCB), infos sobre uma tarefa
 struct task_t
@@ -21,7 +22,7 @@ struct task_t
     int id;                     // identificador da tarefa
     char *name;                 // nome da tarefa
     struct ctx_t context;       // contexto da tarefa
-    char stats;                 // pronta, executando, finalizada ...
+    char state;                 // pronta, executando, finalizada ...
     void *stack;                // ponteiro para a pilha da tarefa
     struct task_t *parent;      // ponteiro para a tarefa pai          
                                 // demais informações, a completar
