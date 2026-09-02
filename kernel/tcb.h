@@ -17,8 +17,7 @@
 #define SUSPENDED 4
 
 // Task Control Block (TCB), infos sobre uma tarefa
-struct task_t
-{
+struct task_t{
     int id;                     // identificador da tarefa
     char *name;                 // nome da tarefa
     struct ctx_t context;       // contexto da tarefa

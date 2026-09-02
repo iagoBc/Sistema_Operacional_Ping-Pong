@@ -1,3 +1,4 @@
+//GRR20244409 Iago Cardoso Bariuka
 // PingPongOS - PingPong Operating System
 
 // Este arquivo PODE/DEVE ser alterado.
@@ -37,7 +38,7 @@ struct task_t* scheduler(struct queue_t* ready_queue) {
 
     it = queue_head(ready_queue); 
 
-    while(it){ // percorre a fila de tarefas prontas para envlehecer a prioridade dinâmica das demais tarefas, exceto a escolhida para execução
+    while(it){ // percorre a fila de tarefas prontas para envelhecer a prioridade dinâmica das demais tarefas, exceto a escolhida para execução
         if (it != next && it->dynamic_prio > -20) it->dynamic_prio--;
         it = queue_next(ready_queue);
     }
