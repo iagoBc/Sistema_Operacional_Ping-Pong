@@ -26,15 +26,19 @@ unsigned int ids = 1; // Contador de IDs
 // inicializa o subsistema de tarefas.
 // (chamada pelo núcleo na inicialização).
 void task_init(){ 
-    kernel_task.name = "kernel";
-    kernel_task.id = 0;
-    current_task = &kernel_task;
-    kernel_task.state = RUNNING;
-    kernel_task.parent = NULL; // A tarefa do kernel não tem pai
-    kernel_task.static_prio = 0;
-    kernel_task.dynamic_prio = 0;
-    kernel_task.quantum = 0;
-    kernel_task.type = SYSTEM; // Define o tipo da tarefa do kernel como SYSTEM
+    kernel_task.name = "kernel";                    // Nome da tarefa do kernel
+    kernel_task.id = 0;                             // Identificador da tarefa do kernel
+    current_task = &kernel_task;                    // Define a tarefa atual como a tarefa do kernel
+    kernel_task.state = RUNNING;                    // Define o estado da tarefa do kernel como RUNNING
+    kernel_task.parent = NULL;                      // A tarefa do kernel não tem pai
+    kernel_task.static_prio = 0;                    // Inicializa a prioridade estática da tarefa do kernel como 0
+    kernel_task.dynamic_prio = 0;                   // Inicializa a prioridade dinâmica da tarefa do kernel como 0
+    kernel_task.quantum = 0;                        // A tarefa do kernel não tem quantum
+    kernel_task.acts = 0;                           // Inicializa o contador de ativações da tarefa do kernel como 0
+    kernel_task.cpu = 1;                            // Inicializa o tempo de CPU da tarefa do kernel como 1
+    kernel_task.run = 0;                            // Inicializa o tempo de vida da tarefa do kernel como 0
+    kernel_task.exit = 0;                           // Inicializa o código de saída da tarefa do kernel como 0
+    kernel_task.type = SYSTEM;                      // Define o tipo da tarefa do kernel como SYSTEM
 
     ppos_debug("subsystem task initiated\n");
 }
@@ -53,13 +57,17 @@ struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
     struct task_t *task = mem_alloc(sizeof(struct task_t));
     if(!task) return NULL;
 
-    task->name = name;
-    task->id = ids++; 
-    task->state = READY; // Tarefa pronta para ser executada
-    task->static_prio = 0; // Inicializa a prioridade estática da tarefa
-    task->dynamic_prio = 0; // Inicializa a prioridade dinâmica da tarefa
-    task->quantum = QUANTUM; // Inicializa o quantum da tarefa
-    task->type = USER; // Inicializa o tipo da tarefa como USER
+    task->name = name;                      // Atribui o nome da tarefa
+    task->id = ids++;                       // Atribui um ID único à tarefa
+    task->state = READY;                    // Tarefa pronta para ser executada
+    task->static_prio = 0;                  // Inicializa a prioridade estática da tarefa
+    task->dynamic_prio = 0;                 // Inicializa a prioridade dinâmica da tarefa
+    task->quantum = QUANTUM;                // Inicializa o quantum da tarefa
+    task->type = USER;                      // Inicializa o tipo da tarefa como USER
+    task->cpu = 0;                          // Inicializa o tempo de CPU da tarefa
+    task->run = time();                     // Inicializa o tempo de vida da tarefa
+    task->acts = 0;                         // Inicializa o contador de ativações da tarefa
+    task->exit = 0;                         // Inicializa o código de saída da tarefa
 
     task->stack = mem_alloc(STACKSIZE); // Aloca memoria para a pilha da tarefa
     if(!task->stack){
@@ -88,10 +96,10 @@ struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
 // terminadas. Retorno: NOERROR (0) ou ERROR (<0).
 int task_destroy(struct task_t *task){
     if (!task) return NOERROR;
-    if (task->state != TERMINATED) return ERROR;
+    if (task->state != TERMINATED) return ERROR;            // A tarefa só pode ser destruída se estiver no estado TERMINATED
 
     mem_free(task->stack);
-    VALGRIND_STACK_DEREGISTER(task->vg_id); // dezfaz o registro da pilha no Valgrind
+    VALGRIND_STACK_DEREGISTER(task->vg_id);                 // Desfaz o registro da pilha no Valgrind
     task->vg_id = 0;
     mem_free(task);
 
@@ -117,14 +125,14 @@ int task_switch(struct task_t *task){
     struct task_t *current = current_task;
     struct task_t *new; 
 
-    if(!task) new = current_task->parent; // Se o parametro = NULL, a tarefa atual vai ser trocada pela tarefa pai
+    if(!task) new = current_task->parent;           // Se o parametro = NULL, a tarefa atual vai ser trocada pela tarefa pai
     else new = task; 
 
     if(new == current) return ERROR;
 
-    // Troca de tarefa para a nova tarefa
-    current_task = new;
-
+    
+    current_task = new;                             // Troca de tarefa para a nova tarefa
+    current_task->acts++;                           // Incrementa o contador de ativações da nova tarefa
     ppos_debug("task %i (%s) switch to task %i (%s)\n", current->id, current->name, current_task->id, current_task->name);
 
     return ctx_switch(&current->context, &new->context); 
@@ -155,6 +163,8 @@ void task_sleep(int t){
 // (exit_code); a execução retorna ao núcleo/dispatcher.
 void task_exit(int exit_code){
     current_task->state = TERMINATED;
-    task_switch(&kernel_task);
+    current_task->cpu = time() - current_task->cpu;               // Calcula o tempo de CPU usado pela tarefa   
+    current_task->run = time() - current_task->run;             // Calcula o tempo de vida da tarefa
+    current_task->exit = exit_code;                             // Armazena o código de saída da tarefa
+    task_switch(&kernel_task);                                  // Retorna para a tarefa do kernel
 }
-

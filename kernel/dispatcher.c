@@ -72,7 +72,7 @@ void dispatcher(){
     struct task_t *task_user = task_create("user_main", user_main, NULL);
 
     // enquanto houver tarefas de usuário
-    while((queue_size(ready_queue) > 0) ||(queue_size(suspended_queue) > 0)){
+    while((queue_size(ready_queue) > 0) || (queue_size(suspended_queue) > 0)){
         // escolhe a próxima tarefa a executar
         struct task_t *next = scheduler(ready_queue);
 
@@ -82,13 +82,14 @@ void dispatcher(){
             task_run(next);
          
             // ao voltar ao dispatcher, trata a tarefa de acordo com seu estado
-            switch (next->state){
+            switch(next->state){
                 case READY:
                     break;
                 case RUNNING:
                     break;
                 case TERMINATED:
-                    break;
+                    printk("PPOS: task   %d (%s),     %d ms run,     %d ms cpu,     %d acts, exit code   %d\n",
+                            next->id, next->name, next->run, next->cpu, next->acts, next->exit);
                 case SUSPENDED:
                     break;
                 default:
@@ -99,5 +100,8 @@ void dispatcher(){
 
     // destrói a tarefa inicial do usuário
     task_destroy(task_user);
+
+    printk("PPOS: task   %d (%s), %d ms run,     %d ms cpu,  %d acts, exit code   %d\n",
+        kernel_task.id, kernel_task.name, time(), kernel_task.cpu, kernel_task.acts, kernel_task.exit);
 }
 
