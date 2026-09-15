@@ -6,6 +6,7 @@
 // Dispatcher: gerencia os estados das tarefas.
 
 #include "task.h"
+#include "time.h"
 #include "macros.h"
 #include "lib/queue.h"
 #include "scheduler.h"
@@ -32,6 +33,8 @@ void dispatcher_init(){
 // encerra o subsistema dispatcher
 // (chamada pelo núcleo no encerramento).
 void dispatcher_term(){
+    queue_destroy(ready_queue);
+    queue_destroy(suspended_queue);
     ppos_debug("dispatcher stopping, no more user tasks\n");
 }
 
@@ -40,6 +43,7 @@ void dispatcher_term(){
 void task_run(struct task_t *task){
     queue_del(ready_queue, task);
     task->state = RUNNING;
+    task->quantum = QUANTUM;
     task_switch(task);
 }
 

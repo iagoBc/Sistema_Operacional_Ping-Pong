@@ -16,6 +16,9 @@
 #define TERMINATED 3
 #define SUSPENDED 4
 
+#define USER 1
+#define SYSTEM 2
+
 // Task Control Block (TCB), infos sobre uma tarefa
 struct task_t{
     int id;                     // identificador da tarefa
@@ -27,7 +30,9 @@ struct task_t{
     int vg_id;		            // ID da pilha da tarefa no Valgrind
     int static_prio;            // prioridade estática da tarefa
     int dynamic_prio;           // prioridade dinâmica da tarefa          
-                                // demais informações, a completar
+    int quantum;                // quantum da tarefa
+    int type;                   // tipo da tarefa (USER ou SYSTEM)                            
+    // demais informações, a completar
 };
 
 #endif

@@ -10,6 +10,8 @@
 #include "lib/queue.h"
 #include "task.h"
 #include "memory.h"
+#include "time.h"
+
 #include <valgrind/valgrind.h>
 
 #define STACKSIZE 32 * 1024 
@@ -31,6 +33,8 @@ void task_init(){
     kernel_task.parent = NULL; // A tarefa do kernel não tem pai
     kernel_task.static_prio = 0;
     kernel_task.dynamic_prio = 0;
+    kernel_task.quantum = 0;
+    kernel_task.type = SYSTEM; // Define o tipo da tarefa do kernel como SYSTEM
 
     ppos_debug("subsystem task initiated\n");
 }
@@ -54,6 +58,8 @@ struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
     task->state = READY; // Tarefa pronta para ser executada
     task->static_prio = 0; // Inicializa a prioridade estática da tarefa
     task->dynamic_prio = 0; // Inicializa a prioridade dinâmica da tarefa
+    task->quantum = QUANTUM; // Inicializa o quantum da tarefa
+    task->type = USER; // Inicializa o tipo da tarefa como USER
 
     task->stack = mem_alloc(STACKSIZE); // Aloca memoria para a pilha da tarefa
     if(!task->stack){
