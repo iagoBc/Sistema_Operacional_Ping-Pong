@@ -8,6 +8,7 @@
 #include "task.h"
 #include "tcb.h"
 #include "time.h"
+#include "lib/pplibc.h"
 
 #define NULL 0
 
@@ -18,7 +19,7 @@ extern struct task_t *current_task;
 void handle(int irq){
     system_time++;
     if(current_task->type == USER && current_task->quantum > 0) current_task->quantum--;
-    if(current_task->quantum == 0) task_yield();
+    else if(current_task->quantum == 0) task_yield();
 }
 
 // inicia o subsistema de gestão do tempo
