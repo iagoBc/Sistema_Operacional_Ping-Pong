@@ -9,8 +9,6 @@
 #include "time.h"
 #include "lib/pplibc.h"
 
-#define NULL 0
-
 unsigned int system_time = 0; // Variável global para armazenar o tempo do sistema
 
 extern struct task_t *current_task;

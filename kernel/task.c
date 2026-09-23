@@ -33,7 +33,7 @@ void task_init(){
     kernel_task.dynamic_prio = 0;                   // Inicializa a prioridade dinâmica da tarefa do kernel como 0
     kernel_task.quantum = 0;                        // A tarefa do kernel não tem quantum
     kernel_task.acts = 0;                           // Inicializa o contador de ativações da tarefa do kernel como 0
-    kernel_task.cpu = 1;                            // Inicializa o tempo de CPU da tarefa do kernel como 1
+    kernel_task.cpu = 0;                            // Inicializa o tempo de CPU da tarefa do kernel como 0
     kernel_task.run = 0;                            // Inicializa o tempo de vida da tarefa do kernel como 0
     kernel_task.exit = 0;                           // Inicializa o código de saída da tarefa do kernel como 0
     kernel_task.type = SYSTEM;                      // Define o tipo da tarefa do kernel como SYSTEM
@@ -161,7 +161,6 @@ void task_sleep(int t){
 // (exit_code); a execução retorna ao núcleo/dispatcher.
 void task_exit(int exit_code){
     current_task->state = TERMINATED;
-    current_task->cpu = time() - current_task->cpu;               // Calcula o tempo de CPU usado pela tarefa   
     current_task->run = time() - current_task->run;             // Calcula o tempo de vida da tarefa
     current_task->exit = exit_code;                             // Armazena o código de saída da tarefa
     task_switch(&kernel_task);                                  // Retorna para a tarefa do kernel
