@@ -1,9 +1,8 @@
 //GRR20244409 Iago Cardoso Bariuka
 // PingPongOS - PingPong Operating System
-
 // Este arquivo PODE/DEVE ser alterado.
-
 // Escalonador de tarefas prontas.
+
 #include "scheduler.h"
 #include "tcb.h"
 
