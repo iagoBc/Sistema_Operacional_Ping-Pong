@@ -11,6 +11,8 @@
 #define __PPOS_TCB__
 
 #include "ctx.h"
+
+struct queue_t;
 #define READY 1
 #define RUNNING 2
 #define TERMINATED 3
@@ -36,6 +38,7 @@ struct task_t{
     int run;                                // tempo de vida da tarefa
     int acts;                               // número de ativações da tarefa
     int exit;                               // código de saída da tarefa                            
+    struct task_t *wait;                   // tarefas aguardando esta tarefa
                                             // demais informações, a completar
 };
 

@@ -7,6 +7,7 @@
 #include "lib/pplibc.h"
 #include "lib/queue.h"
 #include "task.h"
+#include "dispatcher.h"
 #include "memory.h"
 #include "time.h"
 
@@ -18,6 +19,7 @@ struct task_t kernel_task; // Tarefa para o fluxo de execução do núcleo
 struct task_t* current_task = NULL; // Struct para armazenar a tarefa atual em execução
 
 extern struct queue_t *ready_queue; // Fila de tarefas prontas para execução
+extern struct queue_t *suspended_queue; // Fila de tarefas suspensas
 
 unsigned int ids = 1; // Contador de IDs
 
@@ -36,6 +38,7 @@ void task_init(){
     kernel_task.cpu = 0;                            // Inicializa o tempo de CPU da tarefa do kernel como 0
     kernel_task.run = 0;                            // Inicializa o tempo de vida da tarefa do kernel como 0
     kernel_task.exit = 0;                           // Inicializa o código de saída da tarefa do kernel como 0
+    kernel_task.wait = NULL;
     kernel_task.type = SYSTEM;                      // Define o tipo da tarefa do kernel como SYSTEM
 
     ppos_debug("subsystem task initiated\n");
@@ -66,6 +69,7 @@ struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
     task->run = time();                     // Inicializa o tempo de vida da tarefa
     task->acts = 0;                         // Inicializa o contador de ativações da tarefa
     task->exit = 0;                         // Inicializa o código de saída da tarefa
+    task->wait = NULL;                  // A tarefa ainda não aguarda outra tarefa
 
     task->stack = mem_alloc(STACKSIZE); // Aloca memoria para a pilha da tarefa
     if(!task->stack){
@@ -148,7 +152,14 @@ void task_yield(){
 // ao núcleo/dispatcher. Se a tarefa task já terminou, retorna sem suspender.
 // Retorno: exit code tarefa que terminou ou ERROR.
 int task_wait(struct task_t *task){
-    return 0;
+    if (!task || task == current_task) return ERROR;
+    if (task->state == TERMINATED) return task->exit;
+
+    current_task->wait = task;
+    task_suspend(suspended_queue);
+    current_task->wait = NULL;
+
+    return task->exit;
 }
 
 // suspende a tarefa atual por t milissegundos; a execução retorna ao
@@ -163,5 +174,16 @@ void task_exit(int exit_code){
     current_task->state = TERMINATED;
     current_task->run = time() - current_task->run;             // Calcula o tempo de vida da tarefa
     current_task->exit = exit_code;                             // Armazena o código de saída da tarefa
+
+    struct task_t *waiter = queue_head(suspended_queue);
+    while (waiter) {
+        struct task_t *next = queue_next(suspended_queue);
+        if (waiter->wait == current_task) {
+            waiter->wait = NULL;
+            task_awake(waiter);
+        }
+        waiter = next;
+    }
+
     task_switch(&kernel_task);                                  // Retorna para a tarefa do kernel
 }

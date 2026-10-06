@@ -48,21 +48,24 @@ void task_run(struct task_t *task){
 // suspende a tarefa atual: retira-a da fila de prontas, muda seu status para
 // SUSPENSA, a insere na fila "queue" (se não for NULL) e retorna ao dispatcher.
 void task_suspend(struct queue_t *queue){
+    hw_irq_enable(0);
     current_task->state = SUSPENDED;
     if(queue != NULL){
         queue_add(queue, current_task);
     }
     task_switch(&kernel_task);
+    hw_irq_enable(1);
 }
 
 // acorda uma tarefa: retira-a da fila onde se encontra suspensa (se estiver
 // em uma fila), muda seu status para PRONTA e a insere na fila de prontas,
 // para retomar (ou iniciar) sua execução.
 void task_awake(struct task_t *task){
-    if(queue_has(suspended_queue, task)) queue_del(suspended_queue, task);
+    queue_del(suspended_queue, task);
     task->state = READY;
     queue_add(ready_queue, task);
 }
+
 
 // executa o dispatcher (chamada pelo núcleo após a inicialização).
 void dispatcher(){
@@ -70,12 +73,16 @@ void dispatcher(){
     struct task_t *task_user = task_create("user_main", user_main, NULL);
 
     // enquanto houver tarefas de usuário
-    while((queue_size(ready_queue) > 0) || (queue_size(suspended_queue) > 0)){
-        // escolhe a próxima tarefa a executar
-        struct task_t *next = scheduler(ready_queue);
+    while((queue_size(ready_queue) > 0) ||
+          (queue_size(suspended_queue) > 0)){
+
+        // escolhe a próxima tarefa a executar, se houver alguma pronta
+        struct task_t *next = NULL;
+        if(queue_size(ready_queue) > 0)
+            next = scheduler(ready_queue);
 
         // escalonador escolheu uma tarefa?      
-        if (next != NULL){
+        if(next != NULL){
             // transfere controle para a próxima tarefa
             task_run(next);
          
@@ -94,6 +101,7 @@ void dispatcher(){
                     break;
             }
         }
+        
     }
 
     // destrói a tarefa inicial do usuário
@@ -102,4 +110,3 @@ void dispatcher(){
     printk("PPOS: task   %d (%s), %d ms run,     %d ms cpu,  %d acts, exit code   %d\n",
         kernel_task.id, kernel_task.name, time(), kernel_task.cpu, kernel_task.acts, kernel_task.exit);
 }
-
