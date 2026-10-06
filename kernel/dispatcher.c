@@ -13,11 +13,12 @@ extern void user_main(void *arg);
 extern void task_switch(struct task_t *task);
 
 
-struct queue_t *ready_queue;
-struct queue_t *suspended_queue;
+struct queue_t *ready_queue;                                    // Fila de tarefas prontas para execução
+struct queue_t *suspended_queue;                                // Fila de tarefas suspensas
+struct queue_t *sleeping_queue;                                 // Fila de tarefas em espera
 
-extern struct task_t kernel_task;
-extern struct task_t* current_task;
+extern struct task_t kernel_task;                               // Tarefa para o fluxo de execução do núcleo
+extern struct task_t* current_task;                             // Struct para armazenar a tarefa atual em execução
 
 
 // inicia o subsistema dispatcher
@@ -25,6 +26,7 @@ extern struct task_t* current_task;
 void dispatcher_init(){
     ready_queue = queue_create();
     suspended_queue = queue_create();
+    sleeping_queue = queue_create();
     ppos_debug("subsystem dispatcher initiated\n");
 }
 
@@ -33,6 +35,7 @@ void dispatcher_init(){
 void dispatcher_term(){
     queue_destroy(ready_queue);
     queue_destroy(suspended_queue);
+    queue_destroy(sleeping_queue);
     ppos_debug("dispatcher stopping, no more user tasks\n");
 }
 
@@ -49,10 +52,9 @@ void task_run(struct task_t *task){
 // SUSPENSA, a insere na fila "queue" (se não for NULL) e retorna ao dispatcher.
 void task_suspend(struct queue_t *queue){
     hw_irq_enable(0);
-    current_task->state = SUSPENDED;
-    if(queue != NULL){
-        queue_add(queue, current_task);
-    }
+    if (current_task->state != SLEEPING)
+        current_task->state = SUSPENDED;
+    if(queue != NULL) queue_add(queue, current_task);
     task_switch(&kernel_task);
     hw_irq_enable(1);
 }
@@ -62,10 +64,29 @@ void task_suspend(struct queue_t *queue){
 // para retomar (ou iniciar) sua execução.
 void task_awake(struct task_t *task){
     queue_del(suspended_queue, task);
+    queue_del(sleeping_queue, task);
     task->state = READY;
     queue_add(ready_queue, task);
 }
 
+void wake_sleeping_tasks(void){
+    struct task_t *task;
+    unsigned int now = time();                                              // Obtém o tempo atual em milissegundos
+
+    hw_irq_enable(0);                                                       // Desabilita interrupções para evitar condições de corrida
+    task = queue_head(sleeping_queue);                                      // Obtém a primeira tarefa da fila de tarefas em espera
+    while(task){
+        if((int)(now - task->wake_time) >= 0){                              // Verifica se a tarefa deve acordar
+            queue_del(sleeping_queue, task);                                // Remove a tarefa da fila de tarefas em espera
+            task->state = READY;
+            queue_add(ready_queue, task);                                   // Adiciona a tarefa à fila de tarefas prontas
+            task = queue_head(sleeping_queue);
+        } 
+        
+        else task = queue_next(sleeping_queue);                             // Obtém a próxima tarefa da fila de tarefas em espera
+    }
+    hw_irq_enable(1);                                                       // Habilita interrupções novamente
+}
 
 // executa o dispatcher (chamada pelo núcleo após a inicialização).
 void dispatcher(){
@@ -74,7 +95,9 @@ void dispatcher(){
 
     // enquanto houver tarefas de usuário
     while((queue_size(ready_queue) > 0) ||
-          (queue_size(suspended_queue) > 0)){
+          (queue_size(suspended_queue) > 0) ||
+          (queue_size(sleeping_queue) > 0)){
+        wake_sleeping_tasks();
 
         // escolhe a próxima tarefa a executar, se houver alguma pronta
         struct task_t *next = NULL;
@@ -100,7 +123,8 @@ void dispatcher(){
                 default:
                     break;
             }
-        }
+        } 
+        else if(queue_size(sleeping_queue) > 0) hw_wfi();
         
     }
 
