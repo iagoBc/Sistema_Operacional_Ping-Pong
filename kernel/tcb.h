@@ -17,6 +17,7 @@ struct queue_t;
 #define RUNNING 2
 #define TERMINATED 3
 #define SUSPENDED 4
+#define SLEEPING 5
 
 #define USER 1
 #define SYSTEM 2
@@ -38,7 +39,8 @@ struct task_t{
     int run;                                // tempo de vida da tarefa
     int acts;                               // número de ativações da tarefa
     int exit;                               // código de saída da tarefa                            
-    struct task_t *wait;                   // tarefas aguardando esta tarefa
+    struct task_t *wait;                    // tarefas aguardando esta tarefa
+    unsigned int wake_time;                 // instante em que a tarefa deve acordar
                                             // demais informações, a completar
 };
 

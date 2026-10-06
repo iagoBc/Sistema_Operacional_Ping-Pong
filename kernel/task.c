@@ -15,13 +15,13 @@
 
 #define STACKSIZE 32 * 1024 
 
-struct task_t kernel_task; // Tarefa para o fluxo de execução do núcleo
-struct task_t* current_task = NULL; // Struct para armazenar a tarefa atual em execução
+struct task_t kernel_task;                                                      // Tarefa para o fluxo de execução do núcleo
+struct task_t* current_task = NULL;                                             // Struct para armazenar a tarefa atual em execução
 
-extern struct queue_t *ready_queue; // Fila de tarefas prontas para execução
-extern struct queue_t *suspended_queue; // Fila de tarefas suspensas
-
-unsigned int ids = 1; // Contador de IDs
+extern struct queue_t *ready_queue;                                             // Fila de tarefas prontas para execução
+extern struct queue_t *suspended_queue;                                         // Fila de tarefas suspensas
+extern struct queue_t *sleeping_queue;                                          // Fila de tarefas em espera
+unsigned int ids = 1;                                                           // Contador de IDs
 
 // inicializa o subsistema de tarefas.
 // (chamada pelo núcleo na inicialização).
@@ -39,6 +39,7 @@ void task_init(){
     kernel_task.run = 0;                            // Inicializa o tempo de vida da tarefa do kernel como 0
     kernel_task.exit = 0;                           // Inicializa o código de saída da tarefa do kernel como 0
     kernel_task.wait = NULL;
+    kernel_task.wake_time = 0;
     kernel_task.type = SYSTEM;                      // Define o tipo da tarefa do kernel como SYSTEM
 
     ppos_debug("subsystem task initiated\n");
@@ -70,6 +71,7 @@ struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
     task->acts = 0;                         // Inicializa o contador de ativações da tarefa
     task->exit = 0;                         // Inicializa o código de saída da tarefa
     task->wait = NULL;                  // A tarefa ainda não aguarda outra tarefa
+    task->wake_time = 0;
 
     task->stack = mem_alloc(STACKSIZE); // Aloca memoria para a pilha da tarefa
     if(!task->stack){
@@ -165,7 +167,15 @@ int task_wait(struct task_t *task){
 // suspende a tarefa atual por t milissegundos; a execução retorna ao
 // núcleo/dispatcher.
 void task_sleep(int t){
-    return;
+    if (t <= 0) return;                                                     // Se o tempo de sono for menor ou igual a zero, não faz nada
+
+    hw_irq_enable(0);                                                       // Desabilita interrupções para evitar condições de corrida
+    current_task->wake_time = time() + (unsigned int)t;
+    current_task->state = SLEEPING;                                         // Define o estado da tarefa atual como SLEEPING
+    hw_irq_enable(1);                                                       // Habilita interrupções novamente
+    ppos_debug("task %d (%s) sleep for %d ms\n", current_task->id, current_task->name, t);
+
+    task_suspend(sleeping_queue);                                           // Suspende a tarefa atual e a adiciona na fila de tarefas em espera
 }
 
 // encerra a execução da tarefa atual, informando um código de encerramento
