@@ -52,8 +52,7 @@ void task_run(struct task_t *task){
 // SUSPENSA, a insere na fila "queue" (se não for NULL) e retorna ao dispatcher.
 void task_suspend(struct queue_t *queue){
     hw_irq_enable(0);
-    if (current_task->state != SLEEPING)
-        current_task->state = SUSPENDED;
+    if(current_task->state != SLEEPING) current_task->state = SUSPENDED;
     if(queue != NULL) queue_add(queue, current_task);
     task_switch(&kernel_task);
     hw_irq_enable(1);
@@ -69,23 +68,23 @@ void task_awake(struct task_t *task){
     queue_add(ready_queue, task);
 }
 
-void wake_sleeping_tasks(void){
-    struct task_t *task;
-    unsigned int now = time();                                              // Obtém o tempo atual em milissegundos
-
-    hw_irq_enable(0);                                                       // Desabilita interrupções para evitar condições de corrida
-    task = queue_head(sleeping_queue);                                      // Obtém a primeira tarefa da fila de tarefas em espera
+// acorda todas as tarefas que estão em espera e cujo tempo de espera já
+// expirou, ou seja, cujo tempo de espera é menor ou igual ao tempo atual.
+void wake_sleeping(){
+    hw_irq_enable(0);                                           // Desabilita interrupções para evitar condições de corrida
+    unsigned int now = time();
+    struct task_t *task = queue_head(sleeping_queue);
+    
     while(task){
-        if((int)(now - task->wake_time) >= 0){                              // Verifica se a tarefa deve acordar
-            queue_del(sleeping_queue, task);                                // Remove a tarefa da fila de tarefas em espera
-            task->state = READY;
-            queue_add(ready_queue, task);                                   // Adiciona a tarefa à fila de tarefas prontas
-            task = queue_head(sleeping_queue);
+        if((int)(now - task->sleep_time) >= 0){                      // Verifica se o tempo de sleep da tarefa expirou
+            task_awake(task);                                   // Acorda a tarefa, removendo-a da fila de tarefas em espera e adicionando-a à fila de prontas
+            task = queue_head(sleeping_queue);                  // Atualiza a tarefa atual para a próxima na fila de tarefas em espera
         } 
         
-        else task = queue_next(sleeping_queue);                             // Obtém a próxima tarefa da fila de tarefas em espera
+        else task = queue_next(sleeping_queue);                 // Se a tarefa ainda não expirou, passa para a próxima tarefa na fila de tarefas em espera
+        
     }
-    hw_irq_enable(1);                                                       // Habilita interrupções novamente
+    hw_irq_enable(1);               // Habilita interrupções novamente
 }
 
 // executa o dispatcher (chamada pelo núcleo após a inicialização).
@@ -97,12 +96,12 @@ void dispatcher(){
     while((queue_size(ready_queue) > 0) ||
           (queue_size(suspended_queue) > 0) ||
           (queue_size(sleeping_queue) > 0)){
-        wake_sleeping_tasks();
+        hw_irq_enable(1);                       // habilita interrupções para o núcleo
+        wake_sleeping();
 
         // escolhe a próxima tarefa a executar, se houver alguma pronta
         struct task_t *next = NULL;
-        if(queue_size(ready_queue) > 0)
-            next = scheduler(ready_queue);
+        if(queue_size(ready_queue) > 0) next = scheduler(ready_queue);
 
         // escalonador escolheu uma tarefa?      
         if(next != NULL){
