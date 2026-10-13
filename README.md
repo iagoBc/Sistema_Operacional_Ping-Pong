@@ -1,6 +1,6 @@
 # Ping-Pong Operating System — PPOS
 
-**Versão 2.1** · Julho de 2026
+**Versão 2.1** · Junho de 2026
 
 Este repositório contém o código-fonte do **Sistema Operacional Ping-Pong (PPOS)**, um projeto didático ("toy operating system") desenvolvido para fins de aprendizado.
 
@@ -15,9 +15,10 @@ O PPOS segue a estrutura típica de um **RTOS** (Real-Time Operating System): um
 ### Suportadas
 
 - Tarefas com troca de contexto
+- Suspensão, espera e encerramento de tarefas
 - Escalonador FCFS e por prioridades
 - Preempção por tempo (quantum)
-- Gestão do tempo e contabilização
+- Gestão do tempo, contabilização e espera temporizada
 - Sincronização de tarefas
 - Semáforos genéricos
 - Filas de mensagens
@@ -43,12 +44,40 @@ O desenvolvimento do PPOS é organizado em **projetos incrementais**, cada um im
 
 Detalhes de cada projeto: [página do docente](http://wiki.inf.ufpr.br/maziero).
 
+## Compilação e execução
+
+O PPOS é executado em ambientes Linux. Para compilar um projeto, use o alvo
+correspondente no `makefile`:
+
+```bash
+make p12
+./pingpong-disco
+```
+
+Os alvos disponíveis vão de `p1` a `p14`. Também é possível compilar em modo
+de depuração:
+
+```bash
+make debug p12
+```
+
+Comandos úteis:
+
+```bash
+make clean   # remove arquivos temporários
+make purge   # remove arquivos temporários e executáveis
+make reset   # restaura a imagem do disco virtual
+```
+
+Os testes que acompanham cada projeto estão em `test/`. O kernel inicializa o
+disco virtual usando a imagem `hardware/disk.dat`.
+
 ## Estrutura de diretórios
 
 ```
 hardware/   hardware virtual (emuladores)
 lib/        bibliotecas de apoio
-kernel/     código-fonte do PPOS, a ser desenvolvido pelo aluno
+kernel/     código-fonte e subsistemas do PPOS
 test/       programas de teste dos projetos
 makefile    para compilar o sistema
 ```
