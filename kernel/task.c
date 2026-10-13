@@ -39,7 +39,7 @@ void task_init(){
     kernel_task.run = 0;                            // Inicializa o tempo de vida da tarefa do kernel como 0
     kernel_task.exit = 0;                           // Inicializa o código de saída da tarefa do kernel como 0
     kernel_task.wait = NULL;
-    kernel_task.wake_time = 0;
+    kernel_task.sleep_time = 0;
     kernel_task.type = SYSTEM;                      // Define o tipo da tarefa do kernel como SYSTEM
 
     ppos_debug("subsystem task initiated\n");
@@ -71,7 +71,7 @@ struct task_t * task_create(char *name, void (*entry)(void *), void *arg){
     task->acts = 0;                         // Inicializa o contador de ativações da tarefa
     task->exit = 0;                         // Inicializa o código de saída da tarefa
     task->wait = NULL;                  // A tarefa ainda não aguarda outra tarefa
-    task->wake_time = 0;
+    task->sleep_time = 0;
 
     task->stack = mem_alloc(STACKSIZE); // Aloca memoria para a pilha da tarefa
     if(!task->stack){
@@ -154,12 +154,11 @@ void task_yield(){
 // ao núcleo/dispatcher. Se a tarefa task já terminou, retorna sem suspender.
 // Retorno: exit code tarefa que terminou ou ERROR.
 int task_wait(struct task_t *task){
-    if (!task || task == current_task) return ERROR;
-    if (task->state == TERMINATED) return task->exit;
+    if (!task || task == current_task) return ERROR;                // Não é possível esperar por uma tarefa inexistente ou pela própria tarefa atual
+    if (task->state == TERMINATED) return task->exit;               // Se a tarefa já terminou, retorna o código de saída da tarefa
 
-    current_task->wait = task;
-    task_suspend(suspended_queue);
-    current_task->wait = NULL;
+    current_task->wait = task;                                      // Define a tarefa atual como esperando pela tarefa especificada
+    task_suspend(suspended_queue);                                  // Suspende a tarefa atual e a adiciona na fila de tarefas suspensas                                  
 
     return task->exit;
 }
@@ -167,32 +166,29 @@ int task_wait(struct task_t *task){
 // suspende a tarefa atual por t milissegundos; a execução retorna ao
 // núcleo/dispatcher.
 void task_sleep(int t){
-    if (t <= 0) return;                                                     // Se o tempo de sono for menor ou igual a zero, não faz nada
+    if(t<=0) return;
 
-    hw_irq_enable(0);                                                       // Desabilita interrupções para evitar condições de corrida
-    current_task->wake_time = time() + (unsigned int)t;
-    current_task->state = SLEEPING;                                         // Define o estado da tarefa atual como SLEEPING
-    hw_irq_enable(1);                                                       // Habilita interrupções novamente
-    ppos_debug("task %d (%s) sleep for %d ms\n", current_task->id, current_task->name, t);
-
-    task_suspend(sleeping_queue);                                           // Suspende a tarefa atual e a adiciona na fila de tarefas em espera
+    hw_irq_enable(0);
+    current_task->sleep_time = time() + (unsigned int)t;            // Define o tempo de espera da tarefa atual
+    current_task->state = SLEEPING;
+    task_suspend(sleeping_queue);
 }
 
 // encerra a execução da tarefa atual, informando um código de encerramento
 // (exit_code); a execução retorna ao núcleo/dispatcher.
 void task_exit(int exit_code){
+    hw_irq_enable(0);
     current_task->state = TERMINATED;
     current_task->run = time() - current_task->run;             // Calcula o tempo de vida da tarefa
     current_task->exit = exit_code;                             // Armazena o código de saída da tarefa
 
-    struct task_t *waiter = queue_head(suspended_queue);
-    while (waiter) {
-        struct task_t *next = queue_next(suspended_queue);
-        if (waiter->wait == current_task) {
-            waiter->wait = NULL;
-            task_awake(waiter);
+    struct task_t *waiting = queue_head(suspended_queue);       // Obtém a primeira tarefa da fila de tarefas esperando
+    while(waiting){
+        if(waiting->wait == current_task){                      // Verifica se a tarefa está esperando pela tarefa atual
+            waiting->wait = NULL;                              
+            task_awake(waiting);                               
         }
-        waiter = next;
+        waiting = queue_next(suspended_queue);                  // Obtém a próxima tarefa da fila de tarefas esperando
     }
 
     task_switch(&kernel_task);                                  // Retorna para a tarefa do kernel

@@ -39,8 +39,8 @@ struct task_t{
     int run;                                // tempo de vida da tarefa
     int acts;                               // número de ativações da tarefa
     int exit;                               // código de saída da tarefa                            
-    struct task_t *wait;                    // tarefas aguardando esta tarefa
-    unsigned int wake_time;                 // instante em que a tarefa deve acordar
+    struct task_t *wait;                    // tarefa que esta tarefa está esperando
+    unsigned int sleep_time;                // instante em que a tarefa deve acordar
                                             // demais informações, a completar
 };
 
