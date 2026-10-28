@@ -49,91 +49,116 @@ void spin_unlock(int *lock){
 // Cria um novo semáforo, inicializado com value >= 0.               
 // Retorno: descritor do semáforo ou -1 (erro).              
 int sem_create(int value) {              
-    if(value < 0) return -1;                                                     
-    semaphore_t *s = mem_alloc(sizeof(semaphore_t));                             
-    if (!s) return -1;               
+    if(value < 0) return ERROR;                                                     
+    semaphore_t *sem = mem_alloc(sizeof(semaphore_t));                             
+    if(!sem) return ERROR;               
         
-    s->counter = value;              
-    s->lock = 0;                                                                     // Libera o spinlock inicial
-    s->destroyed = 0;                                                                
-    s->waiters = 0;              
-    s->queue = queue_create();               
-    if (!s->queue) {                 
-        mem_free(s);                 
-        return -1;               
+    sem->counter = value;              
+    sem->lock = 0;                                                                     // Libera o spinlock inicial
+    sem->destroyed = 0;                                                                
+    sem->waiters = 0;              
+    sem->queue = queue_create();
+
+    if(!sem->queue){                 
+        mem_free(sem);                 
+        return ERROR;               
     }                
         
-    s->id = map_put(semaphore_map, s);                                               // Adiciona o semáforo ao mapa e obtém um ID único
-    if(s->id < 0){               
-        queue_destroy(s->queue);                 
-        mem_free(s);                 
-        return -1;               
-    }                
-    return s->id;                
+    sem->id = map_put(semaphore_map, sem);                                               // Adiciona o semáforo ao mapa e obtém um ID único
+    if(sem->id == ERROR){               
+        queue_destroy(sem->queue);                 
+        mem_free(sem);                 
+        return ERROR;               
+    }
+
+    return sem->id;                
 }                
         
 // destrói um semáforo, liberando recursos e tarefas bloqueadas              
 // Retorno: NOERROR (0) ou ERROR (<0)                
-int sem_destroy(int sem_id) {                
-    semaphore_t *s = map_get(semaphore_map, sem_id);                 
-    if(!s) return -1;                                                                // Semáforo não encontrado ou já destruído
-    spin_lock(&s->lock);                                                             // Protege o semáforo antes de mexer no estado
-        
-    s->destroyed = 1;                
-    struct task_t *task = queue_head(s->queue);              
-    while(task){                                                                     // Acorda todas as tarefas bloqueadas no semáforo
-        queue_del(s->queue, task);               
-        task_awake(task);                
-        task = queue_head(s->queue);                 
-    }                
-        
-    spin_unlock(&s->lock);               
-    map_del(semaphore_map, sem_id);                                                  // Remove o semáforo do mapa
+int sem_destroy(int sem_id){
+    semaphore_t *sem = map_del(semaphore_map, sem_id);                                 // Remove o semáforo do mapa
+    if(!sem) return ERROR;
 
-    // Tarefas bloqueadas ainda podem retornar de task_suspend e precisam
-    // consultar o estado destroyed antes de o semáforo ser liberado.
-    if(s->waiters == 0){
-        queue_destroy(s->queue);
-        mem_free(s);
+    spin_lock(&sem->lock);
+    sem->destroyed = 1;
+
+    struct task_t *task = queue_head(sem->queue);
+    while(task){                                                                      // Acorda todas as tarefas bloqueadas no semáforo
+        queue_del(sem->queue, task);
+        task_awake(task);
+        task = queue_head(sem->queue);
     }
 
-    return 0;
+    int task_block = (sem->waiters == 0);                                                  // Verifica se há tarefas bloqueadas no semáforo
+
+    spin_unlock(&sem->lock);                                                            
+
+    if(task_block){                                                                        // Se não houver tarefas bloqueadas, libera os recursos do semáforo
+        queue_destroy(sem->queue);
+        mem_free(sem);
+    }
+
+    return NOERROR;
 }
 
 // Requisita acesso a um semáforo
 // Retorno: NOERROR (0) ou ERROR (<0)
 int sem_down(int sem_id){
-    semaphore_t *s = map_get(semaphore_map, sem_id);
-    if(!s) return -1;
-    spin_lock(&s->lock);                                                              // Protege o semáforo antes de mexer no contador
+    semaphore_t *sem = map_get(semaphore_map, sem_id);
+    if(!sem) return ERROR;
 
-    if(s->destroyed){                                                                 // Se o semáforo foi destruído, retorna erro
-        spin_unlock(&s->lock);
-        return -1;
+    spin_lock(&sem->lock);
+
+    if(sem->destroyed){                                                                 // Se o semáforo foi destruído, retorna erro
+        spin_unlock(&sem->lock);
+        return ERROR;
     }
 
-    s->counter--;                                                                
-    if(s->counter < 0){                                                               // Se o contador for negativo, a tarefa precisa esperar
-        s->waiters++;
-        spin_unlock(&s->lock);
-        task_suspend(s->queue);                                                       // Suspende a tarefa atual
-    }
+    sem->counter--;
 
-    spin_unlock(&s->lock);
-    return 0;
+    if(sem->counter < 0){                                                               // Se o contador for menor que zero, bloqueia a tarefa atual
+        sem->waiters++;                                                                 // Incrementa o contador de tarefas bloqueadas
+        spin_unlock(&sem->lock);
+
+        task_suspend(sem->queue);                                                       // Bloqueia a tarefa atual na fila do semáforo
+
+        spin_lock(&sem->lock);                                                          
+
+        sem->waiters--;                                                                 // Decrementa o contador de tarefas bloqueadas
+
+        if(sem->destroyed){                                                             // Se o semáforo foi destruído, retorna erro
+            int task_block = (sem->waiters == 0);
+            spin_unlock(&sem->lock);                                                    // Libera o spinlock do semáforo
+
+            if(task_block){                                                             // Se não houver tarefas bloqueadas, libera os recursos do semáforo
+                queue_destroy(sem->queue);
+                mem_free(sem);
+            }
+
+            return ERROR;
+        }
+
+        spin_unlock(&sem->lock);
+    } 
+
+    else spin_unlock(&sem->lock);
+    
+
+    return NOERROR;
 }
 
 // libera o acesso a um semáforo
 // Retorno: NOERROR (0) ou ERROR (<0)
 int sem_up(int sem_id){
     semaphore_t *s = map_get(semaphore_map, sem_id);
-    if(!s) return -1;
+    if(!s) return ERROR;
 
     spin_lock(&s->lock);
 
     if(s->destroyed){                                                                 // Se o semáforo foi destruído, retorna erro
         spin_unlock(&s->lock);
-        return -1;
+        return ERROR;
     }
 
     s->counter++;                                                                     // Incrementa o contador do semáforo
@@ -144,6 +169,7 @@ int sem_up(int sem_id){
             task_awake(task);
         }
     }
-    spin_unlock(&s->lock);                                                            // Libera o spinlock do semáforo
-    return 0;
+
+    spin_unlock(&s->lock);                                                            
+    return NOERROR;
 }
