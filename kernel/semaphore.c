@@ -8,12 +8,14 @@
 #include "semaphore.h"
 #include "dispatcher.h"
 #include "memory.h"
+#include "hardware/cpu.h"
 
 
 struct map_t *semaphore_map = NULL;                                                  // Variável global restrita a este arquivo
         
 extern struct queue_t *ready_queue;                                                  // Fila de tarefas prontas
 extern struct task_t *current_task;                                                  // Tarefa atualmente em execução
+extern struct task_t kernel_task;                                                    // Tarefa do núcleo
         
 typedef struct{              
     int id;                                                                          // Identificador do semáforo
@@ -119,11 +121,15 @@ int sem_down(int sem_id){
 
     if(sem->counter < 0){                                                               // Se o contador for menor que zero, bloqueia a tarefa atual
         sem->waiters++;                                                                 // Incrementa o contador de tarefas bloqueadas
-        spin_unlock(&sem->lock);
 
-        task_suspend(sem->queue);                                                       // Bloqueia a tarefa atual na fila do semáforo
+        hw_irq_enable(0);                                                               // Desabilita interrupções para evitar race conditions
+        current_task->state = SUSPENDED;
+        queue_add(sem->queue, current_task);
+        spin_unlock(&sem->lock);                                                        // Libera o spinlock do semáforo antes de trocar de contexto
+        task_switch(&kernel_task);                                                      // Troca de contexto para a tarefa do núcleo
+        hw_irq_enable(1);                                                               // Habilita interrupções novamente após a troca de contexto
 
-        spin_lock(&sem->lock);                                                          
+        spin_lock(&sem->lock);                                                          // Re-adquire o spinlock do semáforo após a troca de contexto
 
         sem->waiters--;                                                                 // Decrementa o contador de tarefas bloqueadas
 
