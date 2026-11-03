@@ -45,7 +45,7 @@ void spin_lock(int *lock){
         
 // libera um spin-lock               
 void spin_unlock(int *lock){                 
-    (*lock) = 0;                                                                 
+    __sync_lock_release(lock);                                                      // atomic release, que seta *lock = 0
 }                
         
 // Cria um novo semáforo, inicializado com value >= 0.               
