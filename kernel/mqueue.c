@@ -1,7 +1,7 @@
+// GRR20244409
+
 // PingPongOS - PingPong Operating System
-
 // Este arquivo PODE/DEVE ser alterado.
-
 // Gerência de filas de mensagens
 
 #include "mqueue.h"
@@ -148,7 +148,6 @@ int mqueue_recv(int mqueue_id, void *msg){
     if(!item) return ERROR;
 
     memcpy(msg, item, mq->msg_size);                                                // Copia a mensagem para o buffer fornecido
-    if(!msg) return ERROR;
 
     if(queue_del(mq->buffer, item) == ERROR) return ERROR;                          // Remove a mensagem da fila de mensagens
 
@@ -165,6 +164,14 @@ int mqueue_recv(int mqueue_id, void *msg){
 int mqueue_msgs(int mqueue_id){
     mqueue_t *mq = map_get(mqueue_map, mqueue_id);
     if(!mq) return ERROR;
-    return queue_size(mq->buffer);
+
+    // Bloqueia o mutex da fila de mensagens
+    if(sem_down(mq->mutex) == ERROR) return ERROR;
+
+    int size = queue_size(mq->buffer);
+
+    if(sem_up(mq->mutex) == ERROR) return ERROR;
+
+    return size;
 }
 
