@@ -1,4 +1,4 @@
-//GRR20244409 Iago Cardoso Bariuka
+//GRR20244409
 // PingPongOS - PingPong Operating System
 // Este arquivo PODE/DEVE ser alterado.
 // Semáforos e spinlocks
